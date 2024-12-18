@@ -1,0 +1,1235 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bloque1 {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    //overflow: hidden;
+    overflow: visible;
+}
+
+.bloque1DesktopImage {
+    position: absolute;
+    left: 0;
+    display: none;
+    @include m.tablet_768 {
+        display: block;
+        top: 68rem;
+        img {
+            width: 61.5%;
+        }
+    }
+}
+
+.bloque1Individual {
+    background-color: v.$color1;
+    margin-bottom: 2rem;
+    background-image: url('https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/individual-shield-image-top-1-scaled.webp') !important;
+    // background-image: url('https://lp.cayetano.edu.pe/wp-content/uploads/2024/11/banner-centro-quirurgico-enferme.webp') !important;
+    background-size: 17rem;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    @include m.tablet_768 {
+        background-image: url('https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/individual-pregrado-desktop-desktop-1.webp') !important;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+.bloque1Container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+    width: v.$width_mobile;
+    @include m.tablet_768 {
+        width: v.$width_tablet;
+    }
+    @include m.desktop_1020 {
+        width: v.$width_desktop_1020;
+    }
+    @include m.desktop_1200 {
+        width: v.$width_desktop_1200;
+    }
+    @include m.desktop_1400 {
+        width: v.$width_desktop_1400;
+    }
+}
+
+.bloque1Float {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    background-color: v.$color1;
+    height: 50rem;
+    overflow: hidden;
+    @include m.tablet_768 {
+        height: 68rem;
+    }
+    @include m.desktop_1020 {
+        height: 85rem;
+    }
+    @include m.desktop_1200 {
+        height: 95rem;
+    }
+    @include m.desktop_1400 {
+        height: 110rem;
+    }
+    .bloque1FloatLeft {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        @include m.tablet_768 {
+            display: none;
+        }
+    }
+    .bloque1FloatLeftDesktop {
+        display: none;
+        @include m.tablet_768 {
+            display: block;
+            position: absolute;
+            max-width: 100%;
+            // height: auto;
+            height: 100%;
+            object-fit: cover;
+            // bottom: 0;
+            @include m.tablet_900 {
+                height: auto;
+                // object-fit: contain;
+            }
+            @include m.desktop_1020 {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    .bloque1FloatLeftDesktopPregrado {
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    // .bloque1FloatLeft {
+    //     left: 0;
+    //     bottom: 0;
+    //     width: 22rem;
+    // }
+    // .bloque1FloatRight {
+    //     width: 10.2rem;
+    //     right: 0;
+    //     top: -17rem;
+    // }
+   
+}
+
+.bloque1Logos {
+    // background-color: purple;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0 2rem 0;
+    align-items: center;
+    @include m.tablet_768 {
+        border-bottom: 1px solid black;
+    }
+    @include m.desktop_1020 {
+        padding: 3rem 0;
+    }
+    .blog-logo {
+        width: 15rem;
+        @include m.tablet_768 {
+            width: 13rem;
+        }
+        @include m.desktop_1020 {
+            width: 18rem;
+        }
+        @include m.desktop_1200 {
+            width: 20rem;
+        }
+        @include m.desktop_1400 {
+            width: 22rem;
+        }
+    }
+    .top-icon-mobile {
+        width: 4rem;
+        height: 2rem;
+        @include m.tablet_768 {
+            display: none;
+        }
+    }
+    .bloque1LogosSelect {
+       
+        display: none !important;
+        position: relative;
+        overflow: visible !important;
+
+        
+        @include m.tablet_768 {
+            display: flex !important;
+            &:hover  {
+                .dropdown-menu {
+                    display: block;
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+            h3 {
+                margin: 0;
+                font-size: 1.7rem;
+                font-weight: 700;
+                cursor: pointer; // Agrega cursor interactivo
+                transition: color 0.3s ease;
+            }
+            h3:hover {
+                color: #ffcccc; // Color al pasar el cursor
+              }
+            }
+    }
+    @media (max-width: 767px) {
+        .dropdown-menu {
+            display: none !important; /* Oculta el menú */
+        }
+    }
+    @include m.desktop_1020 {
+        h3 {
+            font-size: 1.7rem;
+        }
+    }
+    @include m.desktop_1200 {
+        h3 {
+            font-size: 2rem;
+        }
+    }
+    @include m.desktop_1400 {
+        h3 {
+            font-size: 2.5rem;
+        }
+    }
+    
+    .dropdown-menu {
+        display: block; // 
+        position: absolute;
+        top:250%;
+        left: 0;
+        background-color: #000000;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        list-style: none;
+        padding: 10px 0;
+        margin: 0; // Ajusta márgenes para evitar espacios
+        min-width: 150px;
+        z-index: 9999;
+        overflow: visible !important;
+        
+        /* Transición y estados iniciales */
+        opacity: 0;
+        transform: translateY(-10px); // Mueve ligeramente hacia arriba
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        
+    
+        li {
+            padding: 10px 20px;
+            a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 1.3rem;
+            display: block;
+            transition: background-color 0.2s ease, color 0.2s ease;
+            &:hover {
+                background-color: #f5f5f5;
+                color: #8b1538;
+            }
+            }
+        }
+    }
+
+    .dropdown-btn {
+        
+        
+        
+    } 
+        
+          // Mostrar menú al hacer hover (sin JavaScript)
+        // &:hover .dropdown-menu {
+        // display: block;
+        
+        // opacity: 1;
+        // transform: translateY(0);
+        // }
+    }
+
+    
+    .bloque1LogosSearch {
+        display: none;
+        @include m.tablet_768 {
+            display: flex;
+            position: relative;
+            height: 3rem;
+            border-radius: 1.4rem;
+            width: 15rem;
+            input {
+                width: 100%;
+                background-color: white;
+                border-radius: 1rem;
+                padding-left: 1rem;
+                outline: none;
+                font-size: 1.2rem;
+            }
+            img {
+                position: absolute;
+                height: 2rem;
+                width: auto;
+                right: .7rem;
+                top: .4rem;
+                cursor: pointer;
+            }
+        }
+        @include m.desktop_1020 {
+            width: 18rem;
+            height: 3.5rem;
+            img {
+                top: .6rem;
+                right: .9rem;
+            }
+        }
+        @include m.desktop_1200 {
+            width: 21rem;
+        }
+        @include m.desktop_1400 {
+            width: 23rem;
+            height: 4rem;
+            img {
+                height: 2.5rem;
+            }
+        }
+    }
+    button {
+        width: auto;
+        overflow: hidden;
+        // display: flex;
+        background-color: black;
+        border: none;
+        border-radius: 1.5rem;
+        align-items: center;
+        justify-items: center;
+        padding: .8rem 1.3rem;
+        column-gap: .8rem;
+        display: none;
+        @include m.tablet_768 {
+            display: flex;
+        }
+        @include m.desktop_1020 {
+            padding: 1.1rem 1.5rem;
+        }
+        h3 {
+            margin: 0;
+            font-size: 1.3rem;
+            color: white;
+            font-weight: 400;
+            @include m.desktop_1020 {
+                font-size: 1.5rem;
+            }
+            @include m.desktop_1200 {
+                font-size: 1.8rem;
+            }
+            @include m.desktop_1400 {
+                font-size: 2.2rem;
+            }
+        }
+        img {
+            width: 2rem;
+            filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(5%) hue-rotate(322deg) brightness(105%) contrast(100%);
+            @include m.desktop_1400 {
+                width: 3rem;
+            }
+        }
+    }
+
+
+.bloque1Title {
+    // background-color: purple;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0; 
+    text-align: center;
+    row-gap: 3rem;
+    @include m.tablet_768 {
+        padding: 3rem 0 5rem 0;
+    }
+    @include m.desktop_1020 {
+        padding: 5rem 0 7rem 0;
+    }
+    @include m.desktop_1400 {
+        padding: 8rem 0 10rem 0;
+    }
+    h3, p {
+        color: #000000;
+        margin: 0;
+    }
+    h3 {
+        font-weight: 500;
+        font-size: 3.5rem;
+        @include m.tablet_768 {
+            font-size: 5rem;
+            font-weight: 400;
+        }
+        @include m.desktop_1020 {
+            font-size: 7rem;
+        }
+        @include m.desktop_1200 {
+            font-size: 8rem;
+        }
+    }
+    p {
+        font-size: 1.6rem;
+        line-height: 1.1;
+        // background-color: purple;
+        @include m.tablet_768 {
+            font-size: 2rem;
+            padding: 0 5rem;
+            line-height: 1.3;
+            font-weight:400;
+        }
+        @include m.desktop_1020 {
+            font-size: 2.5rem;
+            font-weight: 500;
+            padding: 0 7rem;
+        }
+        @include m.desktop_1200 {
+            font-size: 3rem;
+            padding: 0 10rem;
+        }
+        @include m.desktop_1400 {
+            padding: 0 12rem;
+        }
+    }
+}
+ 
+/* ============================SLIDER =============================*/
+
+.bloque1Slider {
+    // background-color: green;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    overflow: hidden;
+    padding-bottom: 1rem;
+    @include m.tablet_768 {
+        width: 100%;
+        // visibility: hidden;
+    }
+}
+
+.bloque1SliderPregrado {
+    // display: none;
+    @include m.tablet_768 {
+        display: none !important;
+    }
+}
+
+
+.slider__container2 {
+    height: auto;
+    // position: relative;
+    width: 100%;
+    @include m.tablet_760 {
+        // max-width: 65rem;
+        max-width: 100%;
+    }
+    @include m.desktop_1000 {
+        overflow: hidden;
+        // width: 50%;
+    }
+    @include m.desktop_1020 {
+        // max-width: v.$max-width-1020;
+        // max-width: 50rem;
+        max-width: 100%;
+        display: grid;
+        // grid-template-columns: repeat(4, 1fr);
+        // height: 28rem;
+        height: auto;
+        // width: 65rem;
+        width: auto !important;
+        // background-color: red;
+    }
+    // @include m.desktop_1200 {
+    //     width: 75rem;
+    // }
+}
+  
+.slider__grid2 {
+    // position: relative;
+    display: flex;
+    height: auto;
+    position: relative;
+    @include m.tablet_768 {
+        overflow: normal !important;
+    }
+    @include m.desktop_1020 {
+        height: 100%;
+        width: auto !important;
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        // justify-items: center;
+        row-gap: 1rem;
+    }
+}
+
+.slider__item2.swiper-slide {
+    // margin-top: 4rem;
+    height: auto;
+    // position: relative;
+    display: grid;
+    width: 100%;
+    // background-color: green;
+    height: auto;
+    // align-content: center;
+    justify-items: center;
+    // margin-bottom: 3rem;
+
+    @include m.tablet_760 {
+        // padding-bottom: 8rem;
+        width: 90%;
+    }
+    @include m.desktop_1020 {
+        padding-bottom: 0;
+        // margin-top: 4rem !important;
+        overflow: visible !important;
+        // width: auto !important;
+        // width: 36.5% !important;
+        // background-color: purple;
+    }
+    @include m.desktop_1020 {
+        justify-items: center;
+    }
+}
+ 
+//ancho-individual
+.sliderItemInfo2 {
+    background-color: purple;
+    width: 23rem;
+    height: auto;
+    min-height: 26rem;
+    border-radius: 1.5rem;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    overflow: hidden;
+    // background-color: white;
+    row-gap: 2.5rem;
+    padding: 2rem;
+    @include m.tablet_768 {
+        width: 88%;
+        padding: 0;
+        min-height: 41rem;
+    }
+    @include m.desktop_1020 {
+        width: 82%;
+        min-height: 49rem;
+    }
+    @include m.desktop_1200 {
+        min-height: 60rem;
+    }
+    @include m.desktop_1400 {
+        min-height: 71rem;
+    }
+    .sliderItemInfo2Title {
+        margin: 0;
+        font-size: 2rem;
+        color: white;
+        text-align: center;
+        margin-top: 5rem;
+        @include m.tablet_768 {
+            margin-top: 12rem;
+            font-size: 2.7rem;
+            font-weight: 400;
+            width: 40rem;
+        }
+        @include m.desktop_1020 {
+            width: 47rem;
+        }
+        @include m.desktop_1020 {
+            margin-top: 15rem;
+        }
+    }
+    .sliderItemCalendar {
+        // background-color: red;
+        display: flex;
+        height: auto;
+        width: 10rem;
+        justify-content: center;
+        align-items: center;
+        column-gap: .5rem;
+        @include m.desktop_1020 {
+            column-gap: .8rem;
+        }
+        img {
+            width: 1.5rem;
+            height: 1.5rem;
+            @include m.desktop_1020 {
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+        h3 {
+            display: flex;
+            justify-items: center;
+            align-content: center;
+            font-weight: 400;
+            color: white;
+            margin: 0;
+            font-size: 1.2rem;
+            @include m.desktop_1020 {
+                font-size: 1.6rem;
+            }
+        }
+    }
+    button {
+        background-color: v.$color1;
+        border: none;
+        width: 10rem;
+        display: flex;
+        justify-content: center;
+        column-gap: 1rem;
+        align-items: center;
+        height: 2.5rem;
+        border-radius: 1rem;
+        cursor: pointer;
+        @include m.tablet_768 {
+            margin-top: 3rem;
+        }
+        @include m.desktop_1020 {
+            width: 13rem;
+            height: 3.5rem;
+        }
+        h3 {
+            margin: 0;
+            font-weight: 600;
+            font-size: 1.3rem;
+            @include m.desktop_1020 {
+                font-size: 1.5rem;
+            }
+        }
+        img {
+            width: 2rem;
+            @include m.desktop_1020 {
+                width: 2.5rem;
+            }
+        }
+    }
+}
+
+@keyframes arrow-button-movement {
+    0% { transform: translateX(0rem); }
+    50% { transform: translateX(.2rem); }
+    100% { transform: translateX(-.2rem); }
+}
+
+.keyframe-button-movement {
+    animation-name: arrow-button-movement;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+// .swiper-slide1 {
+//     background-image: url('../img/top-mobile-pregrado.webp') !important;
+//     // background-image: url('https://lp.cayetano.edu.pe/wp-content/uploads/2024/11/banner-centro-quirurgico-enferme.webp') !important;
+//     background-size: cover;
+//     background-position: center;
+//     background-repeat: no-repeat;
+// }
+
+.sliderItemInfo2Image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    filter: brightness(0.7);
+    @include m.tablet_768 {
+        display: none;
+    }
+}
+
+.sliderItemInfo2ImageDesktop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    height: auto;
+    z-index: -1;
+    object-fit: contain;
+    display: none;
+    width: 100%;
+    @include m.tablet_768 {
+        display: block;   
+        filter: brightness(0.7);
+    }
+}
+
+// .swiper-slide2 {
+//     background-image: url('../img/top-mobile-pregrado.webp') !important;
+//     background-size: cover;
+//     background-position: center;
+//     background-repeat: no-repeat;
+// }
+
+.swiper-button-next2 {
+    // height: 4.5rem;
+    // background-color: red !important;
+    width: auto;
+    height: auto;
+    color: white !important;
+    text-rendering: auto;
+    z-index: 30;
+    position: absolute !important;
+    // bottom: 50%;
+    bottom: .3rem;
+    right: 30% !important;
+    @include m.phone_360 {
+        right: 26% !important;    
+    }
+    @include m.phone_375 {
+        right: 6.5rem !important;  
+    }
+    @include m.tablet_768 {
+        right: 0 !important;
+        bottom: 43% !important;
+    }
+    img {
+        width: 1.5rem;
+        @include m.tablet_768 {
+            width: 2.2rem;
+        }
+    }
+}
+  
+.swiper-button-prev2 {
+    // height: 4.5rem;
+    // background-color: green;
+    width: auto;
+    height: auto;
+    // color: black !important;
+    position: absolute !important;
+    
+    // left: 2rem !important;
+    text-rendering: auto;
+    z-index: 30;
+    bottom: .3rem;
+    left: 30% !important;
+    @include m.phone_360 {
+        left: 26% !important;    
+    }
+    @include m.phone_375 {
+        left: 6.5rem !important;  
+    }
+    @include m.tablet_768 {
+        left: 0 !important;
+        bottom: 43% !important;
+    }
+    img {
+        width: 1.5rem;
+        @include m.tablet_768 {
+            width: 2.2rem;
+        }
+    }
+}
+
+.swiper-pagination2 {
+    position: relative !important;
+    display: block !important;
+    top: auto !important;
+    bottom: auto !important;
+    // background-color: green;
+    text-align: center;
+    @include m.tablet_768 {
+        display: none !important;
+    }
+}
+
+.bullet2 {
+    background-color: v.$color1 !important;
+    color: v.$color1  !important;
+    width: 1.2rem !important;
+    height: 1.2rem !important;
+}
+
+.bullet2.swiper-pagination-bullet {
+    color: v.$color1  !important;
+    background-color: v.$color1  !important;
+    opacity: 1 !important;
+}
+
+.bullet2.swiper-pagination-bullet-active {
+    background-color: black !important;
+    width: 2.5rem !important;
+    border-radius: .5rem !important;
+    transition: all .5s ease-in-out;
+}
+
+.bloque1Select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: auto;
+    row-gap: 2rem;
+    padding: 2rem 0 4rem 0;
+    @include m.tablet_768 {
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 2rem;
+        z-index: 10;
+    }
+    @include m.desktop_1020 {
+        padding: 5rem 0 7rem 0;
+        column-gap: 3rem;
+    }
+    @include m.desktop_1200 {
+        padding: 7rem 0 9rem 0;
+    }
+    @include m.desktop_1400 {
+        column-gap: 4rem;
+    }
+    h3 {
+        &:hover {
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+        background-color: transparent;
+        width: auto;
+        margin: 0;
+        min-width: 20rem;
+        font-size: 2rem;
+        font-weight: 500;
+        border: 1px solid black;
+        border-radius: 1.5rem;
+        padding: 1rem 0;
+        text-align: center;
+        @include m.tablet_768 {
+            font-weight: 600;
+            border: 2px solid black;
+        }
+        @include m.desktop_1020 {
+            font-size: 2.5rem;
+            min-width: 23rem;
+            padding: 1.2rem 0;
+        }
+        @include m.desktop_1200 {
+            font-size: 3rem;
+            min-width: 28rem;
+            padding: 1.5rem 0;
+        }   
+        @include m.desktop_1400 {
+            font-size: 3.3rem;
+            min-width: 32rem;
+        }
+    }
+}
+
+.bloque1SelectProgramGrid {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    @include m.tablet_768 {
+        display: none;
+    }
+}
+
+.bloque1SelectProgramGridDesktop {
+    display: none;
+    @include m.tablet_768 {
+        display: flex;
+        height: auto;
+    }
+}
+
+.bloque1SelectProgram {
+    background-color: black;
+    // margin-bottom: 3rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    z-index: 10;
+    &:hover {
+        transition: background-color .5s ease-in;
+        background-color: v.$color1;
+    }
+    @include m.tablet_768 {
+        display: none;
+    }
+    h3 {
+        text-align: center;
+        margin: 0;
+        font-size: 2rem;
+        color: white;
+        font-weight: 500;
+        padding: 1rem 0;
+    }
+}
+
+
+.bloque1SelectProgramContentDesktop {
+    @include m.tablet_768 {
+        height: auto !important;
+        animation: none !important;
+        transform: translateY(0rem) !important;
+    }
+}
+
+@keyframes slidecategories {
+    0% {
+    }
+    100% {
+        transform: translateY(0rem);
+        height: auto;
+    }
+}
+
+@keyframes slideCategorieCiencia {
+    0% {}
+    100% {
+        transform: translateY(0rem) !important;
+        height: auto !important;
+        display: block !important;
+        padding-top: 1rem;
+    }
+}
+
+
+.bloque1SelectProgramContent {
+    transition: transform 1s ease-out;
+    // background-color: purple;
+    width: 100%;
+    // height: 3rem;
+    transform: translateY(-30rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: flex-start;
+    height: 0;
+    .bloque1SelectProgramContentItem {
+        width: 82%;
+        // background-color: orange;
+        display: flex;
+        align-items: center;
+        // height: auto;
+        padding: 1.5rem 0;
+        overflow: hidden;
+        align-items: center;
+        // height: 0;
+        // justify-items: flex-start;
+        flex-direction: column;
+        // row-gap: 1rem;
+        z-index: 20;
+        @include m.tablet_768 {
+            width: 96%;
+        }
+        &:nth-child(1) {
+            border-bottom: 1.5px solid black;
+        }
+        &:nth-child(2) {
+            border-bottom: 1.5px solid black;
+        }
+        &:nth-child(3) {
+            border-bottom: 1.5px solid black;
+        }
+        &:nth-child(4) {
+            border-bottom: 1.5px solid black;
+        }
+        &:nth-child(5) {
+            border-bottom: 1.5px solid black;
+        }
+       
+    }
+}
+
+.bloque1SelectProgramContentItemTop {
+    display: flex;
+    column-gap: 1rem;
+    justify-content: flex-start;
+    width: 100%;
+    z-index: 20;
+    cursor: pointer;
+    h3 {
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: black;
+        margin: 0;
+        // background-color: green;
+    }
+    img {
+        width: auto;
+        height: 1.5rem;
+    }
+}
+
+.bloque1SelectProgramContentItemCiencias {
+
+}
+
+.bloque1SelectProgramContentItemBottom {
+    // background-color: purple;
+    width: 81%;
+    height: 0;
+    z-index: 20;
+    transform: translateY(-33rem);
+    @include m.tablet_768 {
+        transform: translateY(-40rem);
+    }
+    h3 {
+        margin: 0;
+        width: 100%;
+        font-size: 1.6rem;
+        font-weight: 400;
+        padding: .5rem 0;
+        cursor: pointer;
+        // background-color: red;
+    }
+}
+
+.activeSelect {
+    transition: all .5s ease-in;
+    animation-name: slidecategories;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+.bloque1SelectProgramContentItemCiencias {
+    transition: all .5s ease-in;
+    animation-name: slideCategorieCiencia;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+.bloque1SelectProgramContentItemCienciasDesktop {
+    transition: all .5s ease-in;
+    transform: translateY(0rem) !important;
+    animation-name: slideCategorieCiencia;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    height: auto !important;
+}
+
+.bloque1SelectProgramContentItemTopActive {
+    img {
+        filter: brightness(0) saturate(100%) invert(17%) sepia(56%) saturate(4262%) hue-rotate(340deg) brightness(120%) contrast(122%);
+    }
+    h3 {
+        color: v.$color1;
+    }
+}
+
+.bloque1SelectTodos {
+    margin: 0;
+}
+
+.bloque1PregradoContent {
+    display: none;
+    @include m.tablet_768 {
+        display: flex;
+        // background-color: purple;
+        height: auto;
+        column-gap: 2rem;
+    }
+}
+
+.bloque1PregradoContentLeft {
+    // background-color: orange;
+    // height: 47.8rem;
+    // width: 63%;
+    width: 75%;
+    position: relative;
+    img {
+        // position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 1.5rem;
+        object-position: right;
+    }
+    
+}
+
+.bloque1PregradoContentLeftDesktop {
+    // background-color: green;
+    width: 100%;
+    height: 100%;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    row-gap: 2rem;
+}
+
+.bloque1PregradoContentRightDesktop {
+    padding: 2rem;
+    .bloque1PregradoContentLeftDesktopTitle {
+        h3 {
+            font-size: 1.6rem;
+            // background-color: red;
+            width: 20rem;
+            line-height: 1.4;
+            @include m.desktop_1020 {
+                font-size: 2rem;
+                // background-color: red;
+                width: 22rem;
+                line-height: 1.4;
+            }
+        }
+    }
+}
+
+.sliderItemCalendarPregrado {
+    // background-color: red;
+    display: flex;
+    height: auto;
+    width: 10rem;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: .5rem;
+    img {
+        width: 1.8rem !important;
+        height: 1.8rem !important;
+        border-radius: 0 !important;
+    }
+    h3 {
+        display: flex;
+        justify-items: center;
+        align-content: center;
+        font-weight: 400;
+        color: white;
+        margin: 0;
+        font-size: 1.2rem;
+    }
+}
+
+.bloque1PregradoContentLeftDesktopTitle {
+    h3 {
+        margin: 0;
+        width: 27rem;
+        font-size: 2.5rem;
+        font-weight: 400;
+        line-height: 1.4;
+        color: white;
+        // background-color: orange;
+    }
+}
+
+.bloque1PregradoContentLeftDesktopButton {
+    button {
+        width: 13rem;
+        background-color: v.$color1;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: .5rem;
+        border-radius: 1.5rem;
+        padding: .8rem 1rem;
+        h3 {
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        img {
+            width: 3rem;
+        }
+    }
+}
+
+.bloque1PregradoContentRight {
+    // background-color: greenyellow;
+    width: 37%;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 2rem;
+    div > & {
+        position: relative;
+    }
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 1.5rem;
+        // border-radius: 1.5rem;
+    }
+}
+
+.bloque1PregradoContentRightTop {
+    position: relative;
+    // img {
+    //     // position: absolute;
+    //     height: 100%;
+    //     width: 100%;
+    //     object-fit: cover;
+    //     border-radius: 1.5rem;
+    //     object-position: right;
+    // }
+}
+
+
+
+.bloque1PregradoContentRightDesktop {
+    // background-color: red;
+}
+
+// .calendarsize {
+//     width: 1.5rem !important;
+//     height: 1.5rem !important;
+// }
+
+
+.search-dropdown {
+    top: 3rem;
+    background-color: purple;
+    position: absolute;
+    width: 99%;
+    // height: auto;
+    height: auto;
+    display: none;
+}
+
+#options-search {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+        border-bottom: 1px solid black;
+    }
+}
+
+.search-dropdown2 {
+    top: 3rem;
+    background-color: purple;
+    position: absolute;
+    width: 99%;
+    // height: auto;
+    height: auto;
+    display: none;
+}
+
+#options-search2 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+        border-bottom: 1px solid black;
+    }
+}

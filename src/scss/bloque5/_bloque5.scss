@@ -1,0 +1,169 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+:root {
+    --width-form: 35rem;
+    --width-form-1020: 55rem;
+}
+
+.bloque5 {
+    // background-color: red;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    @include m.tablet_768 {
+        justify-content: space-between;
+        position: block;
+    }
+}
+
+.bloque5ImageDesktop {
+    display: none;
+    background-image: url('https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/crm-image-desktop-1.webp') !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 43%;
+    @include m.tablet_768 {
+        display: block;
+    }
+    @include m.desktop_1020 {
+        width: 50rem;
+    }
+}
+
+// .swiper-slide2 {
+//     background-image: url('../img/top-mobile-pregrado.webp') !important;
+//     background-size: cover;
+//     background-position: center;
+//     background-repeat: no-repeat;
+// }
+
+.bloque5Container {
+    width: 28rem;
+    // background-color: purple;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0;
+    row-gap: 1rem;
+    @include m.tablet_768 {
+        width: 57%;
+        align-items: center;
+        padding: 6rem 0;
+    }
+    @include m.desktop_1020 {
+        width: 100%;
+    }
+    h3 {
+        color: black;
+        margin: 0;
+        font-size: 1.8rem;
+        font-weight: 500;
+        text-align: center;
+        @include m.tablet_768 {
+            width: var(--width-form);
+            display: none;
+        }
+    }
+    .bloque5ContainerTextDesktop {
+        display: none;
+        @include m.tablet_768 {
+            display: block;
+            font-size: 2rem;
+        }
+        @include m.desktop_1020 {
+            width: var(--width-form-1020);
+        }
+    }
+}
+
+.bloque5ContainerInput {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    // background-color: red;
+    @include m.tablet_768 {
+        width: var(--width-form);
+    }
+    @include m.desktop_1020 {
+        width: var(--width-form-1020);
+    }
+    .bloque5ContainerInputGroupSelect,
+    .bloque5ContainerInputGroup {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        @include m.tablet_768 {
+            flex-direction: row;
+            column-gap: 1rem;
+        }
+        input {
+            width: 100%;
+        }
+    }
+    input {
+        height: 3.3rem;
+        outline: none;
+        border: 1px solid black;
+        background-color: transparent;
+        border-radius: 1rem;
+        padding-left: 1rem;
+        &::placeholder {
+            color: black;
+            font-size: 1.2rem;
+            // opacity: 1;
+        }
+    }
+}
+
+.bloque5ContainerTerminos,
+.bloque5ContainerAcepto {
+    display: flex;
+    column-gap: 1rem;
+    justify-content: center;
+    @include m.tablet_768 {
+        width: var(--width-form);
+    }
+    @include m.desktop_1020 {
+        width: var(--width-form-1020);
+    }
+    h4 {
+        margin: 0;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        font-size: 1.3rem;
+    }
+}
+
+.bloque5Button {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    button {
+        background-color: black;
+        border: none;
+        border-radius: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 13rem;
+        column-gap: 1rem;
+        height: 3.5rem;
+        h3 {
+            display: block;
+            color: white;
+            font-size: 1.7rem;
+            margin: 0;
+            width: auto;
+        }
+        img {
+            width: 3rem;
+            filter: brightness(0) saturate(100%) invert(100%) sepia(3%) saturate(430%) hue-rotate(183deg) brightness(118%) contrast(100%);
+        }
+    }
+} 

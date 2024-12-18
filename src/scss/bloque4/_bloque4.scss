@@ -1,0 +1,402 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+:root {
+    --width-768: 61%;
+}
+
+.bloque4 {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    padding-bottom: 4rem;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 14%, rgba(239,239,239,1) 14%);
+    @include m.tablet_768 {
+        background: linear-gradient(180deg, rgba(255,255,255,1) 8%, rgba(239,239,239,1) 8%);
+    }
+    @include m.desktop_1020 {
+        // padding-bottom: 7rem;
+    }
+}
+
+.bloque4Container {
+    width: v.$width_mobile;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    @include m.tablet_768 {
+        width: v.$width_tablet;
+    }
+    @include m.desktop_1020 {
+        width: v.$width_desktop_1020;
+    }
+    @include m.desktop_1200 {
+        width: v.$width_desktop_1200;
+    }
+    @include m.desktop_1400 {
+        width: v.$width_desktop_1400;
+    }
+}
+
+.bloque4Banner {
+    height: 27rem;
+    background-image: url('https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/individual-banner-carrera-1-scaled.webp') !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1rem;
+    padding: 0 2rem;
+    @include m.tablet_768 {
+        background-image: url('https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/individual-banner-carrera-desktop-1-scaled.webp') !important;
+        height: 12rem;
+        background-position: 5% center;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 4rem;
+    }
+    @include m.desktop_1200 {
+        height: 14rem;
+    }
+    h3, h4 {
+        margin: 0;
+        color: black;
+        font-weight: 500;
+        text-align: center;
+        @include m.tablet_768 {
+            text-align: left;
+        }
+    }
+    h3 {
+        font-size: 2rem;
+        font-weight: 700;
+        @include m.tablet_768 {
+            font-size: 2.5rem;
+        }
+    }
+    h4 {
+        font-size: 1.6rem;
+        @include m.tablet_768 {
+            font-size: 1.8rem;
+        }
+        span {
+            font-weight: 700;
+        }
+    }
+    button {
+        display: flex;
+        justify-content: center;
+        width: 15rem;
+        height: 3rem;
+        background-color: black;
+        border: none;
+        align-items: center;
+        column-gap: 1rem;
+        border-radius: 1.5rem;
+        @include m.tablet_768 {
+            width: 17rem;
+        }
+        h5 {
+            color: white;
+            margin: 0;
+            font-size: 1.3rem;
+        }
+        img {
+            filter: brightness(0) saturate(100%) invert(99%) sepia(24%) saturate(0%) hue-rotate(142deg) brightness(109%) contrast(100%);
+            width: 2rem;
+        }
+    }
+}
+
+.bloque4BannerProgram {
+    padding: 0;
+    display: flex;
+    position:relative;
+    justify-items: center;
+    @include m.tablet_768 {
+        height: 15rem;
+       
+        
+    }
+    .bloque4BannerProgramButton {
+        width: 100%;
+        height: 2.5rem;
+        bottom: 2.3rem;
+        left: 0;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        .bloque4BannerProgramButtonContent {
+            width: 16rem;
+            height: 100%;
+        }
+    }
+    .bloque4BannerProgramMobile {
+        width: 100%;
+        height: 100%;
+        @include m.tablet_768 {
+            display: none;
+        }
+    }
+    .bloque4BannerProgramDesktop {
+        display: none;
+        @include m.tablet_768 {
+            display: block;
+            width: 100%;
+        height: 100%;
+        }
+    } 
+}
+
+.bloque4BannerIndividual {
+    margin: 2rem 0;
+}
+
+.bloque4ContentItemsProgram {
+    @include m.tablet_768 {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 0 !important;
+        .linebottom {
+            border-bottom: 1.5px solid black;
+        }
+        .bloque4Item {
+            flex: auto;
+            width: auto;
+            flex-direction: row;
+            height: 15rem;
+            padding: 2.5rem 0;
+            column-gap: 1.5rem;
+        }
+        .bloque4ItemImage {
+            width: 10rem !important;
+            height: auto !important;
+        }
+        .bloque4ItemContentCalendar {
+            display: flex;
+        }
+        .bloque4ItemContent {
+            // background-color: red;
+            width: 40rem !important;
+            .bloque4ItemContentText {
+                flex-direction: column;
+                align-items: flex-start !important;
+                row-gap: 1rem;
+                width: 35rem;
+            }
+        }
+        .bloque4ItemContentPregrado {
+            .bloque4ItemContentText {
+                width: 100%;
+                h3 {
+                    font-size: 1.3rem !important;
+                }
+            }
+        }
+    }
+}
+
+//
+.bloque4ContentItems {
+    margin-top: 2rem;
+    // background-color: green;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    @include m.tablet_768 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 4rem;
+        // width: var(--width-768);
+    }
+    // @include m.tablet_768 {
+    //     display: none;
+    // }
+}
+
+.linebottom {
+    border-bottom: 1.5px solid black;
+    @include m.tablet_768 {
+        border-bottom: 0;
+    }
+}
+
+
+.bloque4Item {
+    // background-color: purple;
+    height: 15rem;
+    padding: 2.5rem 0;
+    display: flex;
+    column-gap: 1.5rem;
+    @include m.tablet_768 {
+        flex: 1 1 0; 
+        width: 20rem;  
+        flex-direction: column;
+        height: auto;
+        padding: 1rem 0;
+        row-gap: 1.5rem;
+    }
+    @include m.desktop_1020 {
+        flex: none;
+        flex-wrap: wrap;
+        width: 27rem;
+    }
+    @include m.desktop_1200 {
+        width: 34rem;
+    }
+    @include m.desktop_1400 {
+        width: 40.6rem;
+    }
+    img {
+        width: 5rem;
+    }
+    .bloque4ItemImage {
+        border-radius: 1.5rem;
+        width: 10rem;
+        filter: brightness(0) saturate(100%) invert(33%) sepia(6%) saturate(273%) hue-rotate(188deg) brightness(90%) contrast(89%);
+        @include m.tablet_768 {
+            width: 100%;
+            height: 16rem;
+            max-width: 100%;
+            // height: auto;
+            // z-index: -1;
+            object-fit: cover;
+        }
+    }
+    .bloque4ItemContent {
+        width: 17rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.5rem;
+        @include m.tablet_768 {
+            width: 20.5rem;
+        }
+        @include m.desktop_1020 {
+            width: 27rem;
+        }
+        .bloque4ItemContentText {
+            // background-color: red;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            h3 {
+                margin: 0;
+                font-size: 1.2rem;
+                font-weight: 500;
+                padding-right: .5rem;
+                @include m.tablet_768 {
+                    font-weight: 700;
+                }
+                @include m.desktop_1020 {
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    .bloque4ItemContentParagraph {
+        display: none;
+        @include m.tablet_768 {
+            display: flex;
+            h3 {
+                margin: 0;
+                font-weight: 400 !important;
+                color: black;
+                @include m.desktop_1020 {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+.bloque4ItemContentCalendarGrid {
+    display: flex;
+    column-gap: 1rem;
+}
+
+.bloque4ItemContentCarrera {
+    // background-color: red;
+    h3 {
+        margin: 0;
+        font-size: 1.2rem;
+        color: black;
+        font-weight: 500;
+        padding: .5rem .5rem;
+        border-radius: 1.5rem;
+    }
+    .bloque4ItemContentCarreraIngenieria {
+        background-color: v.$ingenieria;
+    }
+    .bloque4ItemContentCarreraCiencias {
+        background-color: v.$ciencias;
+    }
+    .bloque4ItemContentCarreraSalud {
+        background-color: v.$salud;
+    }
+    .bloque4ItemContentCarreraEducacion {
+        background-color: v.$educacion;
+    }
+}
+
+.bloque4ItemContentCalendar {
+    display: flex;
+    height: auto;
+    // width: 10rem;
+    width: auto;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: .3rem;
+    @include m.tablet_768 {
+        display: none;    
+    }
+    img {
+        width: 1.5rem;
+        height: 1.5rem;
+        filter: brightness(0) saturate(100%) invert(13%) sepia(65%) saturate(6454%) hue-rotate(347deg) brightness(112%) contrast(100%);
+    }
+    h3 {
+        display: flex;
+        justify-items: center;
+        align-content: center;
+        font-weight: 600;
+        color: v.$color1;
+        margin: 0;
+        font-size: 1.2rem;
+    }
+}
+
+.bloque4Todes {
+    width: auto;
+    display: flex;
+    justify-content: center;
+
+    @include m.tablet_768 {
+    justify-content: flex-end;    
+    }
+    
+    h3 {
+        margin: 0;
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 500;
+        // background-color: red;
+        width: 8rem;
+        padding: .3rem 0;
+        border-bottom: 1px solid black;
+        cursor: pointer;
+        @include m.desktop_1200 {
+            font-size: 2.3rem;
+            width: 10rem;
+        }
+    }
+}
