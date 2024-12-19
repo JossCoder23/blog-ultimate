@@ -427,7 +427,7 @@ html(lang="en")
                                                 img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/11/arrow-categories.webp", alt="")
                                                 h3 Ciencias
                                             .bloque1SelectProgramContentItemBottom.bloque1SelectProgramContentItemBottomCienciasDesktop
-                                                h3 Nutrición
+                                                h3(onclick="getThis(this)") Nutrición
                                                 h3 Biología
                                                 h3 Farmacia y Bioquímica
                                         .bloque1SelectProgramContentItem
@@ -468,6 +468,10 @@ html(lang="en")
                                                 h3 Terapia Fisica
                                                 h3 Terapia Ocupacional
                                                 h3 Terapia de Audicion 
+                            script(defer=''). 
+                                function getThis(ev) {
+                                    console.log(ev.innerHTML);
+                                }
                             .bloque2ProgramRightContainerNewsletter 
                                 .newsletterWhitespace
                                 .newsletterContent
@@ -522,5 +526,6 @@ html(lang="en")
                     h3 Av. Honorio Delgado 430
                     h3 Urb. Ingeniería, San Martín de Porres 
         //- script(src="../js/script.js" defer)
+        script(src="./js/script-pregrado.js" defer)
         script(src="./js/script.js" defer)
         script(src="https://unpkg.com/swiper/swiper-bundle.min.js")

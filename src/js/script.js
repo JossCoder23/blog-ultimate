@@ -39,8 +39,6 @@ window.addEventListener("load", () => {
         }
     }
 
-   
-
     if( window.screen.width >= 767 ) {
         let buscar2 = document.getElementById('buscar2');
         let opciones2 = document.getElementById('options-search2');
@@ -190,12 +188,12 @@ window.addEventListener("load", () => {
         bodyContent.classList.toggle('bodyOverflow')
     })
 
-    let clickerIndex = document.querySelector('.indexclicker');
-    let indexContent = document.querySelector('.bloque6LeftIndexContent');
+    // let clickerIndex = document.querySelector('.indexclicker');
+    // let indexContent = document.querySelector('.bloque6LeftIndexContent');
 
     // clickerIndex.addEventListener('click', () => {
     //     alert("hice click")
-    //     // indexContent.classList.add('bloque6LeftIndexBlock');
+    //     indexContent.classList.add('bloque6LeftIndexBlock');
     // })
 
 })

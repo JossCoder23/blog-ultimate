@@ -903,7 +903,7 @@
 @keyframes slideCategorieCiencia {
     0% {}
     100% {
-        transform: translateY(0rem) !important;
+        
         height: auto !important;
         display: block !important;
         padding-top: 1rem;
@@ -978,10 +978,6 @@
     }
 }
 
-.bloque1SelectProgramContentItemCiencias {
-
-}
-
 .bloque1SelectProgramContentItemBottom {
     // background-color: purple;
     width: 81%;
@@ -1014,6 +1010,8 @@
     animation-name: slideCategorieCiencia;
     animation-duration: .5s;
     animation-fill-mode: forwards;
+    height: auto !important;
+    transform: translateY(0rem) !important;
 }
 
 .bloque1SelectProgramContentItemCienciasDesktop {
@@ -1023,6 +1021,7 @@
     animation-duration: .5s;
     animation-fill-mode: forwards;
     height: auto !important;
+    // height: auto !important;
 }
 
 .bloque1SelectProgramContentItemTopActive {
