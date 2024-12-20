@@ -660,6 +660,7 @@
     height: auto;
     display: flex;
     flex-direction: column;
+    margin-top: 2rem;
 }
 
 .newsletterWhitespace {
@@ -789,7 +790,7 @@
     display: flex;
     justify-content: center;
     background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 58%, rgba(239,239,239,1) 58%);
+    // background: linear-gradient(180deg, rgba(255,255,255,1) 58%, rgba(239,239,239,1) 58%);
     padding: 3rem 0;
     width: 100%;
     @include m.tablet_768 {
@@ -979,3 +980,17 @@
 
     
 }
+
+.bloque2SelectProgram {
+    // overflow: hidden;
+    border: none;
+    background-color: red;
+    width: 100%;
+    display: block;
+    option {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid black;
+        height: 2rem;
+    }
+} 

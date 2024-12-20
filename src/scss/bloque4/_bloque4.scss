@@ -12,9 +12,9 @@
     height: auto;
     padding-bottom: 4rem;
     background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 14%, rgba(239,239,239,1) 14%);
+    // background: linear-gradient(180deg, rgba(255,255,255,1) 14%, rgba(239,239,239,1) 14%);
     @include m.tablet_768 {
-        background: linear-gradient(180deg, rgba(255,255,255,1) 8%, rgba(239,239,239,1) 8%);
+        // background: linear-gradient(180deg, rgba(255,255,255,1) 8%, rgba(239,239,239,1) 8%);
     }
     @include m.desktop_1020 {
         // padding-bottom: 7rem;

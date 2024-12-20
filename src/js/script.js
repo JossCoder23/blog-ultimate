@@ -39,7 +39,7 @@ window.addEventListener("load", () => {
         }
     }
 
-    if( window.screen.width >= 767 ) {
+    if( window.screen.width >= 768 ) {
         let buscar2 = document.getElementById('buscar2');
         let opciones2 = document.getElementById('options-search2');
         let drop2 = document.querySelector('.search-dropdown2');

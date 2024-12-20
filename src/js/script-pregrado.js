@@ -51,45 +51,45 @@ window.addEventListener('load', () => {
     //=================================================================================================================
     //=================================================================================================================
 
-    let cienciasCategorieDesktop = document.querySelector('.bloque1SelectProgramContentItemTopCienciasDesktop');
-    let aparitionCienciasDesktop = document.querySelector('.bloque1SelectProgramContentItemBottomCienciasDesktop')
+    // let cienciasCategorieDesktop = document.querySelector('.bloque1SelectProgramContentItemTopCienciasDesktop');
+    // let aparitionCienciasDesktop = document.querySelector('.bloque1SelectProgramContentItemBottomCienciasDesktop')
 
-    cienciasCategorieDesktop.addEventListener('click', () => {
-        aparitionCienciasDesktop.classList.toggle('bloque1SelectProgramContentItemCienciasDesktop');
-        cienciasCategorieDesktop.classList.toggle('bloque1SelectProgramContentItemTopActive');
-    })
+    // cienciasCategorieDesktop.addEventListener('click', () => {
+    //     aparitionCienciasDesktop.classList.toggle('bloque1SelectProgramContentItemCienciasDesktop');
+    //     cienciasCategorieDesktop.classList.toggle('bloque1SelectProgramContentItemTopActive');
+    // })
 
-    let educacionCategorieDesktop = document.querySelector('.bloque1SelectProgramContentItemTopEducacionDesktop');
-    let aparitionEducacionDesktop = document.querySelector('.bloque1SelectProgramContentItemBottomEducacionDesktop')
+    // let educacionCategorieDesktop = document.querySelector('.bloque1SelectProgramContentItemTopEducacionDesktop');
+    // let aparitionEducacionDesktop = document.querySelector('.bloque1SelectProgramContentItemBottomEducacionDesktop')
 
-    educacionCategorieDesktop.addEventListener('click', () => {
-        aparitionEducacionDesktop.classList.toggle('bloque1SelectProgramContentItemCienciasDesktop');
-        educacionCategorieDesktop.classList.toggle('bloque1SelectProgramContentItemTopActive');
-    })
+    // educacionCategorieDesktop.addEventListener('click', () => {
+    //     aparitionEducacionDesktop.classList.toggle('bloque1SelectProgramContentItemCienciasDesktop');
+    //     educacionCategorieDesktop.classList.toggle('bloque1SelectProgramContentItemTopActive');
+    // })
 
-    let gestionCategorieDesktop = document.querySelector('.bloque1SelectProgramContentItemTopGestionDesktop');
-    let aparitionGestionDesktop = document.querySelector('.bloque1SelectProgramContentItemBottomGestionDesktop')
+    // let gestionCategorieDesktop = document.querySelector('.bloque1SelectProgramContentItemTopGestionDesktop');
+    // let aparitionGestionDesktop = document.querySelector('.bloque1SelectProgramContentItemBottomGestionDesktop')
 
-    gestionCategorieDesktop.addEventListener('click', () => {
-        aparitionGestionDesktop.classList.toggle('bloque1SelectProgramContentItemCienciasDesktop');
-        gestionCategorieDesktop.classList.toggle('bloque1SelectProgramContentItemTopActive');
-    })
+    // gestionCategorieDesktop.addEventListener('click', () => {
+    //     aparitionGestionDesktop.classList.toggle('bloque1SelectProgramContentItemCienciasDesktop');
+    //     gestionCategorieDesktop.classList.toggle('bloque1SelectProgramContentItemTopActive');
+    // })
 
-    let ingenieriaCategorieDesktop = document.querySelector('.bloque1SelectProgramContentItemTopIngenieriaDesktop');
-    let aparitionIngenieriaDesktop = document.querySelector('.bloque1SelectProgramContentItemBottomIngenieriaDesktop')
+    // let ingenieriaCategorieDesktop = document.querySelector('.bloque1SelectProgramContentItemTopIngenieriaDesktop');
+    // let aparitionIngenieriaDesktop = document.querySelector('.bloque1SelectProgramContentItemBottomIngenieriaDesktop')
 
-    ingenieriaCategorieDesktop.addEventListener('click', () => {
-        aparitionIngenieriaDesktop.classList.toggle('bloque1SelectProgramContentItemCienciasDesktop');
-        ingenieriaCategorieDesktop.classList.toggle('bloque1SelectProgramContentItemTopActive');
-    })
+    // ingenieriaCategorieDesktop.addEventListener('click', () => {
+    //     aparitionIngenieriaDesktop.classList.toggle('bloque1SelectProgramContentItemCienciasDesktop');
+    //     ingenieriaCategorieDesktop.classList.toggle('bloque1SelectProgramContentItemTopActive');
+    // })
 
-    let saludCategorieDesktop = document.querySelector('.bloque1SelectProgramContentItemTopSaludDesktop');
-    let aparitionSaludDesktop = document.querySelector('.bloque1SelectProgramContentItemBottomSaludDesktop')
+    // let saludCategorieDesktop = document.querySelector('.bloque1SelectProgramContentItemTopSaludDesktop');
+    // let aparitionSaludDesktop = document.querySelector('.bloque1SelectProgramContentItemBottomSaludDesktop')
 
-    saludCategorieDesktop.addEventListener('click', () => {
-        aparitionSaludDesktop.classList.toggle('bloque1SelectProgramContentItemCienciasDesktop');
-        saludCategorieDesktop.classList.toggle('bloque1SelectProgramContentItemTopActive');
-    })
+    // saludCategorieDesktop.addEventListener('click', () => {
+    //     aparitionSaludDesktop.classList.toggle('bloque1SelectProgramContentItemCienciasDesktop');
+    //     saludCategorieDesktop.classList.toggle('bloque1SelectProgramContentItemTopActive');
+    // })
 
     //=================================================================================================================
     //=================================================================================================================
@@ -97,6 +97,3 @@ window.addEventListener('load', () => {
 
 }) 
 
-function getThis(this) {
-    console.log(this);
-}
