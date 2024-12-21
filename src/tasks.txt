@@ -1,0 +1,9 @@
+individuales
+- foto de portada
+- colocar links en los breadcrumbs
+- arreglar la fecha
+- ponerle la etiqueta (Todos, ingenieria, ciencias)
+- arreglar los indices
+- link de redes (opcional)
+
+

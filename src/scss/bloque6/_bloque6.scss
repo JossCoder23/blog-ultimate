@@ -54,6 +54,7 @@
       font-size: 1.2rem;
       font-weight: 500;
       color: black;
+      cursor: pointer;
       @include m.desktop_1020 {
         font-size: 1.5rem;
       }
@@ -99,6 +100,10 @@
     flex-wrap: wrap;
     .bloque6ItemIngenieria {
       background-color: v.$ingenieria;
+    }
+    .bloque6ItemTodos {
+      background-color: v.$color1;
+      color: white;
     }
     h4 {
       margin: 0;
