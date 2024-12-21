@@ -1,4 +1,5 @@
 individuales
+- favicon
 - foto de portada
 - colocar links en los breadcrumbs
 - arreglar la fecha
@@ -7,3 +8,13 @@ individuales
 - link de redes (opcional)
 
 
+facebook, instagram, linkedin, whatsapp, twitter
+
+const url = window.location.href; 
+`https://x.com/intent/post?text=${encodeURIComponent(window.location.href)}`
+`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`
+`https://api.whatsapp.com/send?text=${encodeURIComponent(window.location.href)}`
+`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`
+`https://www.instagram.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`
+
+https://www.facebook.com/sharer/sharer.php?i=https%3A%2F%2Flp.cayetano.edu.pe%2Fwp-content%2Fuploads%2F2024%2F12%2Fimage-nota-24.jpg&u=https%3A%2F%2Fblogs.cayetano.edu.pe%2Fpregrado%2Fbioincuba%2F
