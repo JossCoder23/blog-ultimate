@@ -23,17 +23,7 @@ html(lang="es")
                     img(loading="lazy" src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="")
                     h3.manuInnerClose X
                 .manuInnerInfo
-                    .manuInnerInfoSearch
-                        input(type="text" id="buscar")
-                        img(loading="lazy" src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-search.webp", alt="")
-                        .search-dropdown
-                            ul#options-search
-                                li: a(href="") Apple
-                                li Banana
-                                li Cherry
-                                li Date
-                                li Elderberry
-                                li Loquita
+                    include includes/search/searchMobile.pug
                     .manuInnerInfoContent
                         h3.manuInnerInfoContentBottom Blog Cayetano
                         h3.manuInnerInfoContentBottom Blog Pregrado
@@ -59,17 +49,7 @@ html(lang="es")
                             li: a(href="#") Pregrado
                             li: a(href="#") Pge  
                             li: a(href="#") Especialidades
-                    .bloque1LogosSearch
-                        input(type="text" id="buscar2" placeholder="Buscar...")
-                        img(loading="lazy" src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-search.webp", alt="")
-                        .search-dropdown2 
-                            ul#options-search2
-                                li Apple
-                                li Banana
-                                li Cherry
-                                li Date
-                                li Elderberry
-                                li Loquita
+                    include includes/search/searchDesktop.pug
                     img.top-icon-mobile(loading="lazy" src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-menu2.webp", alt="")
                     button  
                         h3 Quiero ser de Cayetano
