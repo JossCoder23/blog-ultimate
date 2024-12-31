@@ -915,7 +915,7 @@
 
     @include m.desktop_1200 {
         grid-template-columns: repeat(2, 1fr); 
-        gap: 30px; /* Más espaciado entre tarjetas */
+        gap: 20px; /* Más espaciado entre tarjetas */
     }
 
     @include m.desktop_1400 {
@@ -931,7 +931,7 @@
     display: flex;
     flex-direction: column; 
     transition: transform 0.2s ease-in-out; 
-    height: 300px;
+    height: auto;
 
     
 
@@ -940,7 +940,7 @@
     }
 
     @include m.desktop_1020 {
-       height: 300px;
+    //    height: 300px;
     }
     
 
@@ -948,10 +948,13 @@
         width: 100%; 
         height: 150px; 
         object-fit: cover; 
-        border-top-left-radius: 10px; 
-        border-top-right-radius: 10px;
+        // border-top-left-radius: 10px; 
+        // border-top-right-radius: 10px;
         overflow-clip-margin: content-box;
         overflow: clip;
+        @include m.desktop_1200 {
+            height: 20rem;
+        }
     }
 
     .content {
@@ -965,14 +968,23 @@
         font-size: 1.2rem;
         margin: 0;
         color: #333; 
-
+        &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        @include m.desktop_1020 {
+            font-size: 1.5rem;
+        }      
+        @include m.desktop_1200 {
+            font-size: 1.8rem;
+        }
     }
 
     .content img {
         overflow-clip-margin: content-box;
         overflow: clip;
         width: 3.5rem;
-        height: 2rem;
+        height: auto;
 
     }
 
@@ -980,6 +992,12 @@
         font-size: 0.9rem;
         margin: 0;
         color: #666; /* Texto gris */
+        @include m.desktop_1020 {
+            font-size: 1.2rem;
+        }
+        @include m.desktop_1020 {
+            font-size: 1.5rem;
+        }
     }
 
     

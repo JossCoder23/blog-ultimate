@@ -1040,6 +1040,9 @@
 
 .bloque1PregradoContent {
     display: none;
+    .bloque1PregradoContentLeftBack {
+        filter: brightness(0.7);
+    }
     @include m.tablet_768 {
         display: flex;
         // background-color: purple;
@@ -1060,7 +1063,8 @@
         width: 100%;
         object-fit: cover;
         border-radius: 1.5rem;
-        object-position: right;
+        object-position: center;
+        
     }
     
 }
@@ -1086,6 +1090,10 @@
             // background-color: red;
             width: 20rem;
             line-height: 1.4;
+            &:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
             @include m.desktop_1020 {
                 font-size: 2rem;
                 // background-color: red;
@@ -1106,7 +1114,7 @@
     column-gap: .5rem;
     img {
         width: 1.8rem !important;
-        height: 1.8rem !important;
+        height: auto !important;
         border-radius: 0 !important;
     }
     h3 {
@@ -1129,6 +1137,10 @@
         line-height: 1.4;
         color: white;
         // background-color: orange;
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        } 
     }
 }
 
@@ -1174,6 +1186,13 @@
 
 .bloque1PregradoContentRightTop {
     position: relative;
+    z-index: 30;
+    h3 {
+        &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
     // img {
     //     // position: absolute;
     //     height: 100%;
@@ -1188,6 +1207,8 @@
 
 .bloque1PregradoContentRightDesktop {
     // background-color: red;
+    // position: relative;
+
 }
 
 // .calendarsize {
