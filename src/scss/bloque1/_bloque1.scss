@@ -316,6 +316,7 @@
         padding: .8rem 1.3rem;
         column-gap: .8rem;
         display: none;
+        cursor: pointer;
         @include m.tablet_768 {
             display: flex;
         }
@@ -1196,12 +1197,13 @@
 
 
 .search-dropdown {
-    top: 3rem;
-    background-color: purple;
+    top: 4rem;
+    background-color: rgba(232, 232, 232);
     position: absolute;
     width: 99%;
     // height: auto;
     height: auto;
+    z-index: 9999;
     display: none;
 }
 
@@ -1211,14 +1213,24 @@
     margin: 0;
     li {
         border-bottom: 1px solid black;
+        padding: 1rem;
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.2rem;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 }
 
 .search-dropdown2 {
     top: 3rem;
-    background-color: purple;
+    background-color: rgba(232, 232, 232, 0.87);
     position: absolute;
     width: 99%;
+    z-index: 9999;
     // height: auto;
     height: auto;
     display: none;
@@ -1230,5 +1242,14 @@
     margin: 0;
     li {
         border-bottom: 1px solid black;
+        padding: 1rem;
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.2rem;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 }

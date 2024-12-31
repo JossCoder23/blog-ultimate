@@ -246,6 +246,10 @@
             padding-left: 2rem;
             // background-color: purple;
             width: 15rem;
+            &:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
             @include m.tablet_768 {
                 text-align: left;
                 font-size: 1.2rem;
