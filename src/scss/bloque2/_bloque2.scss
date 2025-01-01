@@ -775,6 +775,39 @@
     }
 }
 
+.swiper-pagination5 {
+    position: relative !important;
+    display: block !important;
+    top: auto !important;
+    bottom: auto !important;
+    // background-color: green;
+    text-align: center;
+    margin-top: 2rem;
+    @include m.tablet_768 {
+        display: none !important;
+    }
+}
+
+.bullet5 {
+    background-color: v.$color1 !important;
+    color: v.$color1  !important;
+    width: 1.2rem !important;
+    height: 1.2rem !important;
+}
+
+.bullet5.swiper-pagination-bullet {
+    color: v.$color1  !important;
+    background-color: v.$color1  !important;
+    opacity: 1 !important;
+}
+
+.bullet5.swiper-pagination-bullet-active {
+    background-color: black !important;
+    width: 2.5rem !important;
+    border-radius: .5rem !important;
+    transition: all .5s ease-in-out;
+}
+
 .bloque2ProgramRight {
     @include m.tablet_768 {
         display: none;
