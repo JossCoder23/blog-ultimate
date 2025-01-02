@@ -24,5 +24,7 @@ https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/image-nota-23.webp
 https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/image-nota-24.webp
 
 
+(onclick="window.location.replace('')")
+
 https://blogs.cayetano.edu.pe/
 https://blogs.cayetano.edu.pe/pregrado/

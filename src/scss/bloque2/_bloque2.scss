@@ -583,7 +583,7 @@
 .sliderItemInfo5 {
     background-color: #EFEFEF;
     width: auto;
-    height: 35rem;
+    height: 41rem;
     border-radius: 1.5rem;
     z-index: 3;
     display: flex;
@@ -612,6 +612,7 @@
         padding: 2rem;
         justify-content: space-between;
         height: 17rem;
+        row-gap: 1rem;
         h3, p {
             margin: 0;
         }
@@ -783,6 +784,8 @@
     // background-color: green;
     text-align: center;
     margin-top: 2rem;
+    height: 4rem;
+    top: -.8rem !important;
     @include m.tablet_768 {
         display: none !important;
     }
@@ -793,6 +796,7 @@
     color: v.$color1  !important;
     width: 1.2rem !important;
     height: 1.2rem !important;
+    margin-top: .7rem !important;
 }
 
 .bullet5.swiper-pagination-bullet {
@@ -1038,14 +1042,75 @@
 
 .bloque2SelectProgram {
     // overflow: hidden;
-    border: none;
-    background-color: red;
+    border: 1.5px solid black;
+    background-color: black;
+    height: auto;
     width: 100%;
     display: block;
+    color: black;
+    // padding-left: 1rem;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius:1rem;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+    background: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 23.5rem;
+    background-position-y: 10px;
+    @include m.tablet_768 {
+        background-position-x: 20rem;
+    }
+    @include m.desktop_1020 {
+        background-position-x: 26rem;
+    }
+    @include m.desktop_1200 {
+        background-position-x: 32rem;
+    }
+    @include m.desktop_1400 {
+        background-position-x: calc(100% - 1rem);
+    }
     option {
         display: flex;
         align-items: center;
         border-bottom: 1px solid black;
         height: 2rem;
+        color: black;
+        font-size: 2rem;
+    }
+} 
+
+.bloque2SelectProgramMobile {
+    // overflow: hidden;
+    border: 1.5px solid black;
+    background-color: black;
+    height: auto;
+    width: 100%;
+    display: block;
+    color: black;
+    // padding-left: 1rem;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius:1rem;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+    background: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 23.5rem;
+    background-position-y: 10px;
+    @include m.tablet_768 {
+        background-position-x: 26rem;
+    }
+    option {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid black;
+        height: 2rem;
+        color: black;
+        font-size: 2rem;
     }
 } 

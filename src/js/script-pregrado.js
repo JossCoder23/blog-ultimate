@@ -1,50 +1,50 @@
 window.addEventListener('load', () => {
-    let categories = document.querySelector('.bloque1SelectProgram');
-    let aparition = document.querySelector('.bloque1SelectProgramContent');
+    // let categories = document.querySelector('.bloque1SelectProgram');
+    // let aparition = document.querySelector('.bloque1SelectProgramContent');
 
-    categories.addEventListener("click", () => {
-        aparition.classList.toggle('activeSelect');
-    })
+    // categories.addEventListener("click", () => {
+    //     aparition.classList.toggle('activeSelect');
+    // })
 
-    let cienciasCategorie = document.querySelector('.bloque1SelectProgramContentItemTopCiencias');
-    let aparitionCiencias = document.querySelector('.bloque1SelectProgramContentItemBottomCiencias')
+    // let cienciasCategorie = document.querySelector('.bloque1SelectProgramContentItemTopCiencias');
+    // let aparitionCiencias = document.querySelector('.bloque1SelectProgramContentItemBottomCiencias')
 
-    cienciasCategorie.addEventListener('click', () => {
-        aparitionCiencias.classList.toggle('bloque1SelectProgramContentItemCiencias');
-        cienciasCategorie.classList.toggle('bloque1SelectProgramContentItemTopActive');
-    })
+    // cienciasCategorie.addEventListener('click', () => {
+    //     aparitionCiencias.classList.toggle('bloque1SelectProgramContentItemCiencias');
+    //     cienciasCategorie.classList.toggle('bloque1SelectProgramContentItemTopActive');
+    // })
 
-    let educacionCategorie = document.querySelector('.bloque1SelectProgramContentItemTopEducacion');
-    let aparitionEducacion = document.querySelector('.bloque1SelectProgramContentItemBottomEducacion')
+    // let educacionCategorie = document.querySelector('.bloque1SelectProgramContentItemTopEducacion');
+    // let aparitionEducacion = document.querySelector('.bloque1SelectProgramContentItemBottomEducacion')
 
-    educacionCategorie.addEventListener('click', () => {
-        aparitionEducacion.classList.toggle('bloque1SelectProgramContentItemCiencias');
-        educacionCategorie.classList.toggle('bloque1SelectProgramContentItemTopActive');
-    })
+    // educacionCategorie.addEventListener('click', () => {
+    //     aparitionEducacion.classList.toggle('bloque1SelectProgramContentItemCiencias');
+    //     educacionCategorie.classList.toggle('bloque1SelectProgramContentItemTopActive');
+    // })
 
-    let gestionCategorie = document.querySelector('.bloque1SelectProgramContentItemTopGestion');
-    let aparitionGestion = document.querySelector('.bloque1SelectProgramContentItemBottomGestion')
+    // let gestionCategorie = document.querySelector('.bloque1SelectProgramContentItemTopGestion');
+    // let aparitionGestion = document.querySelector('.bloque1SelectProgramContentItemBottomGestion')
 
-    gestionCategorie.addEventListener('click', () => {
-        aparitionGestion.classList.toggle('bloque1SelectProgramContentItemCiencias');
-        gestionCategorie.classList.toggle('bloque1SelectProgramContentItemTopActive');
-    })
+    // gestionCategorie.addEventListener('click', () => {
+    //     aparitionGestion.classList.toggle('bloque1SelectProgramContentItemCiencias');
+    //     gestionCategorie.classList.toggle('bloque1SelectProgramContentItemTopActive');
+    // })
 
-    let ingenieriaCategorie = document.querySelector('.bloque1SelectProgramContentItemTopIngenieria');
-    let aparitionIngenieria = document.querySelector('.bloque1SelectProgramContentItemBottomIngenieria')
+    // let ingenieriaCategorie = document.querySelector('.bloque1SelectProgramContentItemTopIngenieria');
+    // let aparitionIngenieria = document.querySelector('.bloque1SelectProgramContentItemBottomIngenieria')
 
-    ingenieriaCategorie.addEventListener('click', () => {
-        aparitionIngenieria.classList.toggle('bloque1SelectProgramContentItemCiencias');
-        ingenieriaCategorie.classList.toggle('bloque1SelectProgramContentItemTopActive');
-    })
+    // ingenieriaCategorie.addEventListener('click', () => {
+    //     aparitionIngenieria.classList.toggle('bloque1SelectProgramContentItemCiencias');
+    //     ingenieriaCategorie.classList.toggle('bloque1SelectProgramContentItemTopActive');
+    // })
 
-    let saludCategorie = document.querySelector('.bloque1SelectProgramContentItemTopSalud');
-    let aparitionSalud = document.querySelector('.bloque1SelectProgramContentItemBottomSalud')
+    // let saludCategorie = document.querySelector('.bloque1SelectProgramContentItemTopSalud');
+    // let aparitionSalud = document.querySelector('.bloque1SelectProgramContentItemBottomSalud')
 
-    saludCategorie.addEventListener('click', () => {
-        aparitionSalud.classList.toggle('bloque1SelectProgramContentItemCiencias');
-        saludCategorie.classList.toggle('bloque1SelectProgramContentItemTopActive');
-    })
+    // saludCategorie.addEventListener('click', () => {
+    //     aparitionSalud.classList.toggle('bloque1SelectProgramContentItemCiencias');
+    //     saludCategorie.classList.toggle('bloque1SelectProgramContentItemTopActive');
+    // })
 
 
 
