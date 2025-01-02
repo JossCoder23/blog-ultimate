@@ -11,6 +11,7 @@ individuales
 facebook, instagram, linkedin, whatsapp, twitter
 
 const url = window.location.href; 
+
 `https://x.com/intent/post?text=${encodeURIComponent(window.location.href)}`
 `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`
 `https://api.whatsapp.com/send?text=${encodeURIComponent(window.location.href)}`

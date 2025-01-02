@@ -10,8 +10,8 @@ html(lang="en")
         meta(http-equiv='Pragma' content='no-cache')
         title Blog Pregrado
         link(rel='preconnect' href='https://fonts.googleapis.com')
-        //- link(rel="stylesheet", href="../../css/app.css")
-        link(rel="stylesheet", href="./css/app.css")
+        link(rel="stylesheet", href="../../css/app.css")
+        //- link(rel="stylesheet", href="./css/app.css")
         link(rel="stylesheet", href="https://unpkg.com/swiper/swiper-bundle.min.css")
         link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
         link(href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap' rel='stylesheet')
@@ -139,10 +139,11 @@ html(lang="en")
                     select(class="bloque2SelectProgramMobile" id="filterMobile" onchange="filterCardsMobile()")
                         option(disabled selected) - Filtrar Notas -
                         option(value='') Todos
-                        option(value='educacion') Educación
-                        option(value='nutricion') Nutrición
+                        option(value='psicologia') Psicología
+                        option(value='veterinaria') Medicina Veterinaria y Zootecnia
+                        option(value='enfermeria') Enfermería
                         option(value='biologia') Biología
-                        option(value='ingAmbiental') Ingeniería Ambiental
+                        option(value='industrial') Ingeniería Industrial
                         option(value='otros') Otros    
         .bloque7
             .bloque7Container
@@ -152,322 +153,44 @@ html(lang="en")
                             .bloque2ProgramLeft
                                 .bloque2Title
                                     h3 Notas publicadas
-                                .bloque2Slider.bloque2SliderProgram
-                                    .slider__container5.swiper.mySwiper5
-                                        .slider__grid5.swiper-wrapper#container__card--mobile
-                                            .slider__item5.swiper-slide
-                                                .sliderItemInfo5
-                                                    .sliderItemInfo5Image
-                                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/image-nota-1.webp", alt="")
-                                                    .sliderItemInfo5Info
-                                                        .sliderItemInfo6ItemInfoCalendar
-                                                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/calendar-icon-whit.webp", alt="")
-                                                            h3 17
-                                                            h3 |
-                                                            h3 12
-                                                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/que-estudia-medicina-veterinaria')") ¿Qué estudia la medicina veterinaria?
-                                                        p Conoce cómo esta carrera te prepara para proteger a los animales y su entorno. Estamos listos para orientarte y ayudarte a construir tu futuro profesional.
-                                                        img.keyframe-button-movement(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
-                                            .slider__item5.swiper-slide
-                                                .sliderItemInfo5
-                                                    .sliderItemInfo5Image
-                                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/image-nota-2.webp", alt="")
-                                                    .sliderItemInfo5Info
-                                                        .sliderItemInfo6ItemInfoCalendar
-                                                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/calendar-icon-whit.webp", alt="")
-                                                            h3 17
-                                                            h3 |
-                                                            h3 12
-                                                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/cayetano-heredia-carreras')")  Carreras de Cayetano Heredia: 20 programas de excelencia
-                                                        p ¿No sabes qué estudiar? Conoce las 20 carreras de Cayetano Heredia que incluyen las áreas de gestión, ingeniería, educación, ciencias y salud.
-                                                        img.keyframe-button-movement(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
-                                            .slider__item5.swiper-slide
-                                                .sliderItemInfo5
-                                                    .sliderItemInfo5Image
-                                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/image-nota-3.webp", alt="")
-                                                    .sliderItemInfo5Info
-                                                        .sliderItemInfo6ItemInfoCalendar
-                                                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/calendar-icon-whit.webp", alt="")
-                                                            h3 17
-                                                            h3 |
-                                                            h3 12
-                                                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/en-que-consiste-carrera-psicologia')") ¿En qué consiste la carrera de psicología y cuánto dura?
-                                                        p Descubre aquí en qué consiste la carrera de psicología y sus especialidades como psicología clínica, psicología organizacional, educativa y social.
-                                                        img.keyframe-button-movement(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
-                                            .slider__item5.swiper-slide
-                                                .sliderItemInfo5
-                                                    .sliderItemInfo5Image
-                                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/image-nota-4.webp", alt="")
-                                                    .sliderItemInfo5Info
-                                                        .sliderItemInfo6ItemInfoCalendar
-                                                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/calendar-icon-whit.webp", alt="")
-                                                            h3 17
-                                                            h3 |
-                                                            h3 12
-                                                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/examen-admision-cayetano-heredia')") Examen de Admisión de Cayetano Heredia: sigue estos pasos
-                                                        p Encuentra la información que necesitas para rendir el examen de admisión de Cayetano Heredia: montos, documentos, temario, consejos y más.
-                                                        img.keyframe-button-movement(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
-                                            .slider__item5.swiper-slide
-                                                .sliderItemInfo5
-                                                    .sliderItemInfo5Image
-                                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/image-nota-5.webp", alt="")
-                                                    .sliderItemInfo5Info
-                                                        .sliderItemInfo6ItemInfoCalendar
-                                                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/calendar-icon-whit.webp", alt="")
-                                                            h3 17
-                                                            h3 |
-                                                            h3 12
-                                                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/de-que-trata-ingenieria-industrial')") ¿De qué trata la carrera de ingeniería industrial y por qué elegirla?
-                                                        p Conoce aquí de qué trata la carrera de ingeniería industrial, la malla curricular, duración y por qué elegir la carrera.
-                                                        img.keyframe-button-movement(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
-                                            .slider__item5.swiper-slide
-                                                .sliderItemInfo5
-                                                    .sliderItemInfo5Image
-                                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/image-nota-6.webp", alt="")
-                                                    .sliderItemInfo5Info
-                                                        .sliderItemInfo6ItemInfoCalendar
-                                                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/calendar-icon-whit.webp", alt="")
-                                                            h3 17
-                                                            h3 |
-                                                            h3 12
-                                                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/matricula-cayetano-heredia')") ¿Cómo es el proceso de matrícula en Cayetano Heredia?
-                                                        p Conoce cada paso del proceso de matrícula y comienza tu camino profesional en Cayetano.
-                                                        img.keyframe-button-movement(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
-                                            .slider__item5.swiper-slide
-                                                .sliderItemInfo5
-                                                    .sliderItemInfo5Image
-                                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/image-nota-7.webp", alt="")
-                                                    .sliderItemInfo5Info
-                                                        .sliderItemInfo6ItemInfoCalendar
-                                                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/calendar-icon-whit.webp", alt="")
-                                                            h3 18
-                                                            h3 |
-                                                            h3 12
-                                                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/que-estudia-biologia')") ¿Qué estudia la biología?: ramas, historia e importancia
-                                                        p Al descubrir qué estudia la biología, sabrás si esta carrera es para ti. Conoce su definición, ramas, historia e importancia.
-                                                        img.keyframe-button-movement(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
-                                            .slider__item5.swiper-slide
-                                                .sliderItemInfo5
-                                                    .sliderItemInfo5Image
-                                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/image-nota-8.webp", alt="")
-                                                    .sliderItemInfo5Info
-                                                        .sliderItemInfo6ItemInfoCalendar
-                                                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/calendar-icon-whit.webp", alt="")
-                                                            h3 18
-                                                            h3 |
-                                                            h3 12
-                                                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/cayetano-heredia-sedes')") Sedes de Cayetano Heredia: descubre todos los campus
-                                                        p Las sedes de Cayetano Heredia están diseñadas para desarrollar tu potencial al máximo en un entorno que combina aprendizaje, convivencia y bienestar.
-                                                        img.keyframe-button-movement(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
-                                            .slider__item5.swiper-slide
-                                                .sliderItemInfo5
-                                                    .sliderItemInfo5Image
-                                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/image-nota-9.webp", alt="")
-                                                    .sliderItemInfo5Info
-                                                        .sliderItemInfo6ItemInfoCalendar
-                                                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/calendar-icon-whit.webp", alt="")
-                                                            h3 18
-                                                            h3 |
-                                                            h3 12
-                                                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/en-que-consiste-carrera-enfermeria')") ¿En qué consiste la carrera de enfermería?
-                                                        p Descubre aquí en qué consiste la carrera de enfermería, duración, competencias y por qué elegirla como carrera universitaria.
-                                                        img.keyframe-button-movement(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
-                                            .slider__item5.swiper-slide
-                                                .sliderItemInfo5
-                                                    .sliderItemInfo5Image
-                                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/image-nota-10.webp", alt="")
-                                                    .sliderItemInfo5Info
-                                                        .sliderItemInfo6ItemInfoCalendar
-                                                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/calendar-icon-whit.webp", alt="")
-                                                            h3 18
-                                                            h3 |
-                                                            h3 12
-                                                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/cayetano-heredia-mensualidad')") ¿Cuánto es la mensualidad en Cayetano Heredia?
-                                                        p Conoce la mensualidad de nuestras carreras de excelencia para una educación de calidad.
-                                                        img.keyframe-button-movement(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
-                                            .slider__item5.swiper-slide
-                                                .sliderItemInfo5
-                                                    .sliderItemInfo5Image
-                                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/image-nota-11.webp", alt="")
-                                                    .sliderItemInfo5Info
-                                                        .sliderItemInfo6ItemInfoCalendar
-                                                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/calendar-icon-whit.webp", alt="")
-                                                            h3 18
-                                                            h3 |
-                                                            h3 12
-                                                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/cuanto-dura-la-carrera-veterinaria')") ¿Cuánto dura la carrera de veterinaria y zootecnia?
-                                                        p Si buscas una carrera que combine el cuidado animal y compromiso ambiental, en Cayetano recibirás una formación integral alineada a tus metas.
-                                                        img.keyframe-button-movement(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
-                                            .slider__item5.swiper-slide
-                                                .sliderItemInfo5
-                                                    .sliderItemInfo5Image
-                                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/image-nota-12.webp", alt="")
-                                                    .sliderItemInfo5Info
-                                                        .sliderItemInfo6ItemInfoCalendar
-                                                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/calendar-icon-whit.webp", alt="")
-                                                            h3 18
-                                                            h3 |
-                                                            h3 12
-                                                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/cuanto-dura-carrera-psicologia')") ¿Cuánto dura la carrera de psicología y sus ventajas?
-                                                        p Descubre aquí cuánto dura la carrera de psicología, su importancia, qué tan difícil es la carrera y las ventajas de estudiarla.
-                                                        img.keyframe-button-movement(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
-                                            .slider__item5.swiper-slide
-                                                .sliderItemInfo5
-                                                    .sliderItemInfo5Image
-                                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/image-nota-13.webp", alt="")
-                                                    .sliderItemInfo5Info
-                                                        .sliderItemInfo6ItemInfoCalendar
-                                                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/calendar-icon-whit.webp", alt="")
-                                                            h3 19
-                                                            h3 |
-                                                            h3 12
-                                                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/malla-curricular-ingenieria-industrial')") Malla curricular de ingeniería industrial y su campo laboral
-                                                        p La malla curricular de Ingeniería Industrial te permite especializarte en diversas áreas, siendo una de las carreras más demandadas del mercado laboral.
-                                                        img.keyframe-button-movement(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
-                                            .slider__item5.swiper-slide
-                                                .sliderItemInfo5
-                                                    .sliderItemInfo5Image
-                                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/image-nota-14.webp", alt="")
-                                                    .sliderItemInfo5Info
-                                                        .sliderItemInfo6ItemInfoCalendar
-                                                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/calendar-icon-whit.webp", alt="")
-                                                            h3 19
-                                                            h3 |
-                                                            h3 12
-                                                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/malla-curricular-biologia')") Malla curricular de Biología: conoce los cursos de esta carrera
-                                                        p La malla curricular de Biología está diseñada para ofrecerte una formación integral, combinando teoría y práctica desde el inicio de tu carrera.
-                                                        img.keyframe-button-movement(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
-                                            .slider__item5.swiper-slide
-                                                .sliderItemInfo5
-                                                    .sliderItemInfo5Image
-                                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/image-nota-15.webp", alt="")
-                                                    .sliderItemInfo5Info
-                                                        .sliderItemInfo6ItemInfoCalendar
-                                                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/calendar-icon-whit.webp", alt="")
-                                                            h3 19
-                                                            h3 |
-                                                            h3 12
-                                                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/donde-puedo-estudiar-medicina-veterinaria')") ¿Dónde estudiar medicina veterinaria y zootecnia?
-                                                        p Encuentra dónde estudiar Medicina veterinaria y zootecnia, descubre la mejor opcion y aspectos clave para desarrollar tu pasión por el cuidado animal.
-                                                        img.keyframe-button-movement(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
-                                            .slider__item5.swiper-slide
-                                                .sliderItemInfo5
-                                                    .sliderItemInfo5Image
-                                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/image-nota-16.webp", alt="")
-                                                    .sliderItemInfo5Info
-                                                        .sliderItemInfo6ItemInfoCalendar
-                                                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/calendar-icon-whit.webp", alt="")
-                                                            h3 19
-                                                            h3 |
-                                                            h3 12
-                                                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/carreras-mejor-pagada')") Carreras mejor pagadas 2024: lista actualizada
-                                                        p Si aún no decides qué carrera estudiar, revisa esta lista y descubre cuáles son las 15 carreras mejor pagadas en Perú y dónde estudiarlas.
-                                                        img.keyframe-button-movement(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
-                                            .slider__item5.swiper-slide
-                                                .sliderItemInfo5
-                                                    .sliderItemInfo5Image
-                                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/image-nota-17.webp", alt="")
-                                                    .sliderItemInfo5Info
-                                                        .sliderItemInfo6ItemInfoCalendar
-                                                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/calendar-icon-whit.webp", alt="")
-                                                            h3 19
-                                                            h3 |
-                                                            h3 12
-                                                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/donde-estudiar-carrera-psicologia')") ¿Dónde estudiar la carrera de psicología en Perú?
-                                                        p Elegir dónde estudiar la carrera de psicología es una decisión crucial, ya que será el primer paso en tu camino profesional.
-                                                        img.keyframe-button-movement(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
-                                            .slider__item5.swiper-slide
-                                                .sliderItemInfo5
-                                                    .sliderItemInfo5Image
-                                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/image-nota-18.webp", alt="")
-                                                    .sliderItemInfo5Info
-                                                        .sliderItemInfo6ItemInfoCalendar
-                                                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/calendar-icon-whit.webp", alt="")
-                                                            h3 19
-                                                            h3 |
-                                                            h3 12
-                                                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/que-es-tercio-superior')") ¿Qué es el tercio superior?
-                                                        p Descubre que es el tercio superior y sus beneficios para el inicio de tu carrera profesional.
-                                                        img.keyframe-button-movement(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
-                                            .slider__item5.swiper-slide
-                                                .sliderItemInfo5
-                                                    .sliderItemInfo5Image
-                                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/image-nota-19.webp", alt="")
-                                                    .sliderItemInfo5Info
-                                                        .sliderItemInfo6ItemInfoCalendar
-                                                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/calendar-icon-whit.webp", alt="")
-                                                            h3 20
-                                                            h3 |
-                                                            h3 12
-                                                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/donde-estudiar-ingenieria-industrial')") ¿Dónde estudiar ingeniería industrial en Perú? [2025]
-                                                        p Si te preguntas dónde estudiar Ingeniería Industrial, tu mejor opción es Cayetano Heredia. Descubre las herramientas y oportunidades que te ofrecemos.
-                                                        img.keyframe-button-movement(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
-                                            .slider__item5.swiper-slide
-                                                .sliderItemInfo5
-                                                    .sliderItemInfo5Image
-                                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/image-nota-20.webp", alt="")
-                                                    .sliderItemInfo5Info
-                                                        .sliderItemInfo6ItemInfoCalendar
-                                                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/calendar-icon-whit.webp", alt="")
-                                                            h3 20
-                                                            h3 |
-                                                            h3 12
-                                                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/todo-sobre-la-excelencia-academica')") Excelencia académica
-                                                        p .
-                                                        img.keyframe-button-movement(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
-                                            .slider__item5.swiper-slide
-                                                .sliderItemInfo5
-                                                    .sliderItemInfo5Image
-                                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/image-nota-21.webp", alt="")
-                                                    .sliderItemInfo5Info
-                                                        .sliderItemInfo6ItemInfoCalendar
-                                                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/calendar-icon-whit.webp", alt="")
-                                                            h3 20
-                                                            h3 |
-                                                            h3 12
-                                                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/donde-estudiar-biologia')") ¿Dónde estudiar Biología?
-                                                        p .
-                                                        img.keyframe-button-movement(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
-                                            .slider__item5.swiper-slide
-                                                .sliderItemInfo5
-                                                    .sliderItemInfo5Image
-                                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/image-nota-22.webp", alt="")
-                                                    .sliderItemInfo5Info
-                                                        .sliderItemInfo6ItemInfoCalendar
-                                                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/calendar-icon-whit.webp", alt="")
-                                                            h3 20
-                                                            h3 |
-                                                            h3 12
-                                                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/como-adaptarse-a-la-universidad')") ¿Cómo adaptarse a la universidad?
-                                                        p Conoce los puntos clave que debes tener en cuenta antes de ingresar a la universidad.
-                                                        img.keyframe-button-movement(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
-                                            .slider__item5.swiper-slide
-                                                .sliderItemInfo5
-                                                    .sliderItemInfo5Image
-                                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/image-nota-23.webp", alt="")
-                                                    .sliderItemInfo5Info
-                                                        .sliderItemInfo6ItemInfoCalendar
-                                                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/calendar-icon-whit.webp", alt="")
-                                                            h3 20
-                                                            h3 |
-                                                            h3 12
-                                                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/donde-estudiar-enfermeria')") ¿Dónde estudiar enfermería en Perú?
-                                                        p Descubre dónde estudiar la carrera de enfermería en Perú teniendo en cuenta aspectos importantes para tomar la mejor decisión.
-                                                        img.keyframe-button-movement(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
-                                            .slider__item5.swiper-slide
-                                                .sliderItemInfo5
-                                                    .sliderItemInfo5Image
-                                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/image-nota-24.webp", alt="")
-                                                    .sliderItemInfo5Info
-                                                        .sliderItemInfo6ItemInfoCalendar
-                                                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/calendar-icon-whit.webp", alt="")
-                                                            h3 20
-                                                            h3 |
-                                                            h3 12
-                                                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/bioincuba')") ¿Qué es Bioincuba? Incubadora de negocios de Cayetano
-                                                        p ¿Sabe qué es Bioincuba? Descubre cómo trabaja una incubadora de negocios en la universidad y las 10 ideas de negocio innovadoras.
-                                                        img.keyframe-button-movement(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
-                                        .swiper-pagination5
+                                .bloque2Cards
+                                    .bloque2DesktopCardsItem                  
+                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/image-nota-2.webp" alt="Imagen de nota")                       
+                                        .content
+                                            // Bloque del calendario en la parte superior
+                                            .sliderItemInfo6ItemInfoCalendar
+                                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/calendar-icon-whit.webp", alt="")
+                                                h3 17
+                                                h3 |
+                                                h3 12
+                                            h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/cayetano-heredia-carreras')")  Carreras de Cayetano Heredia: 20 programas de excelencia
+                                            p ¿No sabes qué estudiar? Conoce las 20 carreras de Cayetano Heredia que incluyen las áreas de gestión, ingeniería, educación, ciencias y salud.
+                                            img(class="keyframe-button-movement" src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
+                                    .bloque2DesktopCardsItem                  
+                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/image-nota-2.webp" alt="Imagen de nota")                       
+                                        .content
+                                            // Bloque del calendario en la parte superior
+                                            .sliderItemInfo6ItemInfoCalendar
+                                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/calendar-icon-whit.webp", alt="")
+                                                h3 17
+                                                h3 |
+                                                h3 12
+                                            h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/cayetano-heredia-carreras')")  Carreras de Cayetano Heredia: 20 programas de excelencia
+                                            p ¿No sabes qué estudiar? Conoce las 20 carreras de Cayetano Heredia que incluyen las áreas de gestión, ingeniería, educación, ciencias y salud.
+                                            img(class="keyframe-button-movement" src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
+                                    .bloque2DesktopCardsItem                  
+                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/image-nota-2.webp" alt="Imagen de nota")                       
+                                        .content
+                                            // Bloque del calendario en la parte superior
+                                            .sliderItemInfo6ItemInfoCalendar
+                                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/calendar-icon-whit.webp", alt="")
+                                                h3 17
+                                                h3 |
+                                                h3 12
+                                            h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/cayetano-heredia-carreras')")  Carreras de Cayetano Heredia: 20 programas de excelencia
+                                            p ¿No sabes qué estudiar? Conoce las 20 carreras de Cayetano Heredia que incluyen las áreas de gestión, ingeniería, educación, ciencias y salud.
+                                            img(class="keyframe-button-movement" src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
+                                .bloque2ProgramNotasMobile
                                 .bloque2DesktopCards
                                     //- Nota 1
                                     .bloque2DesktopCardsItem                  
@@ -870,11 +593,12 @@ html(lang="en")
                             select(class="bloque2SelectProgram" id="filter" onchange="filterCards()")
                                 option(disabled selected) - Filtrar Notas -
                                 option(value='') Todos
-                                option(value='educacion') Educación
-                                option(value='nutricion') Nutrición
+                                option(value='psicologia') Psicología
+                                option(value='veterinaria') Medicina Veterinaria y Zootecnia
+                                option(value='enfermeria') Enfermería
                                 option(value='biologia') Biología
-                                option(value='ingAmbiental') Ingeniería Ambiental
-                                option(value='otros') Otros
+                                option(value='industrial') Ingeniería Industrial
+                                option(value='otros') Otros    
                             .bloque2ProgramRightContainerNewsletter 
                                 .newsletterWhitespace
                                 .newsletterContent
@@ -928,10 +652,10 @@ html(lang="en")
                     h3 Campus Central:
                     h3 Av. Honorio Delgado 430
                     h3 Urb. Ingeniería, San Martín de Porres 
-        //- script(src="../js/script.js" defer)
-        //- script(src="../js/script-pregrado.js" defer)
-        //- script(src="../js/filter.js" defer)
-        script(src="./js/script-pregrado.js" defer)
-        script(src="./js/filter.js" defer)
-        script(src="./js/script.js" defer)
+        script(src="../js/script.js" defer)
+        script(src="../js/script-pregrado.js" defer)
+        script(src="../js/filter.js" defer)
+        //- script(src="./js/script-pregrado.js" defer)
+        //- script(src="./js/filter.js" defer)
+        //- script(src="./js/script.js" defer)
         script(src="https://unpkg.com/swiper/swiper-bundle.min.js")

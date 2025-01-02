@@ -628,26 +628,50 @@
     }
 }
 
-
+.bloque2Cards {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
 
 .bloque2ProgramNotas {
     // margin: 1rem 0;
     // background-color: purple;
     display: flex;
     justify-content: center;
-
+    column-gap: .5rem;
     @include m.tablet_768 {
         justify-content: flex-end;
-    
-    }
-    h3 {
-        font-size: 1.5rem;
-        font-weight: 500;
-        width: 13rem;
-        // background-color: red;
-        border-bottom: 2px solid black;
         
-       
+    }
+    button {
+        border: 1px solid black;
+        border-radius: 60%;
+        font-size: 1.3rem;
+        background-color: rgb(221, 221, 221);
+    }
+}
+
+.bloque2ProgramNotasMobile {
+    // margin: 1rem 0;
+    // background-color: purple;
+    display: flex;
+    justify-content: center;
+    column-gap: .5rem;
+    height: 3rem;
+    background-color: red;
+    @include m.tablet_768 {
+        display: none;
+        // justify-content: flex-end;
+        
+    }
+    button {
+        display: block;
+        border: 1px solid black;
+        border-radius: 60%;
+        font-size: 1.3rem;
+        background-color: blue;
+        background-color: rgb(221, 221, 221);
     }
 }
 
