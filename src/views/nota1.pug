@@ -10,8 +10,8 @@ html(lang="en")
         meta(http-equiv='Pragma' content='no-cache')
         title ¿Qué estudia la medicina veterinaria?
         link(rel='preconnect' href='https://fonts.googleapis.com')
-        //- link(rel="stylesheet", href="../../css/app.css")
-        link(rel="stylesheet", href="./css/app.css")
+        link(rel="stylesheet", href="../../css/app.css")
+        //- link(rel="stylesheet", href="./css/app.css")
         link(rel="icon" type="image/x-icon" href="../../favicon.png")
         link(rel="stylesheet", href="https://unpkg.com/swiper/swiper-bundle.min.css")
         link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
@@ -43,13 +43,10 @@ html(lang="en")
                 .bloque1LogosSelect
                     h3.dropdown-btn Blog Cayetano
                     ul.dropdown-menu
-                        li: a(href="") Pregrado
+                        li: a(href="https://blogs.cayetano.edu.pe/") Pregrado
                         li: a(href="") Pge  
                         li: a(href="") Especialidades
-                .bloque1LogosSearch
-                    input(type="text" id="buscar2" placeholder="Buscar...")
-                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-search.webp", alt="")
-                    include includes/search/searchDesktop.pug
+                include includes/search/searchDesktop.pug
                 img.top-icon-mobile(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-menu2.webp", alt="")
                 button  
                     h3 Quiero ser de Cayetano
@@ -78,8 +75,6 @@ html(lang="en")
                                 h3 Compartir en redes:
                                 .bloque6LeftRedesContent
                                     img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-fb.webp", alt="", onclick="window.location.replace(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`)")
-                                    //- img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-ig.webp", alt="", onclick="window.location.replace()")
-                                    //- img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-in.webp", alt="", onclick="window.location.replace(`https://api.whatsapp.com/send?text=${encodeURIComponent(window.location.href)}`)")
                                     img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-wp.webp", alt="", onclick="window.location.replace(`https://api.whatsapp.com/send?text=${encodeURIComponent(window.location.href)}`)")
                                     img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-x.webp", alt="", onclick="window.location.replace(`https://x.com/intent/post?text=${encodeURIComponent(window.location.href)}`)")
                                     img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-link.webp", alt="", onclick="window.location.replace(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`)")
@@ -258,8 +253,8 @@ html(lang="en")
               h3 Campus Central:
               h3 Av. Honorio Delgado 430
               h3 Urb. Ingeniería, San Martín de Porres 
-        //- script(src="../../js/script.js" defer)
-        //- script(src="../../js/script-ind.js" defer)
-        script(src="./js/script.js" defer)
-        script(src="./js/script-ind.js" defer)
+        script(src="../../js/script.js" defer)
+        script(src="../../js/script-ind.js" defer)
+        //- script(src="./js/script.js" defer)
+        //- script(src="./js/script-ind.js" defer)
         script(src="https://unpkg.com/swiper/swiper-bundle.min.js")
