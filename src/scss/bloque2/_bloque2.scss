@@ -632,6 +632,9 @@
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
+    @include m.tablet_768 {
+        display: none;        
+    }
 }
 
 .bloque2ProgramNotas {
@@ -659,7 +662,7 @@
     justify-content: center;
     column-gap: .5rem;
     height: 3rem;
-    background-color: red;
+    // background-color: red;
     @include m.tablet_768 {
         display: none;
         // justify-content: flex-end;
