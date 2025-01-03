@@ -12,6 +12,7 @@ html(lang="en")
         link(rel='preconnect' href='https://fonts.googleapis.com')
         link(rel="stylesheet", href="../../css/app.css")
         //- link(rel="stylesheet", href="./css/app.css")
+        link(rel="icon" type="image/x-icon" href="../../favicon.png")
         link(rel="stylesheet", href="https://unpkg.com/swiper/swiper-bundle.min.css")
         link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
         link(href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap' rel='stylesheet')
@@ -24,17 +25,7 @@ html(lang="en")
                     img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="")
                     h3.manuInnerClose X
                 .manuInnerInfo
-                    .manuInnerInfoSearch
-                        input(type="text" id="buscar")
-                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-search.webp", alt="")
-                        .search-dropdown
-                            ul#options-search
-                                li: a(href="") Apple
-                                li Banana
-                                li Cherry
-                                li Date
-                                li Elderberry
-                                li Loquita
+                    include includes/search/searchMobile.pug
                     .manuInnerInfoContent
                         h3.manuInnerInfoContentBottom Blog Cayetano
                         h3.manuInnerInfoContentBottom Blog Pregrado
@@ -51,20 +42,10 @@ html(lang="en")
                 .bloque1LogosSelect
                     h3.dropdown-btn Blog Cayetano
                     ul.dropdown-menu
-                        li: a(href="") Pregrado
+                        li: a(href="https://blogs.cayetano.edu.pe/pregrado/") Pregrado
                         li: a(href="") Pge  
                         li: a(href="") Especialidades
-                .bloque1LogosSearch
-                    input(type="text" id="buscar2" placeholder="Buscar...")
-                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-search.webp", alt="")
-                    .search-dropdown2 
-                        ul#options-search2
-                            li Apple
-                            li Banana
-                            li Cherry
-                            li Date
-                            li Elderberry
-                            li Loquita
+                include includes/search/searchDesktop.pug
                 img.top-icon-mobile(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-menu2.webp", alt="")
                 button  
                     h3 Quiero ser de Cayetano
@@ -73,31 +54,29 @@ html(lang="en")
             .bloque6Container
                 .bloque6Calendar
                     .bloque6CalendarProgress
-                        h5 Blog Cayetano
+                        h5(onclick="window.location.replace('https://blogs.cayetano.edu.pe/')") Blog Cayetano
                         h5 |
-                        h5 Blog Pregrado
+                        h5(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/')") Blog Pregrado
                     .bloque6CalendarInfo
                         img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/calendar-icon-whit.webp", alt="")
-                        h3 14 de abril del 2024
+                        h3 19 de diciembre del 2024
                     .bloque6Title
                         h3#first ¿Qué es el tercio superior?
                     .bloque6Item
-                        h4.bloque6ItemIngenieria Ingeniería
+                        h4.bloque6ItemTodos General
         .bloque7.bloque7Individual
             .bloque7Container.bloque7ContainerIndividual
                 .bloque7Left
                     .bloque6Flex
                         .bloque6Left
-                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/blog-individual-mobile.webp", alt="")
+                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/image-nota-18.webp", alt="")
                             .bloque6LeftRedes
                                 h3 Compartir en redes:
                                 .bloque6LeftRedesContent
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-fb.webp", alt="")
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-ig.webp", alt="")
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-in.webp", alt="")
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-wp.webp", alt="")
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-x.webp", alt="")
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-link.webp", alt="")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-fb.webp", alt="", onclick="window.location.replace(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`)")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-wp.webp", alt="", onclick="window.location.replace(`https://api.whatsapp.com/send?text=${encodeURIComponent(window.location.href)}`)")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-x.webp", alt="", onclick="window.location.replace(`https://x.com/intent/post?text=${encodeURIComponent(window.location.href)}`)")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-link.webp", alt="", onclick="window.location.replace(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`)")
                             .bloque6LeftIndex
                                 h3.indexclicker Índice
                                 .bloque6LeftIndexContent
