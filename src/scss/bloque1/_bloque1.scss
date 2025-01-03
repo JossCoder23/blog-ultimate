@@ -394,7 +394,7 @@
         }
         @include m.desktop_1020 {
             font-size: 2.5rem;
-            font-weight: 500;
+            // font-weight: 500;
             padding: 0 7rem;
         }
         @include m.desktop_1200 {
@@ -601,7 +601,7 @@
         column-gap: 1rem;
         align-items: center;
         height: 2.5rem;
-        border-radius: 1rem;
+        border-radius: 2rem;
         cursor: pointer;
         @include m.tablet_768 {
             margin-top: 3rem;
@@ -609,17 +609,20 @@
         @include m.desktop_1020 {
             width: 13rem;
             height: 3.5rem;
+            border-radius: 3rem;
         }
         h3 {
             margin: 0;
             font-weight: 600;
             font-size: 1.3rem;
+            color: black;
             @include m.desktop_1020 {
                 font-size: 1.5rem;
             }
         }
         img {
             width: 2rem;
+            filter: brightness(0) saturate(100%) invert(0%) sepia(3%) saturate(0%) hue-rotate(355deg) brightness(99%) contrast(102%);
             @include m.desktop_1020 {
                 width: 2.5rem;
             }
@@ -637,6 +640,10 @@
     animation-name: arrow-button-movement;
     animation-duration: 1s;
     animation-iteration-count: infinite;
+}
+
+.keyframe-button-movementBlack {
+    filter: brightness(0) saturate(100%) invert(0%) sepia(3%) saturate(0%) hue-rotate(355deg) brightness(99%) contrast(102%);
 }
 
 // .swiper-slide1 {
@@ -816,7 +823,7 @@
         font-size: 2rem;
         font-weight: 500;
         border: 1px solid black;
-        border-radius: 1.5rem;
+        border-radius: 3rem;
         padding: 1rem 0;
         text-align: center;
         @include m.tablet_768 {
@@ -1066,7 +1073,7 @@
         object-fit: cover;
         border-radius: 1.5rem;
         object-position: center;
-        
+        // filter: brightness(0) saturate(100%) invert(0%) sepia(3%) saturate(0%) hue-rotate(355deg) brightness(99%) contrast(102%);
     }
     
 }
@@ -1103,7 +1110,11 @@
                 line-height: 1.4;
             }
         }
+        .bloque1PregradoContentLeftDesktopTitleh3 {
+            color: black;
+        }
     }
+   
 }
 
 .sliderItemCalendarPregrado {
@@ -1143,7 +1154,9 @@
             cursor: pointer;
             text-decoration: underline;
         } 
+        
     }
+   
 }
 
 .bloque1PregradoContentLeftDesktopButton {
@@ -1164,6 +1177,9 @@
         }
         img {
             width: 3rem;
+        }
+        .keyframe-button-movementBlack {
+            color: black !important;
         }
     }
 }
