@@ -80,12 +80,13 @@ html(lang="en")
                             .bloque6LeftIndex
                                 h3.indexclicker Índice
                                 .bloque6LeftIndexContent
-                                    h4: a(href="#first") 1. Carreras de Cayetano Heredia: conoce nuestros 20 programas de excelencia.
-                                    h4: a(href="#second") 2. Carreras de gestión.
-                                    h4: a(href="#three") 3. Carreras de ingeniería.
-                                    h4: a(href="#four") 4. Carreras de salud.
-                                    h4: a(href="#five") 5. Carrera de educación.
-                                    h4: a(href="#six") 6. Carreras de ciencias.
+                                    ol 
+                                        li: a(href="#h-uno"): h2 Carreras de Cayetano Heredia: conoce nuestros 20 programas de excelencia
+                                        li: a(href="#h-dos"): h2 Carreras de gestión
+                                        li: a(href="#h-tres"): h2 Carreras de ingeniería
+                                        li: a(href="#h-cuatro"): h2 Carreras de salud
+                                        li: a(href="#h-cinco"): h2 Carreras de educación
+                                        li: a(href="#h-seis"): h2 Carreras de ciencias
                             .bloque6LeftParagraphs
                                 p ¿Crees que la Universidad Cayetano Heredia solo ofrece carreras orientadas a la salud? Estás en el lugar correcto, porque en realidad, las carreras de Cayetano Heredia abarcan diversas áreas, como gestión, ingeniería, educación, ciencias y, por supuesto, salud.
                                 p Esto quiere decir que no solo formamos a médicos excelentes, sino también a profesionales líderes en administración, ingeniería ambiental, biología, psicología, etc.
@@ -164,14 +165,20 @@ html(lang="en")
                                     br 
                                     | Psicología es una de las carreras de Cayetano Heredia reconocida por su liderazgo en investigación en el Perú y el mundo. Si quieres dedicarte al estudio científico de la mente y del comportamiento humano y formarte con un enfoque único en investigación, Cayetano es el lugar correcto.
                                 p Aprenderás a contribuir al bienestar y desarrollo de las personas en áreas como:
-                                    br
-                                    | - Psicología clínica
-                                    br
-                                    | - Psicología social comunitaria
-                                    br
-                                    | - Psicología educacional
-                                    br
-                                    | - Psicología organizacional
+                                    //- br
+                                    //- | - Psicología clínica
+                                    //- br
+                                    //- | - Psicología social comunitaria
+                                    //- br
+                                    //- | - Psicología educacional
+                                    //- br
+                                    //- | - Psicología organizacional
+                                ul.margin1tab
+                                    li Psicología clínica
+                                    li Psicología social comunitaria
+                                    li Psicología educacional
+                                    li Psicología organizacional
+
                                 p Nuestra enseñanza combina teoría y práctica con estrategias vivenciales basadas en casos reales, ayudándote a desarrollar pensamiento crítico, análisis y habilidades para resolver problemas.
                                 p 
                                     strong Medicina Veterinaria y Zootecnia: 
@@ -179,12 +186,18 @@ html(lang="en")
                                     br 
                                     | ¿Te gustaría transformar tu pasión por los animales en tu profesión? Desde el año 2000, la Facultad de Medicina Veterinaria y Zootecnia de Cayetano se ha consolidado como líder en esta carrera, gracias a su excelencia académica, la investigación y el destacado desempeño de sus egresados.
                                 p Estudiar Veterinaria y Zootecnia aquí te preparará para lo siguiente: 
-                                    br
-                                    | - Cuidar y recuperar la salud animal.
-                                    br
-                                    | - Impulsar la producción sostenible de alimentos de origen animal.
-                                    br
-                                    | - Contribuir a la conservación del medio ambiente y la salud pública.
+                                    //- br
+                                    //- | - Cuidar y recuperar la salud animal.
+                                    //- br
+                                    //- | - Impulsar la producción sostenible de alimentos de origen animal.
+                                    //- br
+                                    //- | - Contribuir a la conservación del medio ambiente y la salud pública.
+                                ul.margin1tab
+                                    li Cuidar y recuperar la salud animal.
+                                    li Impulsar la producción sostenible de alimentos de origen animal.
+                                    li Contribuir a la conservación del medio ambiente y la salud pública.
+
+                                    
                                 p Aprenderás con metodologías basadas en casos reales, que te formarán para enfrentar desafíos del mundo real.
                                 p 
                                     strong Terapia Física y Rehabilitación: 
@@ -295,8 +308,14 @@ html(lang="en")
               h3 Campus Central:
               h3 Av. Honorio Delgado 430
               h3 Urb. Ingeniería, San Martín de Porres 
+<<<<<<< HEAD
+        //- script(src="../../js/script.js" defer)
+        
+        script(src="./js/script.js" defer)
+=======
         script(src="../../js/script.js" defer)
         //- script(src="../../js/script-ind.js" defer)
         //- script(src="./js/script.js" defer)
         //- script(src="./js/script-ind.js" defer)
+>>>>>>> e28557e4bdd19d7b0f457230a8cfa2431101f853
         script(src="https://unpkg.com/swiper/swiper-bundle.min.js")
