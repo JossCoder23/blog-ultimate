@@ -285,91 +285,8 @@ html(lang="en")
                 .bloque2ProgramLeft.bloque2IndividualLeft
                     .bloque2Title
                         h3 También podría interesarte
-                    .bloque2Slider
-                        .slider__container5.swiper.mySwiper5
-                            .slider__grid5.swiper-wrapper
-                                .slider__item5.swiper-slide
-                                    .sliderItemInfo5
-                                        .sliderItemInfo5Image
-                                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/invidivual-mobile-slider-image2.webp", alt="")
-                                        .sliderItemInfo5Info
-                                            .bloque4ItemContentCalendar
-                                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/calendar-icon-whit.webp", alt="")
-                                                h3 04
-                                                h3 |
-                                                h3 10
-                                            h3 ¿Por qué elegir una universidad priorizada?
-                                            p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.
-                                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
-                                .slider__item5.swiper-slide
-                                    .sliderItemInfo5
-                                        .sliderItemInfo5Image
-                                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/invidivual-mobile-slider-image1.webp", alt="")
-                                        .sliderItemInfo5Info
-                                            .bloque4ItemContentCalendar
-                                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/calendar-icon-whit.webp", alt="")
-                                                h3 04
-                                                h3 |
-                                                h3 10
-                                            h3 ¿Por qué elegir una universidad priorizada?
-                                            p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.
-                                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
-                                .slider__item5.swiper-slide
-                                    .sliderItemInfo5
-                                        .sliderItemInfo5Image
-                                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/invidivual-mobile-slider-image1.webp", alt="")
-                                        .sliderItemInfo5Info
-                                            .bloque4ItemContentCalendar
-                                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/calendar-icon-whit.webp", alt="")
-                                                h3 04
-                                                h3 |
-                                                h3 10
-                                            h3 ¿Por qué elegir una universidad priorizada?
-                                            p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.
-                                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
-                                .slider__item5.swiper-slide
-                                    .sliderItemInfo5
-                                        .sliderItemInfo5Image
-                                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/invidivual-mobile-slider-image1.webp", alt="")
-                                        .sliderItemInfo5Info
-                                            .bloque4ItemContentCalendar
-                                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/calendar-icon-whit.webp", alt="")
-                                                h3 04
-                                                h3 |
-                                                h3 10
-                                            h3 ¿Por qué elegir una universidad priorizada?
-                                            p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.
-                                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
-        .bloque5 
-            .bloque5ImageDesktop 
-            .bloque5Container
-                h3 Déjanos tus datos y nos contactaremos contigo
-                h3.bloque5ContainerTextDesktop Déjanos tus datos y 
-                    br
-                    | nos contactaremos contigo
-                .bloque5ContainerInput
-                    .bloque5ContainerInputGroupSelect
-                        input(type="text" placeholder="Seleccionar programa")
-                    .bloque5ContainerInputGroup
-                        input(type="text" placeholder="Nombres*")
-                        input(type="text" placeholder="Apellidos*")
-                    .bloque5ContainerInputGroup
-                        input(type="text" placeholder="Tipo de documento:*")
-                        input(type="text" placeholder="Número de documento:*")
-                    .bloque5ContainerInputGroup
-                        input(type="text" placeholder="Celular:*")
-                        input(type="text" placeholder="Correo electrónico:*")
-                    input(type="text" placeholder="Selecciona una carrera o especialidad:*")
-                .bloque5ContainerTerminos
-                    input(type="checkbox")
-                    h4 Acepto la Política de Privacidad y Proteccipon de Datos Personales.
-                .bloque5ContainerAcepto
-                    input(type="checkbox")
-                    h4 No acepto.
-                .bloque5Button
-                    button
-                        h3 Enviar
-                        img.keyframe-button-movement(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
+                    include includes/slider-ind/slider2.pug
+        include includes/form/formBlog.pug
         footer
           .footerContainer
             img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-white.webp", alt="")
@@ -378,7 +295,7 @@ html(lang="en")
               h3 Av. Honorio Delgado 430
               h3 Urb. Ingeniería, San Martín de Porres 
         script(src="../../js/script.js" defer)
-        script(src="../../js/script-ind.js" defer)
+        //- script(src="../../js/script-ind.js" defer)
         //- script(src="./js/script.js" defer)
         //- script(src="./js/script-ind.js" defer)
         script(src="https://unpkg.com/swiper/swiper-bundle.min.js")
