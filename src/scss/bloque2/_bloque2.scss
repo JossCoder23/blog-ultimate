@@ -645,6 +645,10 @@
             font-size: 1.5rem;
             color: black;
             font-weight: 500;
+            &:hover {
+                text-decoration: underline;
+                cursor: pointer;
+            }
         }
         p {
             font-size: 1.2rem;
