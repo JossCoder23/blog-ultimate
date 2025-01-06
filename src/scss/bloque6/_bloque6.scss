@@ -360,6 +360,35 @@
      
     }
   }
+  .margin9tab {
+    margin-left: 9rem;
+    li {
+      margin-bottom: 2rem;
+      
+      
+    }
+    span{
+      font-size: 1.3rem;
+      font-weight: 400;
+      @include m.desktop_1020 {
+        font-size: 1.8rem;
+      }
+      
+    }
+  }
+  
+
+  
+  .margin10tab {
+    margin-left: 8rem;
+    li {
+      margin-bottom: 2rem;
+      
+    }
+  }
+
+
+  
   ul {
     margin: 0;
     padding: 0;
