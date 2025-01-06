@@ -408,6 +408,12 @@
             height: 23rem;
             margin-top: 4rem;
         }
+        @include m.desktop_1200 {
+            height: 30rem;
+        }
+        @include m.desktop_1400 {
+            height: 37rem;
+        }
     }
 }
 

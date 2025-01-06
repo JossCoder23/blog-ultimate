@@ -285,6 +285,12 @@
             // z-index: -1;
             object-fit: cover;
         }
+        @include m.desktop_1020 {
+            height: 20rem;
+        }
+        @include m.desktop_1200 {
+            height: 24rem;
+        }
     }
     .bloque4ItemContent {
         width: 17rem;

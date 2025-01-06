@@ -304,6 +304,9 @@
   row-gap: 2rem;
   .margin1tab {
     margin-left: 6rem;
+    li {
+      margin-bottom: 2rem;
+    }
   }
   .margin2tab {
     margin-left: 8rem;
@@ -315,8 +318,30 @@
   .margin3tab {
     margin-left: 6rem;
     li {
+      font-weight: 700;
       margin-bottom: 2rem;
       list-style:decimal;
+    }
+  }
+  .margin4tab {
+    margin-left: 6rem;
+    li {
+      margin-bottom: .5rem;
+      // list-style:decimal;
+    }
+  }
+  .margin5tab {
+    margin-left: 8rem;
+    li {
+      margin-bottom: .5rem;
+      list-style: square;
+    }
+  }
+  .margin6tab {
+    margin-left: 1.5rem;
+    li {
+      margin-bottom: .5rem;
+      // list-style: square;
     }
   }
   ul {
