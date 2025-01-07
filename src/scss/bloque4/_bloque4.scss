@@ -296,7 +296,7 @@
         width: 17rem;
         display: flex;
         flex-direction: column;
-        row-gap: 1.5rem;
+        row-gap: .8rem;
         @include m.tablet_768 {
             width: 20.5rem;
         }

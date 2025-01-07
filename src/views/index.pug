@@ -21,7 +21,7 @@ html(lang="es")
         .manuInner
             .manuInnerContainer
                 .manuInnerHeader
-                    img(loading="lazy" src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="")
+                    img(loading="lazy" src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.location.replace('https://blogs.cayetano.edu.pe/')")
                     h3.manuInnerClose X
                 .manuInnerInfo
                     include includes/search/searchMobile.pug
@@ -43,11 +43,11 @@ html(lang="es")
                     img.bloque1FloatLeftDesktop(loading="lazy" src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/shield-desktop-scaled.webp", alt="")
                     //- img.bloque1FloatRight(src="img/shield-home-mobile-image2.webp", alt="")
                 .bloque1Logos
-                    img.blog-logo(loading="lazy" src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="")
+                    img.blog-logo(loading="lazy" src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.location.replace('https://blogs.cayetano.edu.pe/')")
                     .bloque1LogosSelect
-                        h3.dropdown-btn Blog Cayetano
+                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/')").dropdown-btn Blog Cayetano
                         ul.dropdown-menu
-                            li: a(href="#") Pregrado
+                            li: a(href="https://blogs.cayetano.edu.pe/pregrado") Pregrado
                             li: a(href="#") Pge  
                             li: a(href="#") Especialidades
                     include includes/search/searchDesktop.pug
@@ -143,9 +143,9 @@ html(lang="es")
                             br
                             | redes sociales
                         .bloque2RedesSociales
-                            img(loading="lazy" src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-wp.webp", alt="")
-                            img(loading="lazy" src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-fb.webp", alt="")
-                            img(loading="lazy" src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-tt-scaled.webp", alt="")
+                            img(loading="lazy" src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-wp.webp", alt="", onclick="window.open('https://wa.link/zxivvn', '_blank')")
+                            img(loading="lazy" src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-fb.webp", alt="", onclick="window.open('https://www.facebook.com/SoyCayetano.Pe', '_blank')")
+                            img(loading="lazy" src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-tt-scaled.webp", alt="", onclick="window.open('https://tiktok.com/@soycayetano.pe', '_blank')")
                         img.bloque2BannerDesktopImage(loading="lazy" src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/gif-redes-nuevo-este.gif", alt="")
                         .bloque2BannerContent
                             .bloque2BannerContentItem
