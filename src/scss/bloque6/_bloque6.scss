@@ -357,6 +357,7 @@
     li {
       margin-bottom: .5rem;
       list-style:decimal;
+      
      
     }
   }
@@ -392,7 +393,14 @@
     }
   }
   
-
+  .margin11tab {
+    margin-left: 1.5rem;
+    li {
+      margin-bottom: .5rem;
+      list-style:decimal;
+      font-weight: 800;
+    }
+  }
 
   
   ul {
