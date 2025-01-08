@@ -368,8 +368,6 @@
     li {
       margin-bottom: .5rem;
       list-style:decimal;
-      
-     
     }
   }
   .margin9tab {
@@ -413,7 +411,19 @@
     }
   }
 
-  
+  ol {
+    margin: 0;
+    padding: 0;
+    li {
+      font-size: v.$title_h4_768;
+      @include m.desktop_1020 {
+        font-size: v.$title_h4_1020;
+      }
+      @include m.desktop_1200 {
+        font-size: v.$title_h4_1200;
+      }
+    }
+  }
   ul {
     margin: 0;
     padding: 0;
