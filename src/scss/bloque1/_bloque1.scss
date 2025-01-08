@@ -611,31 +611,31 @@
         justify-content: center;
         column-gap: 1rem;
         align-items: center;
-        height: 2.5rem;
+        height: 2.2rem;
         border-radius: 2rem;
         cursor: pointer;
         @include m.tablet_768 {
-            margin-top: 3rem;
+            margin-top: 2rem;
         }
         @include m.desktop_1020 {
-            width: 13rem;
-            height: 3.5rem;
+            width: 15rem;
+            height: 3rem;
             border-radius: 3rem;
         }
         h3 {
             margin: 0;
             font-weight: 600;
-            font-size: 1.5rem;
+            font-size: 1.5rem !important;
             color: black;
             @include m.desktop_1020 {
-                font-size: 1.5rem;
+                font-size: 1.8rem !important;
             }
         }
         img {
             width: 3rem;
             filter: brightness(0) saturate(100%) invert(0%) sepia(3%) saturate(0%) hue-rotate(355deg) brightness(99%) contrast(102%);
             @include m.desktop_1020 {
-                width: 2.5rem;
+                width: 3.5rem;
             }
         }
     }
