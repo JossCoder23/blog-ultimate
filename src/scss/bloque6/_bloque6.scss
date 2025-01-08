@@ -71,6 +71,13 @@
     align-items: center;
     column-gap: .5rem;
     margin: 1rem 0;
+    margin-top: 3rem;
+    @include m.desktop_1020 {
+      margin-top: 4rem;
+    }
+    @include m.desktop_1400 {
+      margin-top: 5rem;
+    }
     img {
       height: 1.7rem;
       filter: brightness(0) saturate(100%) invert(15%) sepia(59%) saturate(6420%) hue-rotate(346deg) brightness(106%) contrast(106%);
@@ -101,14 +108,18 @@
       font-size: 2.5rem;
       font-weight: 500;
       color: black;
+      width: 45rem;
       @include m.desktop_1020 {
         font-size: 3.5rem;
+        width: 59rem;
       }
       @include m.desktop_1200 {
         font-size: 4.5rem;
+        width: 72rem;
       }
       @include m.desktop_1400 {
         font-size: 5.5rem;  
+        width: 86rem;
       }
     }
   }
@@ -461,6 +472,10 @@
       font-size: v.$title_h5_1200;
     }
   }
+  span {
+    text-decoration: underline;
+    cursor: pointer;
+  }
   .mention {
     // background-color: green;
     padding: 0 0 0 4rem;
@@ -468,6 +483,9 @@
       font-weight: 300;
       font-style: italic;
       margin-bottom: 1rem;
+      strong {
+        font-weight: 500;
+      }
     }
   }
 }

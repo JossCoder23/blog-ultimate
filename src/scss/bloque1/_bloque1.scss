@@ -185,7 +185,17 @@
             h3:hover {
                 color: #ffcccc; // Color al pasar el cursor
               }
+        }
+        @include m.desktop_1020 {
+            h3 {
+                font-size: 2rem;
             }
+        }
+        @include m.desktop_1200 {
+            h3 {
+                font-size: 2.4rem;
+            }
+        }
     }
     @media (max-width: 767px) {
         .dropdown-menu {
@@ -265,9 +275,9 @@
         @include m.tablet_768 {
             display: flex;
             position: relative;
-            height: 3rem;
+            height: 3.2rem;
             border-radius: 1.4rem;
-            width: 15rem;
+            width: 17rem;
             input {
                 width: 100%;
                 background-color: white;
@@ -281,23 +291,23 @@
                 height: 2rem;
                 width: auto;
                 right: .7rem;
-                top: .4rem;
+                top: .6rem;
                 cursor: pointer;
             }
         }
         @include m.desktop_1020 {
-            width: 18rem;
-            height: 3.5rem;
+            width: 22rem;
+            // height: 3.5rem;
             img {
                 top: .6rem;
                 right: .9rem;
             }
         }
         @include m.desktop_1200 {
-            width: 21rem;
+            width: 25rem;
         }
         @include m.desktop_1400 {
-            width: 23rem;
+            width: 28rem;
             height: 4rem;
             img {
                 height: 2.5rem;
@@ -319,23 +329,24 @@
         cursor: pointer;
         @include m.tablet_768 {
             display: flex;
+            height: 3.2rem;
         }
         @include m.desktop_1020 {
-            padding: 1.1rem 1.5rem;
+            // padding: 1.1rem 1.5rem;
         }
         h3 {
             margin: 0;
-            font-size: 1.3rem;
+            font-size: 1.1rem !important;
             color: white;
             font-weight: 400;
             @include m.desktop_1020 {
-                font-size: 1.5rem;
+                font-size: 1.3rem !important;
             }
             @include m.desktop_1200 {
-                font-size: 1.8rem;
+                font-size: 1.5rem !important;
             }
             @include m.desktop_1400 {
-                font-size: 2.2rem;
+                font-size: 1.8rem !important;
             }
         }
         img {
@@ -595,36 +606,36 @@
     button {
         background-color: v.$color1;
         border: none;
-        width: 10rem;
+        width: 12rem;
         display: flex;
         justify-content: center;
         column-gap: 1rem;
         align-items: center;
-        height: 2.5rem;
+        height: 2.2rem;
         border-radius: 2rem;
         cursor: pointer;
         @include m.tablet_768 {
-            margin-top: 3rem;
+            margin-top: 2rem;
         }
         @include m.desktop_1020 {
-            width: 13rem;
-            height: 3.5rem;
+            width: 15rem;
+            height: 3rem;
             border-radius: 3rem;
         }
         h3 {
             margin: 0;
             font-weight: 600;
-            font-size: 1.3rem;
+            font-size: 1.5rem !important;
             color: black;
             @include m.desktop_1020 {
-                font-size: 1.5rem;
+                font-size: 1.8rem !important;
             }
         }
         img {
-            width: 2rem;
+            width: 3rem;
             filter: brightness(0) saturate(100%) invert(0%) sepia(3%) saturate(0%) hue-rotate(355deg) brightness(99%) contrast(102%);
             @include m.desktop_1020 {
-                width: 2.5rem;
+                width: 3.5rem;
             }
         }
     }

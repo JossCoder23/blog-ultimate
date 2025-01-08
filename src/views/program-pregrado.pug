@@ -10,8 +10,8 @@ html(lang="en")
         meta(http-equiv='Pragma' content='no-cache')
         title ¿Qué carrera estudiar? - Blog Pregrado Cayetano Heredia
         link(rel='preconnect' href='https://fonts.googleapis.com')
-        link(rel="stylesheet", href="../../css/app.css")
-        //- link(rel="stylesheet", href="./css/app.css")
+        //- link(rel="stylesheet", href="../../css/app.css")
+        link(rel="stylesheet", href="./css/app.css")
         link(rel="stylesheet", href="https://unpkg.com/swiper/swiper-bundle.min.css")
         link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
         link(href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap' rel='stylesheet')
@@ -21,13 +21,13 @@ html(lang="en")
         .manuInner
             .manuInnerContainer
                 .manuInnerHeader
-                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="")
+                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.location.replace('https://blogs.cayetano.edu.pe/')")
                     h3.manuInnerClose X
                 .manuInnerInfo
                     include includes/search/searchMobile.pug
                     .manuInnerInfoContent
-                        h3.manuInnerInfoContentBottom Blog Cayetano
-                        h3.manuInnerInfoContentBottom Blog Pregrado
+                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/')").manuInnerInfoContentBottom Blog Cayetano
+                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado')").manuInnerInfoContentBottom Blog Pregrado
                         h3.manuInnerInfoContentBottom Blog PGE
                         h3 Blog Especialidades
             .manuInnerFooter
@@ -41,11 +41,11 @@ html(lang="en")
                     img.bloque1FloatLeftDesktop.bloque1FloatLeftDesktopPregrado(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/shield-desktop-pregrado-scaled.webp", alt="")
                     //- img.bloque1FloatRight(src="img/shield-home-mobile-image2.webp", alt="")
                 .bloque1Logos
-                    img.blog-logo(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="")
+                    img.blog-logo(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.location.replace('https://blogs.cayetano.edu.pe/')")
                     .bloque1LogosSelect
                         h3.dropdown-btn Blog Cayetano
                         ul.dropdown-menu
-                            li: a(href="") Pregrado
+                            li: a(href="https://blogs.cayetano.edu.pe/pregrado") Pregrado
                             li: a(href="") Pge  
                             li: a(href="") Especialidades
                     include includes/search/searchDesktop.pug
@@ -600,7 +600,7 @@ html(lang="en")
                                 option(value='biologia') Biología
                                 option(value='industrial') Ingeniería Industrial
                                 option(value='otros') Otros    
-                            .bloque2ProgramRightContainerNewsletter 
+                            .bloque2ProgramRightContainerNewsletter.bloque2ProgramRightContainerNewsletterPregrado 
                                 .newsletterWhitespace
                                 .newsletterContent
                                     .newsletterImage
@@ -624,10 +624,10 @@ html(lang="en")
                     h3 Campus Central:
                     h3 Av. Honorio Delgado 430
                     h3 Urb. Ingeniería, San Martín de Porres 
-        script(src="../js/script.js" defer)
-        script(src="../js/script-pregrado.js" defer)
-        script(src="../js/filter.js" defer)
-        //- script(src="./js/script-pregrado.js" defer)
-        //- script(src="./js/filter.js" defer)
-        //- script(src="./js/script.js" defer)
+        //- script(src="../js/script.js" defer)
+        //- script(src="../js/script-pregrado.js" defer)
+        //- script(src="../js/filter.js" defer)
+        script(src="./js/script-pregrado.js" defer)
+        script(src="./js/filter.js" defer)
+        script(src="./js/script.js" defer)
         script(src="https://unpkg.com/swiper/swiper-bundle.min.js")

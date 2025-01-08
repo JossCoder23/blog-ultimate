@@ -532,7 +532,8 @@
         justify-content: space-between;
         @include m.desktop_1020 {
             // background-color: purple;
-            width: 18rem;
+            width: 17rem;
+            padding-left: 2rem;
         }
         @include m.desktop_1200 {
             width: 25rem;
