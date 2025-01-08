@@ -717,7 +717,7 @@
 }
 
 .bloque2ProgramRightContainer {
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 .bloque2ProgramRightContainerCategories {
@@ -730,11 +730,15 @@
     height: auto;
     display: flex;
     flex-direction: column;
-    margin-top: 2rem;
+    // top: rem;
+    // margin-top:4rem;
+}
+.bloque2ProgramRightContainerNewsletterPregrado {
+    margin-top: 4rem;
 }
 
 .newsletterWhitespace {
-    height: 3rem;
+    // height: 3rem;
     width: 100%;
     background-color: white;
     @include m.tablet_768 {
@@ -748,9 +752,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    // top: -3rem;
     @include m.tablet_768 {
         position: sticky;
-        top: 20px;
     }
     .newsletterImage {
         position: relative;
@@ -832,6 +836,7 @@
             border-radius: 1.5rem;
             img {
                 width: 2rem;
+                filter: brightness(0) saturate(100%) invert(0%) sepia(53%) saturate(1825%) hue-rotate(334deg) brightness(105%) contrast(109%);
             }
             h3 {
                 color: black;
