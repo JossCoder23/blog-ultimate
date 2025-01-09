@@ -4,6 +4,7 @@
 :root {
     --width-form: 35rem;
     --width-form-1020: 55rem;
+    --width-form-1200: 65rem;
 }
 
 .bloque5 {
@@ -30,6 +31,14 @@
     @include m.desktop_1020 {
         width: 50rem;
     }
+    @include m.desktop_1200 {
+        width: 67rem;
+        min-height: 55rem;
+    }
+    @include m.desktop_1400 {
+        width: 78rem;
+        min-height: 65rem;
+    }
 }
 
 // .swiper-slide2 {
@@ -52,9 +61,13 @@
         width: 57%;
         align-items: center;
         padding: 6rem 0;
+        justify-content: center;
     }
     @include m.desktop_1020 {
         width: 100%;
+    }
+    @include m.desktop_1200 {
+        row-gap: 2rem;
     }
     h3 {
         color: black;
@@ -66,6 +79,9 @@
             width: var(--width-form);
             display: none;
         }
+        @include m.desktop_1200 {
+            width: var(--width-form-1200);
+        }
     }
     .bloque5ContainerTextDesktop {
         display: none;
@@ -75,6 +91,13 @@
         }
         @include m.desktop_1020 {
             width: var(--width-form-1020);
+        }
+        @include m.desktop_1200 {
+            font-size: 2.5rem;
+            width: var(--width-form-1200);
+        }
+        @include m.desktop_1400 {
+            font-size: 3rem;
         }
     }
 }
@@ -90,6 +113,10 @@
     }
     @include m.desktop_1020 {
         width: var(--width-form-1020);
+        row-gap: 2rem;
+    }
+    @include m.desktop_1200 {
+        width: var(--width-form-1200);
     }
     .bloque5ContainerInputGroupSelect,
     .bloque5ContainerInputGroup {
@@ -101,21 +128,37 @@
             flex-direction: row;
             column-gap: 1rem;
         }
+        @include m.desktop_1200 {
+            column-gap: 2rem;
+        }
         input, select {
             width: 100%;
+            @include m.desktop_1200 {
+                font-size: 1.5rem;
+            }
         }
     }
-    input, select {
+    input, select { 
         height: 3.3rem;
         outline: none;
         border: 1px solid black;
         background-color: transparent;
         border-radius: 1rem;
         padding-left: 1rem;
+        @include m.desktop_1200 {
+            height: 4.3rem;
+        }
         &::placeholder {
             color: black;
             font-size: 1.2rem;
-            // opacity: 1;
+            @include m.desktop_1200 {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    select {
+        @include m.desktop_1200 {
+            font-size: 1.5rem;
         }
     }
 }
@@ -137,6 +180,9 @@
         display: flex;
         align-items: center;
         font-size: 1.3rem;
+        @include m.desktop_1020 {
+            font-size: 1.5rem;
+        }
     }
 }
 
@@ -154,12 +200,19 @@
         width: 13rem;
         column-gap: 1rem;
         height: 3.5rem;
+        @include m.desktop_1200 {
+            height: 4.5rem;
+            width: 15rem;
+        }
         h3 {
             display: block;
             color: white;
             font-size: 1.7rem;
             margin: 0;
             width: auto;
+            @include m.desktop_1200 {
+                font-size: 2rem !important;
+            }
         }
         img {
             width: 3rem;

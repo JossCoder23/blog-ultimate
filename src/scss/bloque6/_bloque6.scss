@@ -313,12 +313,17 @@
   display: flex;
   flex-direction: column;
   row-gap: 2rem;
+
+  //- ================= CIRCLE ===========================
+
+  //- un tab - circle - padding alto
   .margin1tab {
     margin-left: 6rem;
     li {
       margin-bottom: 2rem;
     }
   }
+  //- dos tab - circle - padding alto
   .margin2tab {
     margin-left: 12rem;
     li {
@@ -326,95 +331,61 @@
       list-style: square;
     }
   }
+
+  //- un tab - circle - padding bajo
   .margin3tab {
     margin-left: 6rem;
     li {
-      font-weight: 700;
-      margin-bottom: 2rem;
-      list-style:decimal;
+      margin-bottom: .5rem;
     }
   }
+
+  //- dos tab - circle - padding bajo
   .margin4tab {
-    margin-left: 6rem;
+    margin-left: 12rem;
     li {
       margin-bottom: .5rem;
-      // list-style:decimal;
     }
   }
+
+  //- ================= FIN CIRCLE ===========================
+
+  //- ==================== SQUARE ============================
+
+  //- dos tab - square - padding alto
   .margin5tab {
+    margin-left: 12rem;
+    li {
+      margin-bottom: 2rem;
+      list-style: square;
+    }
+  }
+
+  //- dos tab - square - padding bajo
+  .margin6tab {
+    margin-left: 12rem;
+    li {
+      margin-bottom: .5rem;
+      list-style: square;
+    }
+  }
+
+  .margin7tab {
     margin-left: 8rem;
     li {
       margin-bottom: .5rem;
       list-style: square;
     }
   }
-  .margin6tab {
-    margin-left: 1.5rem;
-    li {
-      margin-bottom: .5rem;
-      // list-style: square;
-    }
+  .title_list {
+    margin-left: 10rem;
+    margin-bottom: 1rem;
   }
-  .margin7tab {
-    margin-left: 4rem;
-    li {
-      margin-bottom: .5rem;
-      // list-style:decimal;
-    }
-  }
-
-  .margin8tab {
-    margin-left: 4rem;
-    li {
-      margin-bottom: .5rem;
-      list-style:decimal;
-    }
-  }
-  .margin9tab {
-    margin-left: 9rem;
-    li {
-      margin-bottom: 2rem;
-      
-      
-    }
-    span{
-      font-size: 1.3rem;
-      font-weight: 400;
-      @include m.desktop_1020 {
-        font-size: 1.8rem;
-      }
-      
-    }
-  }
-  
-  .margin1tab {
-    margin-left: 6rem;
-    li {
-      margin-bottom: 2rem;
-    }
-  }
-  
-  .margin10tab {
-    margin-left: 9rem;
-    li {
-      margin-bottom: 2rem;
-      
-    }
-  }
-  
-  .margin11tab {
-    margin-left: 1.5rem;
-    li {
-      margin-bottom: .5rem;
-      list-style:decimal;
-      font-weight: 800;
-    }
-  }
-
   ol {
     margin: 0;
     padding: 0;
     li {
+      font-weight: 700;
       font-size: v.$title_h4_768;
       @include m.desktop_1020 {
         font-size: v.$title_h4_1020;
