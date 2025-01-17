@@ -849,6 +849,8 @@
     }
 }
 
+.captcha{margin-top:.5rem !important;width:18.9rem;height:5.5rem !important}@media(min-width: 1020px){.captcha{width:19.9rem}}@media(min-width: 1200px){.captcha{width:22rem}}.g-recaptcha{height:auto;-webkit-transform:scale(0.63);transform:scale(0.63);-webkit-transform-origin:0 0;transform-origin:0 0}@media(min-width: 1020px){.g-recaptcha{-webkit-transform:scale(0.65);transform:scale(0.65)}}@media(min-width: 1200px){.g-recaptcha{-webkit-transform:scale(0.72);transform:scale(0.72)}}
+
 .swiper-pagination5 {
     position: relative !important;
     display: block !important;

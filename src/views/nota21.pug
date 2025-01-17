@@ -10,25 +10,26 @@ html(lang="en")
         meta(http-equiv='Pragma' content='no-cache')
         title ¿Dónde estudiar Biología?
         link(rel='preconnect' href='https://fonts.googleapis.com')
-        link(rel="stylesheet", href="../../css/app.css")
+        //- link(rel="stylesheet", href="../../css/app.css")
         link(rel="icon" type="image/x-icon" href="../../favicon.png")
-        //- link(rel="stylesheet", href="./css/app.css")
+        link(rel="stylesheet", href="./css/app.css")
         link(rel="stylesheet", href="https://unpkg.com/swiper/swiper-bundle.min.css")
         link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
         link(href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap' rel='stylesheet')
         <meta name="description" content="">
         <meta name="keywords" content="donde estudiar biologia">
+        <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
     body
         .manuInner
             .manuInnerContainer
                 .manuInnerHeader
-                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.location.replace('https://blogs.cayetano.edu.pe/')")
+                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.open('https://blogs.cayetano.edu.pe/', '_self')")
                     h3.manuInnerClose X
                 .manuInnerInfo
                     include includes/search/searchMobile.pug
                     .manuInnerInfoContent
-                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/')").manuInnerInfoContentBottom Blog Cayetano
-                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado')").manuInnerInfoContentBottom Blog Pregrado
+                        h3(onclick="window.open('https://blogs.cayetano.edu.pe/', '_self')").manuInnerInfoContentBottom Blog Cayetano
+                        h3(onclick="window.open('https://blogs.cayetano.edu.pe/pregrado', '_self')").manuInnerInfoContentBottom Blog Pregrado
                         h3.manuInnerInfoContentBottom Blog PGE
                         h3 Blog Especialidades
             .manuInnerFooter
@@ -38,7 +39,7 @@ html(lang="en")
         .bloque1.bloque1Individual
           .bloque1Container
             .bloque1Logos
-                img.blog-logo(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.location.replace('https://blogs.cayetano.edu.pe/')")
+                img.blog-logo(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.open('https://blogs.cayetano.edu.pe/', '_self')")
                 .bloque1LogosSelect
                     h3.dropdown-btn Blog Cayetano
                     ul.dropdown-menu
@@ -54,9 +55,9 @@ html(lang="en")
             .bloque6Container
                 .bloque6Calendar
                     .bloque6CalendarProgress
-                        h5(onclick="window.location.replace('https://blogs.cayetano.edu.pe/')") Blog Cayetano
+                        h5(onclick="window.open('https://blogs.cayetano.edu.pe/', '_self')") Blog Cayetano
                         h5 |
-                        h5(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/')") Blog Pregrado
+                        h5(onclick="window.open('https://blogs.cayetano.edu.pe/pregrado/', '_self')") Blog Pregrado
                     .bloque6CalendarInfo
                         img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/calendar-icon-whit.webp", alt="")
                         h3 20 de diciembre del 2024
@@ -73,18 +74,18 @@ html(lang="en")
                             .bloque6LeftRedes
                                 h3 Compartir en redes:
                                 .bloque6LeftRedesContent
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-fb.webp", alt="", onclick="window.location.replace(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`)")
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-wp.webp", alt="", onclick="window.location.replace(`https://api.whatsapp.com/send?text=${encodeURIComponent(window.location.href)}`)")
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-x.webp", alt="", onclick="window.location.replace(`https://x.com/intent/post?text=${encodeURIComponent(window.location.href)}`)")
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-link.webp", alt="", onclick="window.location.replace(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`)")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-fb.webp", alt="", onclick="window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`, '_self')")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-wp.webp", alt="", onclick="window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(window.location.href)}`, '_self')")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-x.webp", alt="", onclick="window.open(`https://x.com/intent/post?text=${encodeURIComponent(window.location.href)}`, '_self')")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-link.webp", alt="", onclick="window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`, '_self')")
                             .bloque6LeftIndex
                                 h3.indexclicker Índice
                                 .bloque6LeftIndexContent
                                     ol 
                                         li: a(href="#h-uno"): h2 ¿En qué universidad estudiar la carrera de Biología?
-                                        li: a(href="#h-dos"): h2 ¿Por qué elegir Cayetano?
-                                        li: a(href="#h-tres"): h2 ¿Dónde trabaja un biólogo?
-                                        li: a(href="#h-cuatro"): h2 ¿Cuánto gana un biólogo?
+                                        //- li: a(href="#h-dos"): h2 ¿Por qué elegir Cayetano?
+                                        li: a(href="#h-dos"): h2 ¿Dónde trabaja un biólogo?
+                                        li: a(href="#h-tres"): h2 ¿Cuánto gana un biólogo?
                                     //- ol 
                                     //-     li: a(href="#h-uno"): h2 
                                     //-     li: a(href="#h-dos"): h2 
@@ -93,59 +94,66 @@ html(lang="en")
                                     //-     li: a(href="#h-cinco"): h2 
                                     //-     li: a(href="#h-seis"): h2 
                             .bloque6LeftParagraphs
-                                p Si ya sientes que esta es tu vocación, es importante saber dónde estudiar biología. En Perú y en otros países, hay universidades que ofrecen esta carrera con acceso a oportunidades para estudiar y realizar prácticas en el extranjero a través de convenios.
+                                p Si ya sientes que esta es tu vocación, es importante saber dónde estudiar biología. En Perú y en otros países, hay universidades que ofrecen esta carrera <strong>con acceso a oportunidades para estudiar y realizar prácticas en el extranjero a través de convenios</strong>.
                                 p No importa cuál sea tu sueño, la biología te brinda una forma de explorar y cuidar el mundo que nos rodea. Si quieres más información, sigue leyendo esta nota.
                                 .bloque6LeftParagraphsTitle 
                                     h2#h-uno ¿En qué universidad estudiar la carrera de Biología?
                                 p Estudiar Biología en Cayetano Heredia es una decisión que marcará tu futuro profesional. En la UPCH, formamos biólogos altamente capacitados para enfrentar los desafíos de un mundo en constante evolución.
-                                p Nuestra propuesta educativa integra excelencia académica, tecnología de avanzada, internacionalización, oportunidades de investigación e intercambios con prestigiosas universidades de Europa, Norteamérica, Latinoamérica y Asia.
+                                p Nuestra propuesta educativa integra excelencia académica, tecnología de avanzada, internacionalización, <strong>oportunidades de investigación e intercambios con prestigiosas universidades de Europa, Norteamérica, Latinoamérica y Asia</strong>.
                                 .bloque6LeftParagraphsTitle 
-                                    h2#h-dos ¿Por qué elegir Cayetano?
-                                p Investigación e innovación científica: la carrera te dará todas las herramientas para desarrollar tus habilidades de análisis, pensamiento crítico y como investigador.
-                                p Accede a convenios internacionales: cumple tu meta de estudiar en el extranjero con nuestros convenios 
-                                .other
-                                    h3 Innovación y emprendimiento: 
+                                    h3 ¿Por qué elegir Cayetano?
+                                p Ser un biólogo de Cayetano significa ser un profesional <strong>con visión amplia, capaz de resolver problemas, investigar, comunicar e innovar</strong>. A continuación, te contamos por qué elegirnos.
+                                .other2
+                                    h4 Investigación e innovación científica 
+                                    p la carrera te dará todas las herramientas para desarrollar tus habilidades de análisis, pensamiento crítico y como investigador.
+                                .other2 
+                                    h4 Accede a convenios internacionales
+                                    p cumple tu meta de estudiar en el extranjero con nuestros convenios 
+                                .other2
+                                    h4 Innovación y emprendimiento
                                     p Enfoque racional y riguroso: basado en el método científico y el manejo de herramientas de laboratorio, de campo y computacionales para el análisis de datos a distintas escalas.
-                                .other
-                                    h3 Multidisciplinaria: 
+                                .other2
+                                    h4 Multidisciplinaria: 
                                     p trabaja de manera multidisciplinaria y facilita la integración de la biología a otros campos del conocimiento en favor del bienestar y el progreso de la sociedad.
                                 .bloque6LeftParagraphsTitle 
-                                    h2#h-tres ¿Dónde trabaja un biólogo?
-                                p Lo primero que debes saber es que esta carrera te abre las puertas a trabajar en lugares muy diversos, según tus intereses. Un biólogo puede trabajar en laboratorios, haciendo investigaciones para descubrir nuevas medicinas, o estudiando cómo funcionan los seres vivos. 
+                                    h2#h-dos ¿Dónde trabaja un biólogo?
+                                p Lo primero que debes saber es que esta carrera te abre las puertas a trabajar en lugares muy diversos, según tus intereses. <strong>Un biólogo puede trabajar en laboratorios</strong>, haciendo investigaciones para descubrir nuevas medicinas, <strong>o estudiando cómo funcionan los seres vivos</strong>. 
                                 p También puedes trabajar en parques naturales o reservas, protegiendo el medio ambiente y cuidando especies en peligro de extinción. Si te apasiona el mar, podrías convertirte en un biólogo marino y estudiar la vida en los océanos. 
                                 p Además, los biólogos están presentes en empresas dedicadas a alimentos, biotecnología, o incluso en hospitales y centros médicos, ayudando a comprender enfermedades y encontrar soluciones.
                                 .bloque6LeftParagraphsTitle 
                                     h2#h-cuatro ¿Cuánto gana un biólogo?
-                                p El sueldo de un biólogo varía significativamente según la experiencia y la etapa profesional en la que se encuentre.
-                                p Para los jóvenes biólogos de hasta 29 años, el ingreso promedio mensual en el Perú es de S/ 2.772, de acuerdo con el portal Mi Carrera del Ministerio de Trabajo y Promoción del Empleo. En este rango de edad, los salarios pueden oscilar entre un mínimo de S/ 1.300 y un máximo de S/ 5.087.
-                                p Por otro lado, los biólogos con más de 30 años tienden a tener ingresos más altos. En promedio, estos profesionales perciben S/ 5.452 al mes, con un rango que va desde S/ 2.114 como mínimo hasta S/ 9.114 como máximo.
-                            .bloque6LeftLabels 
-                                h3 Ciencias
-                                h3 Ciencias
-                                h3 Ciencias
-                                h3 Ciencias
-                                h3 Ciencias
+                                p El sueldo de un biólogo en Perú es variable. Para los jóvenes biólogos de hasta 29 años, el ingreso promedio mensual en el Perú es de S/ 2.772, de acuerdo con el portal Mi Carrera del Ministerio de Trabajo y Promoción del Empleo. <strong>En este rango de edad, los salarios pueden oscilar entre un mínimo de S/ 1.300 y un máximo de S/ 5.087</strong>.
+                                p En cambio, los biólogos con más de 30 años suelen tener ingresos más altos. En promedio, <strong>estos profesionales con más experiencia alcanzan un salario de S/ 5.452 al mes</strong>, con un rango que va desde S/ 2.114 como mínimo hasta S/ 9.114 como máximo.
+                                p Elegir dónde estudiar la carrera de biología es una decisión clave que marcará el inicio de una etapa emocionante y llena de descubrimientos. Es importante considerar aspectos como la calidad académica, las oportunidades de investigación, los laboratorios disponibles y la experiencia de los docentes. Una universidad que fomente el aprendizaje práctico y la conexión con el mundo profesional será fundamental para construir una base sólida en esta apasionante disciplina.
+                                p Si estás en cuarto o quinto de secundaria, <strong>este es el momento ideal para reflexionar sobre tus intereses y explorar tus opciones</strong>. Investiga, haz preguntas y elige un lugar que te inspire a alcanzar tu máximo potencial como Cayetano.
+                            //- .bloque6LeftLabels 
+                            //-     h3 Ciencias
+                            //-     h3 Ciencias
+                            //-     h3 Ciencias
+                            //-     h3 Ciencias
+                            //-     h3 Ciencias
                         .bloque6Right
                 .bloque7Right
                     .bloque2ProgramRight.bloque2ProgramRightDesktop
                         .bloque2ProgramRightContainer
                             .bloque2ProgramRightContainerCategories
                             .bloque2ProgramRightContainerNewsletter 
-                                .newsletterWhitespace
-                                .newsletterContent
-                                    .newsletterImage
-                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/tano-newletter.gif", alt="")
-                                    .newsletterInfo
-                                        h3 Conéctate con tu 
-                                            span futuro en Cayetano
-                                        p Recibe información sobre nuestros programas, consejos de orientación vocacional, beneficios y mucho más para ayudarte a decidir el camino que mejor se alinea con tus metas. 
-                                        input(type="text" placeholder="Tu correo electrónico...")
-                                        .newsletterInfoTerminos
-                                            input(type="checkbox")
-                                            h3 He leído y acepto la política de privacidad de Cayetano.
-                                        button
-                                            h3 Suscribirme
-                                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
+                                include includes/newletter/innerLetter.pug
+                                //- .newsletterWhitespace
+                                //- .newsletterContent
+                                //-     .newsletterImage
+                                //-         img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/tano-newletter.gif", alt="")
+                                //-     .newsletterInfo
+                                //-         h3 Conéctate con tu 
+                                //-             span futuro en Cayetano
+                                //-         p Recibe información sobre nuestros programas, consejos de orientación vocacional, beneficios y mucho más para ayudarte a decidir el camino que mejor se alinea con tus metas. 
+                                //-         input(type="text" placeholder="Tu correo electrónico...")
+                                //-         .newsletterInfoTerminos
+                                //-             input(type="checkbox")
+                                //-             h3 He leído y acepto la política de privacidad de Cayetano.
+                                //-         button
+                                //-             h3 Suscribirme
+                                //-             img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
         .bloque4 
             .bloque4Container
                 .bloque4Banner
@@ -168,8 +176,6 @@ html(lang="en")
               h3 Campus Central:
               h3 Av. Honorio Delgado 430
               h3 Urb. Ingeniería, San Martín de Porres 
-        script(src="../../js/script.js" defer)
-        //- script(src="../../js/script-ind.js" defer)
-        //- script(src="./js/script.js" defer)
-        //- script(src="./js/script-ind.js" defer)
+        //- script(src="../../js/script.js" defer)
+        script(src="./js/script.js" defer)
         script(src="https://unpkg.com/swiper/swiper-bundle.min.js")

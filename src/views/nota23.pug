@@ -18,17 +18,18 @@ html(lang="en")
         link(href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap' rel='stylesheet')
         <meta name="description" content="Descubre dónde estudiar la carrera de enfermería en Perú teniendo en cuenta aspectos importantes para tomar la mejor decisión.">
         <meta name="keywords" content="donde estudiar enfermeria, donde estudiar enfermería en peru, cuanto gana un licenciado en enfermeria en peru, campo laboral de la carrera de enfermeria​, porque estudiar enfermeria, cuantos años dura la carrera de enfermeria en peru, que cursos lleva la carrera de enfermeria">
+        <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
     body
         .manuInner
             .manuInnerContainer
                 .manuInnerHeader
-                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.location.replace('https://blogs.cayetano.edu.pe/')")
+                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.open('https://blogs.cayetano.edu.pe/', '_self')")
                     h3.manuInnerClose X
                 .manuInnerInfo
                     include includes/search/searchMobile.pug
                     .manuInnerInfoContent
-                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/')").manuInnerInfoContentBottom Blog Cayetano
-                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado')").manuInnerInfoContentBottom Blog Pregrado
+                        h3(onclick="window.open('https://blogs.cayetano.edu.pe/', '_self')").manuInnerInfoContentBottom Blog Cayetano
+                        h3(onclick="window.open('https://blogs.cayetano.edu.pe/pregrado', '_self')").manuInnerInfoContentBottom Blog Pregrado
                         h3.manuInnerInfoContentBottom Blog PGE
                         h3 Blog Especialidades
             .manuInnerFooter
@@ -38,7 +39,7 @@ html(lang="en")
         .bloque1.bloque1Individual
           .bloque1Container
             .bloque1Logos
-                img.blog-logo(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.location.replace('https://blogs.cayetano.edu.pe/')")
+                img.blog-logo(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.open('https://blogs.cayetano.edu.pe/', '_self')")
                 .bloque1LogosSelect
                     h3.dropdown-btn Blog Cayetano
                     ul.dropdown-menu
@@ -54,9 +55,9 @@ html(lang="en")
             .bloque6Container
                 .bloque6Calendar
                     .bloque6CalendarProgress
-                        h5(onclick="window.location.replace('https://blogs.cayetano.edu.pe/')") Blog Cayetano
+                        h5(onclick="window.open('https://blogs.cayetano.edu.pe/', '_self')") Blog Cayetano
                         h5 |
-                        h5(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/')") Blog Pregrado
+                        h5(onclick="window.open('https://blogs.cayetano.edu.pe/pregrado/', '_self')") Blog Pregrado
                     .bloque6CalendarInfo
                         img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/calendar-icon-whit.webp", alt="")
                         h3 20 de diciembre del 2024
@@ -69,14 +70,14 @@ html(lang="en")
                 .bloque7Left
                     .bloque6Flex
                         .bloque6Left
-                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/image-nota-23.webp", alt="¿Dónde estudiar la carrera de Enfermería?")
+                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/image-nota-23.webp", alt="¿Dónde estudiar la carrera de Enfermería?", title="¿Dónde estudiar enfermería?")
                             .bloque6LeftRedes
                                 h3 Compartir en redes:
                                 .bloque6LeftRedesContent
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-fb.webp", alt="", onclick="window.location.replace(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`)")
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-wp.webp", alt="", onclick="window.location.replace(`https://api.whatsapp.com/send?text=${encodeURIComponent(window.location.href)}`)")
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-x.webp", alt="", onclick="window.location.replace(`https://x.com/intent/post?text=${encodeURIComponent(window.location.href)}`)")
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-link.webp", alt="", onclick="window.location.replace(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`)")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-fb.webp", alt="", onclick="window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`, '_self')")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-wp.webp", alt="", onclick="window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(window.location.href)}`, '_self')")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-x.webp", alt="", onclick="window.open(`https://x.com/intent/post?text=${encodeURIComponent(window.location.href)}`, '_self')")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-link.webp", alt="", onclick="window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`, '_self')")
                             .bloque6LeftIndex
                                 h3.indexclicker Índice
                                 .bloque6LeftIndexContent
@@ -91,7 +92,7 @@ html(lang="en")
                                 .bloque6LeftParagraphsTitle 
                                     h2#h-uno ¿Dónde estudiar enfermería en Perú?
                                 p Enfermería es una de las carreras más demandadas del país. Durante la pandemia, quedó clara la importancia de estos profesionales como pieza fundamental en el sistema de salud. Los licenciados en enfermería desempeñan roles de gestión, investigación, procedimientos médicos y brindan apoyo emocional a los pacientes.
-                                p En Perú, existen diversas universidades públicas y privadas donde puedes estudiar esta carrera. Sin embargo, es importante elegir una institución reconocida por su excelencia académica. Según el <strong>ranking SUNEDU</strong>, la Universidad Peruana Cayetano Heredia es la mejor universidad del país, y su prestigio está respaldado por rankings internacionales como THE (Times Higher Education) y QS World University Ranking by Subject, que la destacan como la N.° 1 en Ciencias de la Salud.
+                                p En Perú, existen diversas universidades públicas y privadas donde puedes estudiar esta carrera. Sin embargo, es importante elegir una institución reconocida por su excelencia académica. Según el ranking SUNEDU, la <strong>Universidad Peruana Cayetano Heredia es la mejor universidad del país, y su prestigio está respaldado por rankings internacionales como THE (Times Higher Education) y QS World University Ranking by Subject, que la destacan como la N.° 1 en Ciencias de la Salud.</strong>
                                 p Además, si buscas una universidad con infraestructura moderna, convenios para prácticas y un internado remunerado en clínicas privadas, <strong>Cayetano es tu mejor opción.</strong>
                                 p Elegir bien dónde estudiar enfermería puede marcar la diferencia en tu futuro profesional. Ahora que conoces la mejor alternativa, te preguntarás: <strong>¿cuánto gana un licenciado en enfermería en Perú?</strong>
                                 .bloque6LeftParagraphsTitle 
@@ -99,7 +100,7 @@ html(lang="en")
                                 p Según la Dirección de Investigación Socio Económico Laboral (DISEL) del Ministerio de Trabajo, Promoción y Empleo, <strong>el salario promedio mensual para los licenciados en enfermería de entre 18 y 29 años en Perú es de S/ 2493 en el año 2024.</strong>
                                 p Sin embargo, este sueldo puede variar según diversos factores, como la experiencia, el lugar de trabajo (sector público o privado) y la especialización. De hecho, algunos profesionales <strong>mayores de 30 años pueden llegar a ganar hasta S/ 6000.</strong>
                                 p La enfermería es una de las profesiones más demandadas y valoradas en Perú, pues desempeñan un papel crucial en la atención médica, brindando cuidados especializados y apoyo a los pacientes.
-                                p Si quieres conocer más sobre <span onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/en-que-consiste-carrera-enfermeria/')"><strong>en qué consiste la carrera de enfermería</strong></span> y las asignaturas que abarca, te invitamos a leer nuestro artículo anterior y descubras si es la opción ideal para ti.
+                                p Si quieres conocer más sobre <span onclick="window.open('https://blogs.cayetano.edu.pe/pregrado/en-que-consiste-carrera-enfermeria/', '_self')"><strong>en qué consiste la carrera de enfermería</strong></span> y las asignaturas que abarca, te invitamos a leer nuestro artículo anterior y descubras si es la opción ideal para ti.
                                 .bloque6LeftParagraphsTitle 
                                     h2#h-tres Campo laboral de la carrera de enfermería
                                 p Los profesionales de la carrera de enfermería tienen un amplio campo labora y pueden desempeñarse en áreas como:
@@ -138,7 +139,7 @@ html(lang="en")
                                         p Desde tu ingreso a Cayetano, contarás con el acompañamiento de tutores y docentes académicos que te guiarán en tu proceso de formación y te ayudarán a cumplir tu meta profesional.
                                 p Estudiar enfermería en Cayetano te brinda una formación que combina excelencia académica, experiencia práctica y desarrollo integral para destacar en el campo de la salud. 
                                 p Ahora que cuentas con un contexto amplio sobre la carrera de Enfermería, puedes iniciar tu proceso de admisión. ¡Da el primer paso hacia tu futuro en enfermería!
-                                p ¿Quieres conocer más carreras? Explora <span onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/cayetano-heredia-carreras')"><strong>nuestras 20 carreras de excelencia</strong></span> y estudia en la universidad N.° 1 en Perú.
+                                p ¿Quieres conocer más carreras? Explora <span onclick="window.open('https://blogs.cayetano.edu.pe/pregrado/cayetano-heredia-carreras', '_self')"><strong>nuestras 20 carreras de excelencia</strong></span> y estudia en la universidad N.° 1 en Perú.
                             //- .bloque6LeftLabels 
                             //-     h3 Ciencias
                             //-     h3 Ciencias
@@ -151,21 +152,22 @@ html(lang="en")
                         .bloque2ProgramRightContainer
                             .bloque2ProgramRightContainerCategories
                             .bloque2ProgramRightContainerNewsletter 
-                                .newsletterWhitespace
-                                .newsletterContent
-                                    .newsletterImage
-                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/tano-newletter.gif", alt="")
-                                    .newsletterInfo
-                                        h3 Conéctate con tu 
-                                            span futuro en Cayetano
-                                        p Recibe información sobre nuestros programas, consejos de orientación vocacional, beneficios y mucho más para ayudarte a decidir el camino que mejor se alinea con tus metas. 
-                                        input(type="text" placeholder="Tu correo electrónico...")
-                                        .newsletterInfoTerminos
-                                            input(type="checkbox")
-                                            h3 He leído y acepto la política de privacidad de Cayetano.
-                                        button
-                                            h3 Suscribirme
-                                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
+                                include includes/newletter/innerLetter.pug
+                                //- .newsletterWhitespace
+                                //- .newsletterContent
+                                //-     .newsletterImage
+                                //-         img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/tano-newletter.gif", alt="")
+                                //-     .newsletterInfo
+                                //-         h3 Conéctate con tu 
+                                //-             span futuro en Cayetano
+                                //-         p Recibe información sobre nuestros programas, consejos de orientación vocacional, beneficios y mucho más para ayudarte a decidir el camino que mejor se alinea con tus metas. 
+                                //-         input(type="text" placeholder="Tu correo electrónico...")
+                                //-         .newsletterInfoTerminos
+                                //-             input(type="checkbox")
+                                //-             h3 He leído y acepto la política de privacidad de Cayetano.
+                                //-         button
+                                //-             h3 Suscribirme
+                                //-             img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
         .bloque4 
             .bloque4Container
                 .bloque4Banner

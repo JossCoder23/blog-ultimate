@@ -314,12 +314,20 @@
   flex-direction: column;
   row-gap: 2rem;
 
+  .other {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    margin-top: 1rem;
+  }
+
   //- ================= CIRCLE ===========================
 
   //- un tab - circle - padding alto
   .margin1tab {
     margin-left: 6rem;
     li {
+      font-weight: 500 !important;
       margin-bottom: 2rem;
     }
   }
@@ -336,6 +344,7 @@
   .margin3tab {
     margin-left: 6rem;
     li {
+      font-weight: 400 !important;
       margin-bottom: .5rem;
     }
   }
@@ -375,6 +384,29 @@
     li {
       margin-bottom: .5rem;
       list-style: square;
+    }
+  }
+
+  .margin8tab {
+    margin-left: 4.3rem;
+    li {
+      margin-bottom: .5rem;
+      list-style: square;
+    }
+  }
+  .margin9tab {
+    margin-left: 4.3rem;
+    li {
+      margin-bottom: .5rem;
+      list-style: square;
+    }
+  }
+
+  .margin10tab {
+    margin-left: 6rem;
+    li {
+      font-weight: 600 !important;
+      margin-bottom: .5rem;
     }
   }
   .title_list {

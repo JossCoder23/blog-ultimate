@@ -18,17 +18,18 @@ html(lang="en")
         link(href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap' rel='stylesheet')
         <meta name="description" content="Conoce cada paso del proceso de matrícula y comienza tu camino profesional en Cayetano.">
         <meta name="keywords" content="matricula cayetano heredia, como es el proceso de matricula en cayetano heredia, portal de admision, documentos personales, realiza el pago, valida tu inscripcion">
+        <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
     body
         .manuInner
             .manuInnerContainer
                 .manuInnerHeader
-                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.location.replace('https://blogs.cayetano.edu.pe/')")
+                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.open('https://blogs.cayetano.edu.pe/', '_self')")
                     h3.manuInnerClose X
                 .manuInnerInfo
                     include includes/search/searchMobile.pug
                     .manuInnerInfoContent
-                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/')").manuInnerInfoContentBottom Blog Cayetano
-                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado')").manuInnerInfoContentBottom Blog Pregrado
+                        h3(onclick="window.open('https://blogs.cayetano.edu.pe/', '_self')").manuInnerInfoContentBottom Blog Cayetano
+                        h3(onclick="window.open('https://blogs.cayetano.edu.pe/pregrado', '_self')").manuInnerInfoContentBottom Blog Pregrado
                         h3.manuInnerInfoContentBottom Blog PGE
                         h3 Blog Especialidades
             .manuInnerFooter
@@ -38,7 +39,7 @@ html(lang="en")
         .bloque1.bloque1Individual
           .bloque1Container
             .bloque1Logos
-                img.blog-logo(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.location.replace('https://blogs.cayetano.edu.pe/')")
+                img.blog-logo(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.open('https://blogs.cayetano.edu.pe/', '_self')")
                 .bloque1LogosSelect
                     h3.dropdown-btn Blog Cayetano
                     ul.dropdown-menu
@@ -54,9 +55,9 @@ html(lang="en")
             .bloque6Container
                 .bloque6Calendar
                     .bloque6CalendarProgress
-                        h5(onclick="window.location.replace('https://blogs.cayetano.edu.pe/')") Blog Cayetano
+                        h5(onclick="window.open('https://blogs.cayetano.edu.pe/', '_self')") Blog Cayetano
                         h5 |
-                        h5(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/')") Blog Pregrado
+                        h5(onclick="window.open('https://blogs.cayetano.edu.pe/pregrado/', '_self')") Blog Pregrado
                     .bloque6CalendarInfo
                         img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/calendar-icon-whit.webp", alt="")
                         h3 17 de diciembre del 2024
@@ -73,10 +74,10 @@ html(lang="en")
                             .bloque6LeftRedes
                                 h3 Compartir en redes:
                                 .bloque6LeftRedesContent
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-fb.webp", alt="", onclick="window.location.replace(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`)")
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-wp.webp", alt="", onclick="window.location.replace(`https://api.whatsapp.com/send?text=${encodeURIComponent(window.location.href)}`)")
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-x.webp", alt="", onclick="window.location.replace(`https://x.com/intent/post?text=${encodeURIComponent(window.location.href)}`)")
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-link.webp", alt="", onclick="window.location.replace(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`)")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-fb.webp", alt="", onclick="window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`, '_self')")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-wp.webp", alt="", onclick="window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(window.location.href)}`, '_self')")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-x.webp", alt="", onclick="window.open(`https://x.com/intent/post?text=${encodeURIComponent(window.location.href)}`, '_self')")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-link.webp", alt="", onclick="window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`, '_self')")
                             .bloque6LeftIndex
                                 h3.indexclicker Índice
                                 .bloque6LeftIndexContent
@@ -92,30 +93,29 @@ html(lang="en")
                                 .bloque6LeftParagraphsTitle 
                                     h2 Paso 1: Ingresa al portal de admisión de Cayetano
                                 p Para iniciar tu proceso de matrícula, sigue estos sencillos pasos:
-                                ul.margin3tab
-                                    li  Hola Abre tu navegador y escribe: <strong>UPCH - Portal de Admisión.</strong>
+                                ol.margin3tab
+                                    li  Abre tu navegador y escribe: <strong>UPCH - Portal de Admisión.</strong>
                                     li  Regístrate con tus datos personales y crea tu cuenta.
                                 
-                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/nota6-image3.webp", alt="Diferencia entre veterinario y zootecnista")
+                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/nota6-image3.webp", alt="Registro matricula cayetano", title="Proceso matrícula cayetano")
                                 //- p 
                                 //-     strong Tano te recuerda
                                 //-     br
                                 //-     | No estás solo en esto. Apenas te registres, un asesor especializado se pondrá en contacto contigo para orientarte.
-                                p Al registrarte en el portal de admisión, estás creando una cuenta personalizada para todo tu proceso de matrícula. Este portal te dará acceso a tu información y actualizaciones sobre el estado de tu inscripción. Por eso, es ideal que ingreses tus datos correctamente desde el inicio, para evitar retrasos o errores en el proceso.
+                                p Al registrarte en el portal de admisión, estás creando una cuenta personalizada para todo tu proceso de matrícula. Este portal te dará acceso a tu información y actualizaciones sobre el estado de tu inscripción. Por eso, es ideal que <strong>ingreses tus datos correctamente</strong> desde el inicio, para evitar retrasos o errores en el proceso.
                                 
                                 .bloque6LeftParagraphsTitle 
                                     h2 Paso 2: Prepara tu carpeta de documentos personales
                                 p Reunir tus documentos es esencial para avanzar en el proceso. Asegúrate de tenerlos completos y listos para subir al portal.
                                     br 
                                     | 
-                                //- p(style="margin-botom:5rem;") ¿Qué necesitas?
-                                //p(style "margin-botom:2rem;")¿Qué necesitas?
+                                p(style="margin-left:4.3rem;") ¿Qué necesitas?
                                 
                                 ul.margin3tab
-                                    li <strong> Actualiza tu información </strong> dentro del portal de admisión. Asegúrate de que todos tus datos estén correctos.</span>
-                                    li <strong> Carga los documentos </strong> solicitados (copia de DNI y declaración jurada)  según la modalidad de admisión y la carrera que hayas elegido.
-                                    li <strong> Espera la conformidad </strong> de la Oficina Universitaria de Admisión y Registro Académico,  se te enviará un correo de confirmación una vez que todo esté revisado.
-                                p 
+                                    li <strong>Actualizar tu información </strong> dentro del portal de admisión. Asegúrate de que todos tus datos estén correctos.</span>
+                                    li <strong>Cargar los documentos </strong> solicitados (copia de DNI y declaración jurada)  según la modalidad de admisión y la carrera que hayas elegido.
+                                    li <strong>Esperar la conformidad </strong> de la Oficina Universitaria de Admisión y Registro Académico,  se te enviará un correo de confirmación una vez que todo esté revisado.
+                                p.margin3tab
                                     strong Nota: 
                                     | Este correo te indicará que puedes proceder con el pago de inscripción.
                                 p Recuerda que la calidad de los documentos que subas es esencial para evitar retrasos. Si tienes dudas sobre algún requisito específico, no dudes en comunicarte con tu asesor.
@@ -128,52 +128,49 @@ html(lang="en")
                                     br
                                     br
                                     strong Los costos de inscripción son los siguientes:
-                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/nota6-image2.webp", alt="Costos de inscripción carreras cayetano.")
-                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/nota6-image4.webp", alt="Beneficio preseleccionados para beca 18")
+                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/nota6-image2.webp", alt="Costos de inscripción carreras cayetano", title="Inscripción en cayetano")
+                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/nota6-image4.webp", alt="Beneficio preseleccionados para beca 18", title="Preseleccionados beca 18")
                                 p Es importante que realices el pago en el tiempo indicado, ya que el proceso de matrícula no puede continuar hasta que este paso se complete correctamente. Además, ten en cuenta que la universidad ofrece opciones de pago en línea, por lo que puedes realizar el pago de forma rápida y segura desde la comodidad de tu hogar.
                                 .bloque6LeftParagraphsTitle 
                                     h2 Paso 4: Valida tu inscripción
                                 p ¡Lo lograste, estás a punto de ser parte de Cayetano!
-                                p Una vez que la universidad confirme tu pago, recibirás un correo electrónico de confirmación. Este mensaje te indicará que tu inscripción ha sido completada con éxito. Sin embargo, para completar tu proceso de admisión, deberás realizar una evaluación. En ese correo, recibirás un instructivo detallado para <strong>prepararte para el examen de admisión de Cayetano Heredia</strong>, que incluirá la sede y el horario para rendirlo.
+                                p Una vez que la universidad confirme tu pago, recibirás un correo electrónico de confirmación. Este mensaje te indicará que tu inscripción ha sido completada con éxito. Sin embargo, para completar tu proceso de admisión, deberás realizar una evaluación. En ese correo, recibirás un instructivo detallado para prepararte para el <span onclick="window.open('https://blogs.cayetano.edu.pe/pregrado/examen-admision-cayetano-heredia/', '_self')"><strong>examen de admisión de Cayetano Heredia</strong></span>, que incluirá la sede y el horario para rendirlo.
                                 p 
-                                    strong Nota:
-                                    br 
+                                    strong Nota: 
                                     | Recuerda llevar lápiz 2B, borrador y DNI. No se aceptarán aparatos electrónicos (calculadoras, celular, reloj)
                                 p Estás a punto de dar un paso muy importante. Al completar tu matrícula, formarás parte de una universidad reconocida por su excelencia académica y compromiso con el bienestar de sus estudiantes. Nos emociona que estés en esta etapa y que pronto seas parte de la familia Cayetano.
                                 p 
                                     strong ¿Tienes preguntas? ¡Estamos para ayudarte!
-                                p Si tienes alguna duda o necesitas más información sobre el proceso de matrícula, no dudes en contactarnos a estos números: 
-                                p(style="margin-left:5rem;") - (511) 436-3852
-                                    br
-                                    | - (511) 319-0043
-                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/nota6-image1.webp", alt="Horario de atención Cayetano")
-                            .bloque6LeftLabels 
-                                h3 Ciencias
-                                h3 Ciencias
-                                h3 Ciencias
-                                h3 Ciencias
-                                h3 Ciencias
+                                p Si tienes alguna duda o necesitas más información sobre el proceso de matrícula, <span onclick="window.open('https://wa.link/b4azd8', '_blank')"><strong>no dudes en contactarnos</strong></span>.
+                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/nota6-image1.webp", alt="Horario de atención Cayetano", title="Atención al público Cayetano")
+                            //- .bloque6LeftLabels 
+                            //-     h3 Ciencias
+                            //-     h3 Ciencias
+                            //-     h3 Ciencias
+                            //-     h3 Ciencias
+                            //-     h3 Ciencias
                         .bloque6Right
                 .bloque7Right
                     .bloque2ProgramRight.bloque2ProgramRightDesktop
                         .bloque2ProgramRightContainer
                             .bloque2ProgramRightContainerCategories
                             .bloque2ProgramRightContainerNewsletter 
-                                .newsletterWhitespace
-                                .newsletterContent
-                                    .newsletterImage
-                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/tano-newletter.gif", alt="")
-                                    .newsletterInfo
-                                        h3 Conéctate con tu 
-                                            span futuro en Cayetano
-                                        p Recibe información sobre nuestros programas, consejos de orientación vocacional, beneficios y mucho más para ayudarte a decidir el camino que mejor se alinea con tus metas. 
-                                        input(type="text" placeholder="Tu correo electrónico...")
-                                        .newsletterInfoTerminos
-                                            input(type="checkbox")
-                                            h3 He leído y acepto la política de privacidad de Cayetano.
-                                        button
-                                            h3 Suscribirme
-                                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
+                                include includes/newletter/innerLetter.pug
+                                //- .newsletterWhitespace
+                                //- .newsletterContent
+                                //-     .newsletterImage
+                                //-         img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/tano-newletter.gif", alt="")
+                                //-     .newsletterInfo
+                                //-         h3 Conéctate con tu 
+                                //-             span futuro en Cayetano
+                                //-         p Recibe información sobre nuestros programas, consejos de orientación vocacional, beneficios y mucho más para ayudarte a decidir el camino que mejor se alinea con tus metas. 
+                                //-         input(type="text" placeholder="Tu correo electrónico...")
+                                //-         .newsletterInfoTerminos
+                                //-             input(type="checkbox")
+                                //-             h3 He leído y acepto la política de privacidad de Cayetano.
+                                //-         button
+                                //-             h3 Suscribirme
+                                //-             img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
         .bloque4 
             .bloque4Container
                 .bloque4Banner

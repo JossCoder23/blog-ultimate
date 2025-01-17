@@ -1,15 +1,56 @@
 .newsletterWhitespace
-.newsletterContent
+.newsletterContent.crmWebToEntityForm#crmWebToEntityForm
+    meta(http-equiv="content-type" content="text/html;charset=UTF-8")
+    style.
+        .oculto {
+            display: none;
+        }
     .newsletterImage
         img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/tano-newletter.gif", alt="")
-    .newsletterInfo
+    form.newsletterInfo(id="webform6093725000001039003" action="https://crmsandbox.zoho.com/crm/WebToLeadForm" name="WebToLeads3503766000678594001" method="POST" onSubmit='javascript:document.charset="UTF-8"' accept-charset="UTF-8") 
+        input(type='text' style='display: none' name='xnQsjsdp' value='dca2765a5d03016cc1ad249409ff360c153a5fb0aaecfb26c1b12a317d835ec6')
+        input#zc_gad(type='hidden' name='zc_gad' value='')
+        input(type='text' style='display: none' name='xmIwtLD' value='3b29c2ff618317f97dd6fe14c66f4b58b836008d814bab6189b926723e3d6c43e37730ae448c9ec137dd562bea4e913d')
+        input(type='text' style='display: none' name='actionType' value='TGVhZHM=')
+        input(type="text" style="display:none;" name="returnURL" class="return" value="")
         h3 Conéctate con tu 
             span futuro en Cayetano
         p Recibe información sobre nuestros programas, consejos de orientación vocacional, beneficios y mucho más para ayudarte a decidir el camino que mejor se alinea con tus metas. 
-        input(type="text" placeholder="Tu correo electrónico...")
+        input#Email.requerido.input__item(type='text' name='Email' ftype='email' maxlength='40' placeholder='Correo electrónico...' required)
         .newsletterInfoTerminos
-            input(type="checkbox")
+            input(type="checkbox" required)
             h3 He leído y acepto la política de privacidad de Cayetano.
+        <div class="captcha">
+            <div class="g-recaptcha" id="recap3503766000237491098" data-sitekey="6LdqkDoiAAAAALdLtgIzFUQelkS9jGZU4W7gjLHG" data-theme="light" data-callback="rccallback3503766000237491098" captcha-verified="false"></div>
+            <div id="recapErr3503766000237491098" style="font-size:12px;color:red;visibility:hidden;">Error en validación de Captcha. Si no es un robot, inténtelo de nuevo.</div>
+        </div>
+        .oculto
+            <input class="UTM" id="utm_source" name="LEADCF183" value=""> <!-- utm_content-->
+            <input class="UTM" id="utm_medium" name="LEADCF189" value=""> <!-- utm_medium-->
+            <input class="UTM" id="utm_campaign" name="LEADCF24" value="newsletter"> <!-- utm_campaign-->
+            <input class="UTM" id="utm_id" name="LEADCF203" value=""> <!-- utm_ID-->
+            <input class="UTM" id="utm_term" name="LEADCF184" value="digital"> <!-- utm-term-->
+            <input class="UTM" id="utm_content" name="LEADCF182" value=""> <!-- utm_content-->
+            <input class="" id="reference" name="LEADCF168" value=""> <!-- reference-->
+            <input class="" id="LEADCF185" name="LEADCF185" value="PREGRADO" /> <!-- marca -->
+            <input class="" name="Lead Status" value="Sin gestión" /> <!-- lead status -->
+            <input class="" name="LEADCF1" value="Automáticos" /> <!-- tipo_origen -->
+            <input class="" name="LEADCF198" value="Postulante" /> <!-- parentezco -->
+            <input class="" name="Lead Source" value="Landing Page Blog" /> <!-- fuente_lead -->
+            <input class="" id="LEADCF22" name="LEADCF22" value="" /> <!-- comentario -->
+            <input class="" id="LEADCF194" name="LEADCF194" value="" /> <!-- horario_disponible --> 
+            <input class="" id="LEADCF10" name="LEADCF10" value="2025-1"> <!-- periodo -->
+            <input class="" id="First_Name" name="First Name" value="nombre blog"> 
+            <input class="" id="Last_Name" name="Last Name" value="apellido blog"> 
         button
             h3 Suscribirme
             img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
+        script.
+            let retorno = document.querySelector('.return')
+            let ref = document.getElementById('reference');
+            let url = window.location.href;
+            ref.value = url;
+            retorno.value = url;
+        <script src="https://upch.sis-service-tivenos.com/formulario_global/formulario_general_min.js"></script>
+        <script id='wf_anal' src='https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet?rid=0437d1c573ea9551a6f78fecc75ed055b133d8637c177b8a930789ad34d2a8bfef7546cab2b29a294f78be18933a2358gid144c28dbf479caf4a652b4f2dd53fb61d7dd73ce678f540722674f734ca738b3gidf7258617d9ad292e18817da2738bf8d68d0f8283158afb13ff49649786a97d5egidc810aa67d5387b528f6ea9ce8821a5817278f4c9c284b8c15ca440a2904cd61e&amp;tw=dd956dad13176aee758bad58a08496c10165e0e8527fe8a62da2a32461edd34c'></script>
+        <iframe name="captchaFrame" style="display:none;"></iframe>

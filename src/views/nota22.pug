@@ -18,17 +18,18 @@ html(lang="en")
         link(href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap' rel='stylesheet')
         <meta name="description" content="Conoce los puntos clave que debes tener en cuenta antes de ingresar a la universidad.">
         <meta name="keywords" content="como adaptarse a la universidad, como adaptarte a la vida universitaria, 5 estrategias para la vida universitaria, habilidades blandas que se necesitan en la vida universitaria, dificultades en la vida universitaria, ventajas de generar un balance con tu vida universitaria, ejemplos de logros personales durante la vida universitaria">
+        <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
     body
         .manuInner
             .manuInnerContainer
                 .manuInnerHeader
-                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.location.replace('https://blogs.cayetano.edu.pe/')")
+                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.open('https://blogs.cayetano.edu.pe/', '_self')")
                     h3.manuInnerClose X
                 .manuInnerInfo
                     include includes/search/searchMobile.pug
                     .manuInnerInfoContent
-                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/')").manuInnerInfoContentBottom Blog Cayetano
-                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado')").manuInnerInfoContentBottom Blog Pregrado
+                        h3(onclick="window.open('https://blogs.cayetano.edu.pe/', '_self')").manuInnerInfoContentBottom Blog Cayetano
+                        h3(onclick="window.open('https://blogs.cayetano.edu.pe/pregrado', '_self')").manuInnerInfoContentBottom Blog Pregrado
                         h3.manuInnerInfoContentBottom Blog PGE
                         h3 Blog Especialidades
             .manuInnerFooter
@@ -38,7 +39,7 @@ html(lang="en")
         .bloque1.bloque1Individual
           .bloque1Container
             .bloque1Logos
-                img.blog-logo(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.location.replace('https://blogs.cayetano.edu.pe/')")
+                img.blog-logo(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.open('https://blogs.cayetano.edu.pe/', '_self')")
                 .bloque1LogosSelect
                     h3.dropdown-btn Blog Cayetano
                     ul.dropdown-menu
@@ -54,9 +55,9 @@ html(lang="en")
             .bloque6Container
                 .bloque6Calendar
                     .bloque6CalendarProgress
-                        h5(onclick="window.location.replace('https://blogs.cayetano.edu.pe/')") Blog Cayetano
+                        h5(onclick="window.open('https://blogs.cayetano.edu.pe/', '_self')") Blog Cayetano
                         h5 |
-                        h5(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/')") Blog Pregrado
+                        h5(onclick="window.open('https://blogs.cayetano.edu.pe/pregrado/', '_self')") Blog Pregrado
                     .bloque6CalendarInfo
                         img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/calendar-icon-whit.webp", alt="")
                         h3 20 de diciembre del 2024
@@ -73,10 +74,10 @@ html(lang="en")
                             .bloque6LeftRedes
                                 h3 Compartir en redes:
                                 .bloque6LeftRedesContent
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-fb.webp", alt="", onclick="window.location.replace(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`)")
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-wp.webp", alt="", onclick="window.location.replace(`https://api.whatsapp.com/send?text=${encodeURIComponent(window.location.href)}`)")
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-x.webp", alt="", onclick="window.location.replace(`https://x.com/intent/post?text=${encodeURIComponent(window.location.href)}`)")
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-link.webp", alt="", onclick="window.location.replace(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`)")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-fb.webp", alt="", onclick="window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`, '_self')")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-wp.webp", alt="", onclick="window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(window.location.href)}`, '_self')")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-x.webp", alt="", onclick="window.open(`https://x.com/intent/post?text=${encodeURIComponent(window.location.href)}`, '_self')")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-link.webp", alt="", onclick="window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`, '_self')")
                             .bloque6LeftIndex
                                 h3.indexclicker Índice
                                 .bloque6LeftIndexContent
@@ -133,7 +134,7 @@ html(lang="en")
                                 .bloque6LeftParagraphsTitle 
                                     h2#h-cinco Logros personales durante la vida universitaria
                                 p La universidad es mucho más que clases y exámenes; es un espacio para descubrir tus fortalezas, superar retos y crecer como persona.Aquí es donde comienzas a construir habilidades y logros que marcarán tu camino hacia el éxito, tanto dentro como fuera del aula.  
-                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/nota22-image2-scaled.webp", alt="")
+                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/nota22-image2-scaled.webp", alt="Logros de estudiantes durante la vida universitaria", title="Consejos de estudiantes sobre la vida universitaria")
                                 p Recuerda que cada pequeño paso cuenta. Desde aprender a manejar tu tiempo hasta desarrollar nuevas habilidades, todos tus logros personales son parte de tu historia universitaria.
                                 .bloque6LeftParagraphsTitle 
                                     h2#h-seis Preguntas frecuentes sobre la vida universitaria
@@ -146,7 +147,7 @@ html(lang="en")
                                     li: h3 ¿Cómo funciona el sistema de calificación?
                                         p Cada universidad tiene un sistema propio, pero generalmente se basa en porcentajes o créditos acumulados en evaluaciones, trabajos y asistencia. Puedes encontrar los detalles en el reglamento académico. 
                                     li: h3 ¿Se puede ingresar con la modalidad de ingreso por tercio superior o excelencia académica?
-                                        p Sí, puedes ingresar a Cayetano a través de diversas modalidades. Una de ellas es la modalidad de <span onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/todo-sobre-la-excelencia-academica"><strong>excelencia académica</strong></span>, que permite acceder a una educación de calidad si perteneces al <span onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/que-es-tercio-superior/')"><strong>tercio superior</strong></span> de tu promoción.
+                                        p Sí, puedes ingresar a Cayetano a través de diversas modalidades. Una de ellas es la modalidad de <span onclick="window.open('https://blogs.cayetano.edu.pe/pregrado/todo-sobre-la-excelencia-academica', '_self')"><strong>excelencia académica</strong></span>, que permite acceder a una educación de calidad si perteneces al <span onclick="window.open('https://blogs.cayetano.edu.pe/pregrado/que-es-tercio-superior/', '_self')"><strong>tercio superior</strong></span> de tu promoción.
                             //- .bloque6LeftLabels 
                             //-     h3 Ciencias
                             //-     h3 Ciencias
@@ -159,21 +160,22 @@ html(lang="en")
                         .bloque2ProgramRightContainer
                             .bloque2ProgramRightContainerCategories
                             .bloque2ProgramRightContainerNewsletter 
-                                .newsletterWhitespace
-                                .newsletterContent
-                                    .newsletterImage
-                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/tano-newletter.gif", alt="")
-                                    .newsletterInfo
-                                        h3 Conéctate con tu 
-                                            span futuro en Cayetano
-                                        p Recibe información sobre nuestros programas, consejos de orientación vocacional, beneficios y mucho más para ayudarte a decidir el camino que mejor se alinea con tus metas. 
-                                        input(type="text" placeholder="Tu correo electrónico...")
-                                        .newsletterInfoTerminos
-                                            input(type="checkbox")
-                                            h3 He leído y acepto la política de privacidad de Cayetano.
-                                        button
-                                            h3 Suscribirme
-                                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
+                                include includes/newletter/innerLetter.pug
+                                //- .newsletterWhitespace
+                                //- .newsletterContent
+                                //-     .newsletterImage
+                                //-         img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/tano-newletter.gif", alt="")
+                                //-     .newsletterInfo
+                                //-         h3 Conéctate con tu 
+                                //-             span futuro en Cayetano
+                                //-         p Recibe información sobre nuestros programas, consejos de orientación vocacional, beneficios y mucho más para ayudarte a decidir el camino que mejor se alinea con tus metas. 
+                                //-         input(type="text" placeholder="Tu correo electrónico...")
+                                //-         .newsletterInfoTerminos
+                                //-             input(type="checkbox")
+                                //-             h3 He leído y acepto la política de privacidad de Cayetano.
+                                //-         button
+                                //-             h3 Suscribirme
+                                //-             img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
         .bloque4 
             .bloque4Container
                 .bloque4Banner

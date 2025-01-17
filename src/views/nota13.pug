@@ -18,17 +18,18 @@ html(lang="en")
         link(href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap' rel='stylesheet')
         <meta name="description" content="La malla curricular de Ingeniería Industrial te permite especializarte en diversas áreas, siendo una de las carreras más demandadas del mercado laboral.">
         <meta name="keywords" content="malla curricular ingenieria industrial, que cursos se lleva en ingenieria industrial​, campo laboral, ingenieria industrial, areas de la carrera de ingenieria industrial, ingenieria industrial perfil del egresado​">
+        <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
     body
         .manuInner
             .manuInnerContainer
                 .manuInnerHeader
-                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.location.replace('https://blogs.cayetano.edu.pe/')")
+                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.open('https://blogs.cayetano.edu.pe/', '_self')")
                     h3.manuInnerClose X
                 .manuInnerInfo
                     include includes/search/searchMobile.pug
                     .manuInnerInfoContent
-                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/')").manuInnerInfoContentBottom Blog Cayetano
-                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado')").manuInnerInfoContentBottom Blog Pregrado
+                        h3(onclick="window.open('https://blogs.cayetano.edu.pe/', '_self')").manuInnerInfoContentBottom Blog Cayetano
+                        h3(onclick="window.open('https://blogs.cayetano.edu.pe/pregrado', '_self')").manuInnerInfoContentBottom Blog Pregrado
                         h3.manuInnerInfoContentBottom Blog PGE
                         h3 Blog Especialidades
             .manuInnerFooter
@@ -38,7 +39,7 @@ html(lang="en")
         .bloque1.bloque1Individual
           .bloque1Container
             .bloque1Logos
-                img.blog-logo(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.location.replace('https://blogs.cayetano.edu.pe/')")
+                img.blog-logo(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.open('https://blogs.cayetano.edu.pe/', '_self')")
                 .bloque1LogosSelect
                     h3.dropdown-btn Blog Cayetano
                     ul.dropdown-menu
@@ -54,9 +55,9 @@ html(lang="en")
             .bloque6Container
                 .bloque6Calendar
                     .bloque6CalendarProgress
-                        h5(onclick="window.location.replace('https://blogs.cayetano.edu.pe/')") Blog Cayetano
+                        h5(onclick="window.open('https://blogs.cayetano.edu.pe/', '_self')") Blog Cayetano
                         h5 |
-                        h5(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/')") Blog Pregrado
+                        h5(onclick="window.open('https://blogs.cayetano.edu.pe/pregrado/', '_self')") Blog Pregrado
                     .bloque6CalendarInfo
                         img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/calendar-icon-whit.webp", alt="")
                         h3 19 de diciembre del 2024
@@ -69,14 +70,14 @@ html(lang="en")
                 .bloque7Left
                     .bloque6Flex
                         .bloque6Left
-                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/image-nota-13.webp", alt="Malla curricular de Ingeniería Industrial")
+                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/image-nota-13.webp", alt="Malla curricular de Ingeniería Industrial", title="Malla curricular de Ingeniería Industrial")
                             .bloque6LeftRedes
                                 h3 Compartir en redes:
                                 .bloque6LeftRedesContent
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-fb.webp", alt="", onclick="window.location.replace(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`)")
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-wp.webp", alt="", onclick="window.location.replace(`https://api.whatsapp.com/send?text=${encodeURIComponent(window.location.href)}`)")
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-x.webp", alt="", onclick="window.location.replace(`https://x.com/intent/post?text=${encodeURIComponent(window.location.href)}`)")
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-link.webp", alt="", onclick="window.location.replace(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`)")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-fb.webp", alt="", onclick="window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`, '_self')")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-wp.webp", alt="", onclick="window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(window.location.href)}`, '_self')")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-x.webp", alt="", onclick="window.open(`https://x.com/intent/post?text=${encodeURIComponent(window.location.href)}`, '_self')")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-link.webp", alt="", onclick="window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`, '_self')")
                             .bloque6LeftIndex
                                 h3.indexclicker Índice
                                 .bloque6LeftIndexContent
@@ -92,7 +93,7 @@ html(lang="en")
                                     h2#h-uno ¿Qué cursos se lleva en Ingeniería Industrial?
                                 p La carrera de ingeniería industrial está diseñada para brindarte un sólido conocimiento en aplicaciones técnicas, integrando ciencia, tecnología y administración. Su objetivo es formar profesionales capaces de optimizar procesos y liderar proyectos en diversos sectores.
                                 p En Cayetano, a esta formación se le suma la innovación e investigación, preparándote para diagnosticar, diseñar, implementar, gestionar y optimizar operaciones en organizaciones a nivel nacional e internacional. Además, ofrece una malla curricular con concentraciones en áreas específicas como <strong>Operaciones y Procesos, Ingeniería de Gestión y Transformación Digital.</strong>
-                                p Un aspecto destacado de la carrera es la obtención de certificaciones progresivas que te permiten ingresar al mercado laboral antes de graduarte. Las certificaciones son en Inspector de Procesos (6.º ciclo) y Analista de Operaciones (8.º ciclo). Además, en el 1.º ciclo recibirás una certificación internacional en SCRUM - Metodologías Ágiles. Descubre más sobre las asignaturas en la malla curricular de la carrera de Ingeniería Industrial.
+                                p Un aspecto destacado de la carrera es la obtención de certificaciones progresivas que te permiten ingresar al mercado laboral antes de graduarte. Las certificaciones son en Inspector de Procesos (6.º ciclo) y Analista de Operaciones (8.º ciclo). Además, en el 1.º ciclo recibirás una certificación internacional en SCRUM - Metodologías Ágiles. Descubre más sobre las asignaturas en la <span onclick="window.open('https://lp.cayetano.edu.pe/wp-content/uploads/2024/09/mc-ingenieria-industrial.pdf', '_blank')"><strong>malla curricular</strong></span> de la carrera de Ingeniería Industrial.
                                 p Nuestra carrera de ingeniería industrial, te da el balance perfecto para que estudies con flexibilidad, con cursos en modalidad presencial, semipresencial y no presencial, manteniendo la misma exigencia y excelencia académica que nos caracteriza. 
                                 p La malla curricular incluye cursos actualizados y alineados con las demandas del mercado, como:
                                 ul.margin3tab
@@ -120,7 +121,7 @@ html(lang="en")
                                 .bloque6LeftParagraphsTitle 
                                     h2#h-dos Campo laboral de la carrera de Ingeniería Industrial
                                 p La ingeniería industrial es una de las carreras más demandadas por las industrias debido a su amplio campo de acción, que abarca desde la optimización de procesos hasta la gestión de recursos y la innovación en proyectos.
-                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/nota13-image1.webp", alt="Campo laboral de ingeniería industrial")
+                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/nota13-image1.webp", alt="Campo laboral de ingeniería industrial", title="Campo laboral de ingeniería laboral")
                                 //- IMAGEN
                                 p Su versatilidad permite a los profesionales desempeñarse en diversos sectores a nivel nacional e internacional; aquí te mencionamos algunos de los campos donde nuestros egresados laboran:
                                 ul.margin3tab
@@ -134,7 +135,7 @@ html(lang="en")
                                     li Industrias de la minería
                                     li Empresas agroindustriales
                                     li Empresas de servicios
-                                p Los ingenieros industriales son requeridos en todo tipo de organizaciones, desde pequeñas empresas hasta grandes corporaciones. Si estás considerando esta carrera, descubre más sobre <span onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/de-que-trata-ingenieria-industrial/')"><strong>de qué trata la ingeniería industrial</strong></span> y da el primer paso hacia tu futuro profesional.
+                                p Los ingenieros industriales son requeridos en todo tipo de organizaciones, desde pequeñas empresas hasta grandes corporaciones. Si estás considerando esta carrera, descubre más sobre <span onclick="window.open('https://blogs.cayetano.edu.pe/pregrado/de-que-trata-ingenieria-industrial/', '_self')"><strong>de qué trata la ingeniería industrial</strong></span> y da el primer paso hacia tu futuro profesional.
                                 .bloque6LeftParagraphsTitle 
                                     h2#h-tres Áreas de la carrera de Ingeniería Industrial
                                 p Las principales áreas de la carrera de ingeniería industrial en las que podrías trabajar son:
@@ -163,31 +164,32 @@ html(lang="en")
                                     li Aplicar herramientas para diseñar y mejorar sistemas integrados que ofrezcan productos y servicios sostenibles.
                                     li Optimizar operaciones con criterios de productividad, tecnología y calidad, contribuyendo a la transformación organizacional de manera ética y responsable.
                                     li Proponer soluciones innovadoras, con un enfoque integral y estratégico para promover el cambio tecnológico.
-                                p Además, la carrera te ofrece la posibilidad de emprender, apoyado por <span onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/bioincuba/')"><strong>Bioencuba</strong></span>, nuestra incubadora de negocios, que impulsa tus iniciativas, ya sea creando nuevos procesos, productos o servicios.
+                                p Además, la carrera te ofrece la posibilidad de emprender, apoyado por <span onclick="window.open('https://blogs.cayetano.edu.pe/pregrado/bioincuba/', '_self')"><strong>Bioencuba</strong></span>, nuestra incubadora de negocios, que impulsa tus iniciativas, ya sea creando nuevos procesos, productos o servicios.
                                 p Estos conocimientos se complementan con la experiencia y el apoyo de profesionales de otras áreas. Al ser una carrera interdisciplinaria, te permitirá desarrollar habilidades para desempeñarte en diversas áreas.
                                 p Como puedes ver, la carrera de ingeniería industrial es amplia y te ofrece múltiples oportunidades para desempeñarte en diferentes sectores, lo que te permitirá adaptarte a un entorno profesional en constante cambio y evolución.
-                                p Recuerda que <span onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/cayetano-heredia-carreras')"><strong>Cayetano ofrece 20 carreras de excelencia,</strong></span> que te preparan para destacar internacionalmente a través de prácticas en escenarios reales e intercambios académicos.
+                                p Recuerda que <span onclick="window.open('https://blogs.cayetano.edu.pe/pregrado/cayetano-heredia-carreras', '_self')"><strong>Cayetano ofrece 20 carreras de excelencia,</strong></span> que te preparan para destacar internacionalmente a través de prácticas en escenarios reales e intercambios académicos.
                         .bloque6Right
                 .bloque7Right
                     .bloque2ProgramRight.bloque2ProgramRightDesktop
                         .bloque2ProgramRightContainer
                             .bloque2ProgramRightContainerCategories
                             .bloque2ProgramRightContainerNewsletter 
-                                .newsletterWhitespace
-                                .newsletterContent
-                                    .newsletterImage
-                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/tano-newletter.gif", alt="")
-                                    .newsletterInfo
-                                        h3 Conéctate con tu 
-                                            span futuro en Cayetano
-                                        p Recibe información sobre nuestros programas, consejos de orientación vocacional, beneficios y mucho más para ayudarte a decidir el camino que mejor se alinea con tus metas. 
-                                        input(type="text" placeholder="Tu correo electrónico...")
-                                        .newsletterInfoTerminos
-                                            input(type="checkbox")
-                                            h3 He leído y acepto la política de privacidad de Cayetano.
-                                        button
-                                            h3 Suscribirme
-                                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
+                                include includes/newletter/innerLetter.pug
+                                //- .newsletterWhitespace
+                                //- .newsletterContent
+                                //-     .newsletterImage
+                                //-         img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/tano-newletter.gif", alt="")
+                                //-     .newsletterInfo
+                                //-         h3 Conéctate con tu 
+                                //-             span futuro en Cayetano
+                                //-         p Recibe información sobre nuestros programas, consejos de orientación vocacional, beneficios y mucho más para ayudarte a decidir el camino que mejor se alinea con tus metas. 
+                                //-         input(type="text" placeholder="Tu correo electrónico...")
+                                //-         .newsletterInfoTerminos
+                                //-             input(type="checkbox")
+                                //-             h3 He leído y acepto la política de privacidad de Cayetano.
+                                //-         button
+                                //-             h3 Suscribirme
+                                //-             img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
         .bloque4 
             .bloque4Container
                 .bloque4Banner

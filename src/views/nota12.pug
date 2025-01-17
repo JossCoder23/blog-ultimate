@@ -18,17 +18,18 @@ html(lang="en")
         link(href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap' rel='stylesheet')
         <meta name="description" content="Descubre aquí cuánto dura la carrera de psicología, su importancia, qué tan difícil es la carrera y las ventajas de estudiarla.">
         <meta name="keywords" content="cuanto dura la carrera de psicologia, importancia de la carrera de psicologia, ventajas de estudiar psicologia como carrera profesional">
+        <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
     body
         .manuInner
             .manuInnerContainer
                 .manuInnerHeader
-                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.location.replace('https://blogs.cayetano.edu.pe/')")
+                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.open('https://blogs.cayetano.edu.pe/', '_self')")
                     h3.manuInnerClose X
                 .manuInnerInfo
                     include includes/search/searchMobile.pug
                     .manuInnerInfoContent
-                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/')").manuInnerInfoContentBottom Blog Cayetano
-                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado')").manuInnerInfoContentBottom Blog Pregrado
+                        h3(onclick="window.open('https://blogs.cayetano.edu.pe/', '_self')").manuInnerInfoContentBottom Blog Cayetano
+                        h3(onclick="window.open('https://blogs.cayetano.edu.pe/pregrado', '_self')").manuInnerInfoContentBottom Blog Pregrado
                         h3.manuInnerInfoContentBottom Blog PGE
                         h3 Blog Especialidades
             .manuInnerFooter
@@ -38,7 +39,7 @@ html(lang="en")
         .bloque1.bloque1Individual
           .bloque1Container
             .bloque1Logos
-                img.blog-logo(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.location.replace('https://blogs.cayetano.edu.pe/')")
+                img.blog-logo(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.open('https://blogs.cayetano.edu.pe/', '_self')")
                 .bloque1LogosSelect
                     h3.dropdown-btn Blog Cayetano
                     ul.dropdown-menu
@@ -54,9 +55,9 @@ html(lang="en")
             .bloque6Container
                 .bloque6Calendar
                     .bloque6CalendarProgress
-                        h5(onclick="window.location.replace('https://blogs.cayetano.edu.pe/')") Blog Cayetano
+                        h5(onclick="window.open('https://blogs.cayetano.edu.pe/', '_self')") Blog Cayetano
                         h5 |
-                        h5(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/')") Blog Pregrado
+                        h5(onclick="window.open('https://blogs.cayetano.edu.pe/pregrado/', '_self')") Blog Pregrado
                     .bloque6CalendarInfo
                         img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/calendar-icon-whit.webp", alt="")
                         h3 18 de diciembre del 2024
@@ -69,14 +70,14 @@ html(lang="en")
                 .bloque7Left
                     .bloque6Flex
                         .bloque6Left
-                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/image-nota-12.webp", alt="Duración de la carrera de psicología")
+                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/image-nota-12.webp", alt="Duración de la carrera de psicología", title="Duración de la carrera de Psicología")
                             .bloque6LeftRedes
                                 h3 Compartir en redes:
                                 .bloque6LeftRedesContent
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-fb.webp", alt="", onclick="window.location.replace(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`)")
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-wp.webp", alt="", onclick="window.location.replace(`https://api.whatsapp.com/send?text=${encodeURIComponent(window.location.href)}`)")
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-x.webp", alt="", onclick="window.location.replace(`https://x.com/intent/post?text=${encodeURIComponent(window.location.href)}`)")
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-link.webp", alt="", onclick="window.location.replace(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`)")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-fb.webp", alt="", onclick="window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`, '_self')")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-wp.webp", alt="", onclick="window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(window.location.href)}`, '_self')")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-x.webp", alt="", onclick="window.open(`https://x.com/intent/post?text=${encodeURIComponent(window.location.href)}`, '_self')")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-link.webp", alt="", onclick="window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`, '_self')")
                             .bloque6LeftIndex
                                 h3.indexclicker Índice
                                 .bloque6LeftIndexContent
@@ -115,7 +116,7 @@ html(lang="en")
                                         p Mejoran el clima laboral y la productividad mediante la optimización de procesos como selección, capacitación y resolución de conflictos, promoviendo entornos saludables y eficientes.
                                     li: h3 Sociedad:
                                         p Participan en la resolución de conflictos, promoción de la salud comunitaria, prevención de problemas sociales y fortalecimiento de redes de apoyo.
-                                p La carrera de psicología ofrece múltiples especializaciones, ampliando tus posibilidades de inserción en el campo laboral. Es por ello, que es importante <span onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/en-que-consiste-carrera-psicologia/')"><strong>descubrir en qué consiste la carrera de psicología</strong></span> para tomar una decisión informada, ya que su impacto abarca desde el individuo hasta comunidades enteras. Esto convierte a la psicología en una herramienta esencial para construir una sociedad más equilibrada y saludable.
+                                p La carrera de psicología ofrece múltiples especializaciones, ampliando tus posibilidades de inserción en el campo laboral. Es por ello, que es importante <span onclick="window.open('https://blogs.cayetano.edu.pe/pregrado/en-que-consiste-carrera-psicologia/', '_self')"><strong>descubrir en qué consiste la carrera de psicología</strong></span> para tomar una decisión informada, ya que su impacto abarca desde el individuo hasta comunidades enteras. Esto convierte a la psicología en una herramienta esencial para construir una sociedad más equilibrada y saludable.
                                 .bloque6LeftParagraphsTitle 
                                     h2#h-tres ¿Qué tan difícil es la carrera de psicología?
                                 p La dificultad de la carrera de Psicología varía según las habilidades, intereses y hábitos de estudio de cada estudiante. Durante la formación, los alumnos eligen una especialidad y realizan un trabajo de investigación desde el primer ciclo, lo que implica desarrollar concentración y dominar teorías, métodos de investigación y habilidades específicas según la especialidad elegida.
@@ -140,13 +141,13 @@ html(lang="en")
                                             p La carrera de psicología ofrece oportunidades en múltiples sectores:
                                     ul.margin2tab
                                         li: h4 Psicología clínica: 
-                                            p trabajar en clínicas privadas, hospitales y organizaciones de salud. Además, tienen la posibilidad de emprender sus propios consultorios, participar en laboratorios de investigación y contribuir al avance del conocimiento en salud mental. 
+                                            p Trabajar en clínicas privadas, hospitales y organizaciones de salud. Además, tienen la posibilidad de emprender sus propios consultorios, participar en laboratorios de investigación y contribuir al avance del conocimiento en salud mental. 
                                         li: h4 Psicología organizacional:
-                                            p contribuyen al bienestar laboral de las empresas a través de la salud ocupacional, sectores industriales como minería, y organizaciones no gubernamentales (ONG).
+                                            p Contribuyen al bienestar laboral de las empresas a través de la salud ocupacional, sectores industriales como minería, y organizaciones no gubernamentales (ONG).
                                         li: h4 Psicología educativa:
-                                            p encuentran oportunidades en instituciones educativas, incluyendo colegios, institutos y universidades. Pueden dedicarse a la investigación científica, asumir roles de consultores pedagógicos, colaborar con ONG enfocadas en la educación, y contribuir al desarrollo de programas y políticas educativas en empresas.
+                                            p Encuentran oportunidades en instituciones educativas, incluyendo colegios, institutos y universidades. Pueden dedicarse a la investigación científica, asumir roles de consultores pedagógicos, colaborar con ONG enfocadas en la educación, y contribuir al desarrollo de programas y políticas educativas en empresas.
                                         li: h4 Psicología social comunitaria: 
-                                            p los profesionales pueden trabajar en ONG, empresas mineras, ministerios, municipalidades y comunidades. Su labor se extiende a la investigación, donde contribuyen al entendimiento de las dinámicas sociales y buscan soluciones para mejorar la calidad de vida de las comunidades.
+                                            p Los profesionales pueden trabajar en ONG, empresas mineras, ministerios, municipalidades y comunidades. Su labor se extiende a la investigación, donde contribuyen al entendimiento de las dinámicas sociales y buscan soluciones para mejorar la calidad de vida de las comunidades.
                                     ul.margin1tab
                                         li: h3 Desarrollo personal:
                                             p La carrera de psicología no solo te forma profesionalmente, sino que también te ayuda a conocerte mejor. Aprenderás a manejar tus propios desafíos, fortalecer vínculos personales y optimizar tus relaciones con los demás.
@@ -155,28 +156,29 @@ html(lang="en")
                                         li: h3 Oportunidad de aprendizaje continuo:
                                             p La psicología está en constante evolución, con avances en neurociencias, psicología cognitiva y terapias emergentes. Esto te mantendrá en un proceso de actualización constante, permitiéndote ofrecer intervenciones innovadoras y basadas en evidencia.
                                 p La carrera de psicología combina ciencia y vocación, permitiéndote marcar una diferencia tanto en la vida de las personas como en la sociedad.
-                                p Elige estudiar en Cayetano, <strong>la universidad N.° 1 en Psicología y reconocida internacionalmente</strong> por su excelencia académica. Recuerda, que Cayetano cuenta con <span onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/cayetano-heredia-carreras')"><strong>20 carreras de excelencia</strong></span> y te forma con la misma exigencia y excelencia académica; por qué Cayetano es más que Cayetano.
+                                p Elige estudiar en Cayetano, <strong>la universidad N.° 1 en Psicología y reconocida internacionalmente</strong> por su excelencia académica. Recuerda, que Cayetano cuenta con <span onclick="window.open('https://blogs.cayetano.edu.pe/pregrado/cayetano-heredia-carreras', '_self')"><strong>20 carreras de excelencia</strong></span> y te forma con la misma exigencia y excelencia académica; por qué Cayetano es más que Cayetano.
                         .bloque6Right
                 .bloque7Right
                     .bloque2ProgramRight.bloque2ProgramRightDesktop
                         .bloque2ProgramRightContainer
                             .bloque2ProgramRightContainerCategories
                             .bloque2ProgramRightContainerNewsletter 
-                                .newsletterWhitespace
-                                .newsletterContent
-                                    .newsletterImage
-                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/tano-newletter.gif", alt="")
-                                    .newsletterInfo
-                                        h3 Conéctate con tu 
-                                            span futuro en Cayetano
-                                        p Recibe información sobre nuestros programas, consejos de orientación vocacional, beneficios y mucho más para ayudarte a decidir el camino que mejor se alinea con tus metas. 
-                                        input(type="text" placeholder="Tu correo electrónico...")
-                                        .newsletterInfoTerminos
-                                            input(type="checkbox")
-                                            h3 He leído y acepto la política de privacidad de Cayetano.
-                                        button
-                                            h3 Suscribirme
-                                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
+                                include includes/newletter/innerLetter.pug
+                                //- .newsletterWhitespace
+                                //- .newsletterContent
+                                //-     .newsletterImage
+                                //-         img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/tano-newletter.gif", alt="")
+                                //-     .newsletterInfo
+                                //-         h3 Conéctate con tu 
+                                //-             span futuro en Cayetano
+                                //-         p Recibe información sobre nuestros programas, consejos de orientación vocacional, beneficios y mucho más para ayudarte a decidir el camino que mejor se alinea con tus metas. 
+                                //-         input(type="text" placeholder="Tu correo electrónico...")
+                                //-         .newsletterInfoTerminos
+                                //-             input(type="checkbox")
+                                //-             h3 He leído y acepto la política de privacidad de Cayetano.
+                                //-         button
+                                //-             h3 Suscribirme
+                                //-             img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
         .bloque4 
             .bloque4Container
                 .bloque4Banner

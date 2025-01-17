@@ -18,17 +18,18 @@ html(lang="en")
         link(href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap' rel='stylesheet')
         <meta name="description" content="Las sedes de Cayetano Heredia están diseñadas para desarrollar tu potencial al máximo en un entorno que combina aprendizaje, convivencia y bienestar.">
         <meta name="keywords" content="cayetano heredia sedes, cayetano heredia campus, universidad peruana cayetano heredia campus central, universidad peruana cayetano heredia campus miraflores, universidad peruana cayetano heredia campus la molina, campus cayetano heredia, campus central cayetano heredia, campus de la cayetano heredia, cayetano heredia campus la molina, campus de la universidad cayetano heredia, cayetano heredia sede la molina, cayetano heredia sede miraflores, sedes de la cayetano heredia, sedes cayetano heredia, sedes de cayetano heredia​">
+        <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
     body
         .manuInner
             .manuInnerContainer
                 .manuInnerHeader
-                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.location.replace('https://blogs.cayetano.edu.pe/')")
+                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.open('https://blogs.cayetano.edu.pe/', '_self')")
                     h3.manuInnerClose X
                 .manuInnerInfo
                     include includes/search/searchMobile.pug
                     .manuInnerInfoContent
-                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/')").manuInnerInfoContentBottom Blog Cayetano
-                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado')").manuInnerInfoContentBottom Blog Pregrado
+                        h3(onclick="window.open('https://blogs.cayetano.edu.pe/', '_self')").manuInnerInfoContentBottom Blog Cayetano
+                        h3(onclick="window.open('https://blogs.cayetano.edu.pe/pregrado', '_self')").manuInnerInfoContentBottom Blog Pregrado
                         h3.manuInnerInfoContentBottom Blog PGE
                         h3 Blog Especialidades
             .manuInnerFooter
@@ -38,7 +39,7 @@ html(lang="en")
         .bloque1.bloque1Individual
           .bloque1Container
             .bloque1Logos
-                img.blog-logo(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.location.replace('https://blogs.cayetano.edu.pe/')")
+                img.blog-logo(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.open('https://blogs.cayetano.edu.pe/', '_self')")
                 .bloque1LogosSelect
                     h3.dropdown-btn Blog Cayetano
                     ul.dropdown-menu
@@ -54,9 +55,9 @@ html(lang="en")
             .bloque6Container
                 .bloque6Calendar
                     .bloque6CalendarProgress
-                        h5(onclick="window.location.replace('https://blogs.cayetano.edu.pe/')") Blog Cayetano
+                        h5(onclick="window.open('https://blogs.cayetano.edu.pe/', '_self')") Blog Cayetano
                         h5 |
-                        h5(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/')") Blog Pregrado
+                        h5(onclick="window.open('https://blogs.cayetano.edu.pe/pregrado/', '_self')") Blog Pregrado
                     .bloque6CalendarInfo
                         img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/calendar-icon-whit.webp", alt="")
                         h3 18 de diciembre del 2024
@@ -73,10 +74,10 @@ html(lang="en")
                             .bloque6LeftRedes
                                 h3 Compartir en redes:
                                 .bloque6LeftRedesContent
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-fb.webp", alt="", onclick="window.location.replace(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`)")
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-wp.webp", alt="", onclick="window.location.replace(`https://api.whatsapp.com/send?text=${encodeURIComponent(window.location.href)}`)")
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-x.webp", alt="", onclick="window.location.replace(`https://x.com/intent/post?text=${encodeURIComponent(window.location.href)}`)")
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-link.webp", alt="", onclick="window.location.replace(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`)")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-fb.webp", alt="", onclick="window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`, '_self')")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-wp.webp", alt="", onclick="window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(window.location.href)}`, '_self')")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-x.webp", alt="", onclick="window.open(`https://x.com/intent/post?text=${encodeURIComponent(window.location.href)}`, '_self')")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-link.webp", alt="", onclick="window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`, '_self')")
                             .bloque6LeftIndex
                                 h3.indexclicker Índice
                                 .bloque6LeftIndexContent
@@ -87,77 +88,77 @@ html(lang="en")
                                         li: a(href="#h-cuatro"): h2 Campus Santa María
                                         li: a(href="#h-cinco"): h2 Sede San Isidro
                             .bloque6LeftParagraphs
-                                p ¿Quieres conocer más sobre nuestras instalaciones académicas? Lo primero que debes saber es que las sedes de Cayetano Heredia se encuentran en la ciudad de Lima, en los distritos de San Martín de Porres, La Molina, San Isidro y San María del Mar.
+                                p ¿Quieres conocer más sobre nuestras instalaciones académicas? Lo primero que debes saber es que las sedes de Cayetano Heredia se encuentran en la ciudad de Lima, en los distritos de <strong>San Martín de Porres, La Molina, San Isidro y Santa María del Mar</strong>.
                                 p Segundo, contamos con dos campus y tres sedes, los cuales incluyen áreas verdes, laboratorios, bibliotecas, auditorios y otros espacios dedicados a actividades académicas, sociales, culturales y recreativas. 
                                 p Además, las sedes de Cayetano Heredia están diseñadas para proporcionar un entorno integral que facilite el aprendizaje, la investigación, el desarrollo personal y la interacción social de estudiantes, profesores y personal administrativo. 
                                 p ¡Descubre todo sobre el lugar donde comenzarás tu etapa universitaria!
                                 .bloque6LeftParagraphsTitle 
                                     h2#h-uno Campus Central
                                 p El principal campus de Cayetano Heredia es el Campus Central y está ubicado en el distrito de San Martín de Porres. Aquí llevarás tus clases a partir del segundo año de tu carrera de pregrado, a excepción de la carrera de Psicología.
-                                p ¿Qué espacios encontrarás en nuestro Campus Central?
+                                h3 ¿Qué espacios encontrarás en nuestro Campus Central?
                                 .other
-                                    ul.margin1tab
-                                        li: h3 Laboratorios: 
+                                    ul.margin3tab
+                                        li: h4 Laboratorios: 
                                             p Contamos con más de 100 Laboratorios de Investigación y Desarrollo (LID) diseñados para potenciar el aprendizaje de nuestros estudiantes y llevar adelante proyectos innovadores de la universidad.
-                                        li: h3 Centros Docentes: 
+                                .other
+                                    ul.margin3tab
+                                        li: h4 Centros Docentes: 
                                             p Disponemos de tres Centros Docentes donde podrás hacer tus prácticas en las carreras de Estomatología, Veterinaria y Zootecnia y Tecnologías Médicas.
-                                    ul.margin5tab
+                                    ul.margin4tab
                                         li  Centro Dental Docente
                                         li  Centro Veterinaria Docente, ubicada en local adyacente del Campus Central
                                         li  Centro de Rehabilitación Docente
                                 ul.margin1tab
-                                    li: h3 Biblioteca: 
+                                    li: h4 Biblioteca: 
                                         p Tendrás acceso a una de las más completas bibliotecas de Ciencias de la Salud de Latinoamérica.
-                                    li: h3 Áreas deportivas y culturales:
+                                    li: h4 Áreas deportivas y culturales:
                                         p Si te gusta practicar deporte, las losas deportivas de vóley y fútbol serán tus espacios favoritos. Además, contamos con una zona de uso múltiple para actividades deportivas y artísticas, con capacidad para 600 personas.
-                                    li: h3 Estacionamiento: 
+                                    li: h4 Estacionamiento: 
                                         p Contamos con espacio para 450 autos.
-                                    li: h3 Gimnasio: 
+                                    li: h4 Gimnasio: 
                                         p Si quieres desarrollar habilidades deportivas y tener un estilo de vida saludable, el gimnasio es un espacio al que podrás acceder de manera gratuita.
-                                    li: h3 Áreas verdes y de esparcimiento:
+                                    li: h4 Áreas verdes y de esparcimiento:
                                         p Podrás darte una caminata con tus amigos por el parque central, acercarte a la librería o visitar las cafeterías en tus tiempos libres.
-                                    li: h3 Tópico de emergencia: 
+                                    li: h4 Tópico de emergencia: 
                                         p Su función principal es actuar como el primer punto de respuesta ante emergencias médicas dentro del campus.
-                                    li: h3 Servicios diversos: 
+                                    li: h4 Servicios diversos: 
                                         p También encontrarás máquinas expendedoras, centros de copiado, entre otros.
-                                    li: h3 Dirección:
+                                    li: h4 Dirección:
                                         p Av. Honorio Delgado 430, San Martín de Porres.
                                 .bloque6LeftParagraphsTitle 
                                     h2#h-dos Campus La Molina
                                 p El Campus La Molina de Cayetano Heredia, inaugurado en 2008, es el lugar donde se dictan las clases del primer año de todas las carreras de pregrado. Además, es el campus exclusivo para el desarrollo completo de la carrera de Psicología.
-                                    br
-                                    br
-                                    | ¿Qué espacios encontrarás en nuestro Campus La Molina?
+                                h3 ¿Qué espacios encontrarás en nuestro Campus La Molina?
                                 ul.margin1tab
-                                    li: h3 Laboratorios: 
+                                    li: h4 Laboratorios: 
                                         p En este campus encontrarás los laboratorios de Investigación y de Desarrollo de la Facultad de Psicología.
-                                    li: h3 Biblioteca:
+                                    li: h4 Biblioteca:
                                         p Podrás acceder a más de 4,500 volúmenes en  tu primer año de carrera. Además, contamos con una colección completa de Psicología
-                                    li: h3 Áreas deportivas y culturales:
+                                    li: h4 Áreas deportivas y culturales:
                                         p Contamos con una loza deportiva, jardines y salones para actividades culturales
-                                    li: h3 Servicios diversos: 
+                                    li: h4 Servicios diversos: 
                                         p Aquí también encontrarás una cafetería, máquinas expendedoras, centro de copiado, tópico de emergencia, estacionamiento, entre otros servicios
-                                    li: h3 Dirección: 
+                                    li: h4 Dirección: 
                                         p Calle José Antonio Encinas  310, La Molina.
                                 .bloque6LeftParagraphsTitle 
                                     h2#h-tres Sede Miraflores
                                 p En la sede de Miraflores, no solo se dictan clases de posgrado, sino que también funciona la Pre Cayetano, el lugar ideal para prepararte y asegurar tu ingreso a Cayetano. Aquí es donde podrás dar el primer paso hacia tu futuro con una formación sólida antes del proceso de admisión.
                                 ul.margin1tab
-                                    li: h3 Dirección: 
+                                    li: h4 Dirección: 
                                         p Av. Armendáriz 497, Miraflores.
                                 .bloque6LeftParagraphsTitle 
                                     h2#h-cuatro Sede Santa María
                                 p La sede Santa María es el corazón del Complejo Científico Ecológico y Académico (CCEA) de la universidad, un espacio diseñado para impulsar el aprendizaje práctico. Aquí, nuestros estudiantes de ciencias e ingenierías encuentran el lugar perfecto para realizar talleres, prácticas y laboratorios que los preparan para liderar en sus campos.
                                 ul.margin1tab
-                                    li: h3 Dirección: 
+                                    li: h4 Dirección: 
                                         p Panamericana Sur, Km 2.5,  Santa María del Mar.
                                 .bloque6LeftParagraphsTitle 
                                     h2#h-cinco Sede San Isidro
                                 p Se trata de una nueva sede del Centro Dental Docente de la Universidad Peruana Cayetano Heredia, la cual ofrece atención odontológica general y especializada de alta calidad. Además, en esta sede de Cayetano Heredia los estudiantes realizan prácticas bajo la supervisión de sus docentes, profesionales de gran trayectoria y prestigio en estomatología.
                                 ul.margin1tab
-                                    li: h3 Dirección: 
+                                    li: h4 Dirección: 
                                         p Av. Salaverry 2475, San Isidro.
-                                p En resumen, las sedes de Cayetano Heredia buscan ser mucho más que un lugar para asistir a clases; es un ecosistema donde puedas desarrollar tu potencial al máximo en un entorno que combina aprendizaje, convivencia y bienestar.
+                                p En resumen, las sedes de Cayetano Heredia buscan ser mucho más que un lugar para asistir a clases; <strong>es un ecosistema donde puedas desarrollar tu potencial al máximo en un entorno que combina aprendizaje, convivencia y bienestar</strong>.
                                 p ¿Quieres tener una experiencia universitaria completa que combine la formación académica con el crecimiento personal y profesional? Elige la excelencia, elige Cayetano.
                         .bloque6Right
                 .bloque7Right
@@ -165,21 +166,22 @@ html(lang="en")
                         .bloque2ProgramRightContainer
                             .bloque2ProgramRightContainerCategories
                             .bloque2ProgramRightContainerNewsletter 
-                                .newsletterWhitespace
-                                .newsletterContent
-                                    .newsletterImage
-                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/tano-newletter.gif", alt="")
-                                    .newsletterInfo
-                                        h3 Conéctate con tu 
-                                            span futuro en Cayetano
-                                        p Recibe información sobre nuestros programas, consejos de orientación vocacional, beneficios y mucho más para ayudarte a decidir el camino que mejor se alinea con tus metas. 
-                                        input(type="text" placeholder="Tu correo electrónico...")
-                                        .newsletterInfoTerminos
-                                            input(type="checkbox")
-                                            h3 He leído y acepto la política de privacidad de Cayetano.
-                                        button
-                                            h3 Suscribirme
-                                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
+                                include includes/newletter/innerLetter.pug
+                                //- .newsletterWhitespace
+                                //- .newsletterContent
+                                //-     .newsletterImage
+                                //-         img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/tano-newletter.gif", alt="")
+                                //-     .newsletterInfo
+                                //-         h3 Conéctate con tu 
+                                //-             span futuro en Cayetano
+                                //-         p Recibe información sobre nuestros programas, consejos de orientación vocacional, beneficios y mucho más para ayudarte a decidir el camino que mejor se alinea con tus metas. 
+                                //-         input(type="text" placeholder="Tu correo electrónico...")
+                                //-         .newsletterInfoTerminos
+                                //-             input(type="checkbox")
+                                //-             h3 He leído y acepto la política de privacidad de Cayetano.
+                                //-         button
+                                //-             h3 Suscribirme
+                                //-             img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
         .bloque4 
             .bloque4Container
                 .bloque4Banner
@@ -203,7 +205,5 @@ html(lang="en")
               h3 Av. Honorio Delgado 430
               h3 Urb. Ingeniería, San Martín de Porres 
         script(src="../../js/script.js" defer)
-        //- script(src="../../js/script-ind.js" defer)
         //- script(src="./js/script.js" defer)
-        //- script(src="./js/script-ind.js" defer)
         script(src="https://unpkg.com/swiper/swiper-bundle.min.js")

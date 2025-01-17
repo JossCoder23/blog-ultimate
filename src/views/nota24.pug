@@ -18,17 +18,18 @@ html(lang="en")
         <meta name="description" content="¿Sabe qué es Bioincuba? Descubre cómo trabaja una incubadora de negocios en la universidad y las 10 ideas de negocio innovadoras." />
         <meta name="keywords" content="bioincuba, bioincuba peru, incubadora de negocios, que es y como trabaja una incubadora de negocios, a quienes va dirigido, para que sirve una incubadora de negocios en la universidad, empresas aliadas​, 10 ideas de negocio innovadoras" />
         link(rel="icon" type="image/x-icon" href="../../favicon.png")
+        <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
     body
         .manuInner
             .manuInnerContainer
                 .manuInnerHeader
-                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.location.replace('https://blogs.cayetano.edu.pe/')")
+                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.open('https://blogs.cayetano.edu.pe/', '_self')")
                     h3.manuInnerClose X
                 .manuInnerInfo
                     include includes/search/searchMobile.pug
                     .manuInnerInfoContent
-                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/')").manuInnerInfoContentBottom Blog Cayetano
-                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado')").manuInnerInfoContentBottom Blog Pregrado
+                        h3(onclick="window.open('https://blogs.cayetano.edu.pe/', '_self')").manuInnerInfoContentBottom Blog Cayetano
+                        h3(onclick="window.open('https://blogs.cayetano.edu.pe/pregrado', '_self')").manuInnerInfoContentBottom Blog Pregrado
                         h3.manuInnerInfoContentBottom Blog PGE
                         h3 Blog Especialidades
             .manuInnerFooter
@@ -38,7 +39,7 @@ html(lang="en")
         .bloque1.bloque1Individual
           .bloque1Container
             .bloque1Logos
-                img.blog-logo(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.location.replace('https://blogs.cayetano.edu.pe/')")
+                img.blog-logo(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.open('https://blogs.cayetano.edu.pe/', '_self')")
                 .bloque1LogosSelect
                     h3.dropdown-btn Blog Cayetano
                     ul.dropdown-menu
@@ -54,9 +55,9 @@ html(lang="en")
             .bloque6Container
                 .bloque6Calendar
                     .bloque6CalendarProgress
-                        h5(onclick="window.location.replace('https://blogs.cayetano.edu.pe/')") Blog Cayetano
+                        h5(onclick="window.open('https://blogs.cayetano.edu.pe/', '_self')") Blog Cayetano
                         h5 |
-                        h5(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/')") Blog Pregrado
+                        h5(onclick="window.open('https://blogs.cayetano.edu.pe/pregrado/', '_self')") Blog Pregrado
                     .bloque6CalendarInfo
                         img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/calendar-icon-whit.webp", alt="")
                         h3 20 de diciembre del 2024
@@ -69,14 +70,14 @@ html(lang="en")
                 .bloque7Left
                     .bloque6Flex
                         .bloque6Left
-                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/image-nota-24.webp", alt="")
+                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/image-nota-24.webp", alt="Bioincuba - incubadora de negocios", title="Bioincuba Cayetano")
                             .bloque6LeftRedes
                                 h3 Compartir en redes:
                                 .bloque6LeftRedesContent
-                                    img(id="boton-compartir" src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-fb.webp", alt="")
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-in.webp", alt="")
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-wp.webp", alt="")
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-x.webp", alt="")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-fb.webp", alt="", onclick="window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`, '_self')")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-wp.webp", alt="", onclick="window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(window.location.href)}`, '_self')")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-x.webp", alt="", onclick="window.open(`https://x.com/intent/post?text=${encodeURIComponent(window.location.href)}`, '_self')")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-link.webp", alt="", onclick="window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`, '_self')")
                             .bloque6LeftIndex
                                 h3.indexclicker Índice
                                 .bloque6LeftIndexContent
@@ -89,7 +90,7 @@ html(lang="en")
                                         li: a(href="#h-seis"): h2 10 ideas de negocio innovadoras en Bioincuba
                             .bloque6LeftParagraphs
                                 p Todo emprendimiento empieza con una buena idea, pero para convertirla en un negocio se necesita inversión, apoyo y personas que crean en tu proyecto. Una incubadora de negocios en una universidad es el espacio donde te guían, te enseñan y te dan recursos para hacer realidad tu idea. 
-                                p Emprender es un reto, pero en Cayetano tenemos lo necesario para impulsar estos proyectos a través de nuestra incubadora, <span><strong>Bioincuba</strong></span>. Nuestros estudiantes, antes de llevar su proyecto a la etapa de inversión, pasan por etapas importantes, como la asesoría personalizada y pruebas para validar su producto. Estas primeras etapas son clave para transformar las ideas en proyectos sólidos. Bajo ese contexto, las incubadoras de negocios se convierten en un aliado valioso para los estudiantes, docentes e investigadores.
+                                p Emprender es un reto, pero en Cayetano tenemos lo necesario para impulsar estos proyectos a través de nuestra incubadora, <strong>Bioincuba</strong>. Nuestros estudiantes, antes de llevar su proyecto a la etapa de inversión, pasan por etapas importantes, como la asesoría personalizada y pruebas para validar su producto. Estas primeras etapas son clave para transformar las ideas en proyectos sólidos. Bajo ese contexto, las incubadoras de negocios se convierten en un aliado valioso para los estudiantes, docentes e investigadores.
                                 .bloque6LeftParagraphsTitle 
                                     h2#h-uno ¿Qué es y cómo trabaja una incubadora de negocios?
                                 p Una incubadora de negocios es una organización que ayuda a los emprendedores a desarrollar sus ideas y convertirlas en negocios. Ofrecen apoyo, recursos y asesoría en las primeras etapas, a través de programas, talleres y eventos que fomentan el espíritu emprendedor.
@@ -124,7 +125,7 @@ html(lang="en")
                                     li Medio Ambiente
                                     li Alimentos
                                 p Hoy en día, nuestra incubadora de negocios tiene varias startups, y los datos lo demuestran:
-                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/nota24-image2-scaled.webp", alt="")
+                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/nota24-image2-scaled.webp", alt="Startups participantes Bioincuba", title="Bioincuba Perú")
                                 .bloque6LeftParagraphsTitle 
                                     h2#h-tres ¿A quiénes va dirigido?
                                 p Bioincuba está dirigido a estudiantes, egresados, docentes e investigadores de Cayetano, así como a emprendedores e innovadores que quieran desarrollar proyectos en áreas como la ciencia, la tecnología, la biotecnología y la sostenibilidad. También está abierto a cualquier persona o grupo que busque apoyo para crear empresas tecnológicas basadas en investigaciones y que desee hacer crecer su idea de negocio.
@@ -138,7 +139,7 @@ html(lang="en")
                                         li: h3 Preincubación:
                                             p Convierte tu idea de negocio en realidad con asesorías 100% personalizadas con nuestros expertos de negocios e innovación.
                                         p Actividades:
-                                    ul.margin7tab
+                                    ul.margin6tab
                                         li Validación de ideas
                                         li Identificación de clientes
                                         li Diseño del modelo de negocio
@@ -149,7 +150,7 @@ html(lang="en")
                                         li: h3 Incubación:
                                             p En esta etapa te preparamos en el lanzamiento comercial de tu producto o servicio.
                                         p Actividades:
-                                    ul.margin7tab
+                                    ul.margin6tab
                                         li Validación técnica y comercial
                                         li Mentorías y capacitaciones
                                         li Registro legal de la empresa
@@ -160,7 +161,7 @@ html(lang="en")
                                         li: h3 Pre-aceleración: 
                                             p El objetivo de esta etapa es conectar tu negocio con oportunidades de inversión y expansión internacional.
                                         p Actividades:
-                                    ul.margin7tab
+                                    ul.margin6tab
                                         li Consultorías y reportes financieros
                                         li Contacto con inversionistas
                                         li Técnicas de negociación
@@ -204,7 +205,7 @@ html(lang="en")
                                     li: h3 Le Qara:
                                         p Fusión de biotecnología y moda para crear productos biodegradables, con cuero hecho por cepas de bacterias modificadas.
                                 p Estos son algunos de los proyectos que destacan por su enfoque en sostenibilidad, economía circular y tecnología innovadora que responde a problemas globales y locales.
-                                p ¡Haz realidad tus ideas! Descubre más de <span onclick="window.open('https://bioincuba.cayetano.pe/', '_blank')"><strong>Bioincuba</strong></span> y potencia tus proyectos en nuestras más de <span onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/cayetano-heredia-carreras')"><strong>20 carreras de excelencia</strong></span>. Recuerda, Cayetano es más que Cayetano.
+                                p ¡Haz realidad tus ideas! Descubre más de <span onclick="window.open('https://bioincuba.cayetano.pe/', '_self')"><strong>Bioincuba</strong></span> y potencia tus proyectos en nuestras más de <span onclick="window.open('https://blogs.cayetano.edu.pe/pregrado/cayetano-heredia-carreras', '_self')"><strong>20 carreras de excelencia</strong></span>. Recuerda, Cayetano es más que Cayetano.
                             //- .bloque6LeftLabels 
                             //-     h3 Ciencias
                             //-     h3 Ciencias
@@ -218,20 +219,21 @@ html(lang="en")
                             .bloque2ProgramRightContainerCategories
                             .bloque2ProgramRightContainerNewsletter 
                                 //- .newsletterWhitespace
-                                .newsletterContent
-                                    .newsletterImage
-                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/tano-newletter.gif", alt="")
-                                    .newsletterInfo
-                                        h3 Conéctate con tu 
-                                            span futuro en Cayetano
-                                        p Recibe información sobre nuestros programas, consejos de orientación vocacional, beneficios y mucho más para ayudarte a decidir el camino que mejor se alinea con tus metas. 
-                                        input(type="text" placeholder="Tu correo electrónico...")
-                                        .newsletterInfoTerminos
-                                            input(type="checkbox")
-                                            h3 He leído y acepto la política de privacidad de Cayetano.
-                                        button
-                                            h3 Suscribirme
-                                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
+                                include includes/newletter/innerLetter.pug
+                                //- .newsletterContent
+                                //-     .newsletterImage
+                                //-         img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/tano-newletter.gif", alt="")
+                                //-     .newsletterInfo
+                                //-         h3 Conéctate con tu 
+                                //-             span futuro en Cayetano
+                                //-         p Recibe información sobre nuestros programas, consejos de orientación vocacional, beneficios y mucho más para ayudarte a decidir el camino que mejor se alinea con tus metas. 
+                                //-         input(type="text" placeholder="Tu correo electrónico...")
+                                //-         .newsletterInfoTerminos
+                                //-             input(type="checkbox")
+                                //-             h3 He leído y acepto la política de privacidad de Cayetano.
+                                //-         button
+                                //-             h3 Suscribirme
+                                //-             img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
         .bloque4 
             .bloque4Container
                 .bloque4Banner

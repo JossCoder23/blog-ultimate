@@ -18,17 +18,18 @@ html(lang="en")
         link(href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap' rel='stylesheet')
         <meta name="description" content="¿No sabes qué estudiar? Conoce las 20 carreras de Cayetano Heredia que incluyen las áreas de gestión, ingeniería, educación, ciencias y salud.">
         <meta name="keywords" content="cayetano heredia carreras, que estudiar, cayetano heredia, universidad cayetano heredia, carreras de ingenieria, carreras de salud, carreras de ciencias">
+        <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
     body
         .manuInner
             .manuInnerContainer
                 .manuInnerHeader
-                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.location.replace('https://blogs.cayetano.edu.pe/')")
+                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.open('https://blogs.cayetano.edu.pe/', '_self')")
                     h3.manuInnerClose X
                 .manuInnerInfo
                     include includes/search/searchMobile.pug
                     .manuInnerInfoContent
-                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/')").manuInnerInfoContentBottom Blog Cayetano
-                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado')").manuInnerInfoContentBottom Blog Pregrado
+                        h3(onclick="window.open('https://blogs.cayetano.edu.pe/', '_self')").manuInnerInfoContentBottom Blog Cayetano
+                        h3(onclick="window.open('https://blogs.cayetano.edu.pe/pregrado', '_self')").manuInnerInfoContentBottom Blog Pregrado
                         h3.manuInnerInfoContentBottom Blog PGE
                         h3 Blog Especialidades
             .manuInnerFooter
@@ -38,7 +39,7 @@ html(lang="en")
         .bloque1.bloque1Individual
           .bloque1Container
             .bloque1Logos
-                img.blog-logo(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.location.replace('https://blogs.cayetano.edu.pe/')")
+                img.blog-logo(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.open('https://blogs.cayetano.edu.pe/')")
                 .bloque1LogosSelect
                     h3.dropdown-btn Blog Cayetano
                     ul.dropdown-menu
@@ -54,9 +55,9 @@ html(lang="en")
             .bloque6Container
                 .bloque6Calendar
                     .bloque6CalendarProgress
-                        h5(onclick="window.location.replace('https://blogs.cayetano.edu.pe/')") Blog Cayetano
+                        h5(onclick="window.open('https://blogs.cayetano.edu.pe/', '_self')") Blog Cayetano
                         h5 |
-                        h5(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/')") Blog Pregrado
+                        h5(onclick="window.open('https://blogs.cayetano.edu.pe/pregrado/', '_self')") Blog Pregrado
                     .bloque6CalendarInfo
                         img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/calendar-icon-whit.webp", alt="")
                         h3 17 de diciembre del 2024
@@ -73,220 +74,169 @@ html(lang="en")
                             .bloque6LeftRedes
                                 h3 Compartir en redes:
                                 .bloque6LeftRedesContent
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-fb.webp", alt="", onclick="window.location.replace(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`)")
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-wp.webp", alt="", onclick="window.location.replace(`https://api.whatsapp.com/send?text=${encodeURIComponent(window.location.href)}`)")
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-x.webp", alt="", onclick="window.location.replace(`https://x.com/intent/post?text=${encodeURIComponent(window.location.href)}`)")
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-link.webp", alt="", onclick="window.location.replace(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`)")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-fb.webp", alt="", onclick="window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`, '_self')")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-wp.webp", alt="", onclick="window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(window.location.href)}`, '_self')")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-x.webp", alt="", onclick="window.open(`https://x.com/intent/post?text=${encodeURIComponent(window.location.href)}`, '_self')")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-link.webp", alt="", onclick="window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`, '_self')")
                             .bloque6LeftIndex
                                 h3.indexclicker Índice
                                 .bloque6LeftIndexContent
                                     ol 
-                                       
-                                        li: a(href="#h-dos"): h2 Carreras de gestión
-                                        li: a(href="#h-tres"): h2 Carreras de ingeniería
-                                        li: a(href="#h-cuatro"): h2 Carreras de salud
-                                        li: a(href="#h-cinco"): h2 Carreras de educación
-                                        li: a(href="#h-seis"): h2 Carreras de ciencias
+                                        li: a(href="#h-uno"): h2 Carreras de gestión
+                                        li: a(href="#h-dos"): h2 Carreras de ingeniería
+                                        li: a(href="#h-tres"): h2 Carreras de salud
+                                        li: a(href="#h-cuatro"): h2 Carreras de educación
+                                        li: a(href="#h-cinco"): h2 Carreras de ciencias
                             .bloque6LeftParagraphs
-                                p ¿Crees que la Universidad Cayetano Heredia solo ofrece carreras orientadas a la salud? Estás en el lugar correcto, porque en realidad, las carreras de Cayetano Heredia abarcan diversas áreas, como gestión, ingeniería, educación, ciencias y, por supuesto, salud.
+                                p ¿Crees que la Universidad Cayetano Heredia solo ofrece carreras orientadas a la salud? Estás en el lugar correcto, porque en realidad, <strong>las carreras de Cayetano Heredia abarcan diversas áreas</strong>, como gestión, ingeniería, educación, ciencias y, por supuesto, salud.
                                 p Esto quiere decir que no solo formamos a médicos excelentes, sino también a profesionales líderes en administración, ingeniería ambiental, biología, psicología, etc.
-                                p Ahora que sabes que las carreras de Cayetano Heredia comprenden más áreas de conocimiento, descubre las 20 carreras de excelencia que la universidad N.º 1 del Perú tiene para ti. Porque Cayetano es más que Cayetano.
+                                p Ahora que sabes que las carreras de Cayetano Heredia comprenden más áreas de conocimiento, <strong>descubre las 20 carreras de excelencia que la universidad N.º 1 del Perú tiene para ti</strong>. Porque Cayetano es más que Cayetano.
                                 .bloque6LeftParagraphsTitle 
-                                    h2  Carreras de gestión
+                                    h2#h-uno Carreras de gestión
                                 p Actualmente, contamos con dos carreras en el área de gestión: administración y administración en salud.
-                                p 
-                                    strong Administración: 
-                                    |
-                                    br 
-                                    | Una de las carreras de Cayetano Heredia que te permitirá trabajar en cualquier sector productivo o de servicios es la carrera de Administración. Este programa te abrirá puertas en empresas, organizaciones o emprendimientos, a nivel local y global. 
-                                p En Cayetano, adquirirás competencias esenciales para enfrentar las tendencias en los negocios, impulsar la innovación y dominar la gestión de tecnologías, creando valor y resolviendo desafíos estratégicos. Contarás con una formación de excelencia, guiada por docentes de alto nivel que integran experiencia gerencial y liderazgo en investigación de vanguardia. 
-                                .bloque4Banner.bloque4BannerProgram
-                                    .bloque4BannerProgramButton
-                                        .bloque4BannerProgramButtonContent
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/banner-beca-18-pequeno.gif", alt="")
-                                p 
-                                    strong Administración en Salud: 
-                                    |
-                                    br 
-                                    | Garantizar un acceso de calidad a la salud es uno de los grandes retos de nuestro país. Por eso, en Cayetano, hemos creado la carrera de Administración en Salud, un programa diseñado para formar profesionales capaces de liderar cambios organizacionales que impacten positivamente en la población.  
+                                .other
+                                    h3 Administración
+                                    p Una de las carreras de Cayetano Heredia que te permitirá trabajar en cualquier sector productivo o de servicios es la carrera de Administración. <strong>Este programa te abrirá puertas en empresas, organizaciones o emprendimientos, a nivel local y global</strong>. 
+                                    p En Cayetano, adquirirás competencias esenciales para enfrentar las tendencias en los negocios, impulsar la innovación y dominar la gestión de tecnologías, creando valor y resolviendo desafíos estratégicos. Contarás con una formación de excelencia, guiada por docentes de alto nivel que integran experiencia gerencial y liderazgo en investigación de vanguardia. 
+                                //- .bloque4Banner.bloque4BannerProgram
+                                //-     .bloque4BannerProgramButton
+                                //-         .bloque4BannerProgramButtonContent
+                                //-     img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/banner-beca-18-pequeno.gif", alt="")
+                                .other 
+                                    h3 Administración en Salud
+                                    p Garantizar un acceso de calidad a la salud es uno de los grandes retos de nuestro país. Por eso, en Cayetano, hemos creado la carrera de Administración en Salud, un programa diseñado para formar profesionales capaces de liderar cambios organizacionales que impacten positivamente en la población.  
+                                    p Como administrador en salud, <strong>estarás preparado para planificar, organizar, dirigir y evaluar estratégicamente instituciones de salud públicas y privadas</strong>, como clínicas, hospitales, laboratorios, farmacias y aseguradoras.
+                                    p Tendrás la oportunidad de trabajar en áreas clave como marketing, finanzas, recursos humanos, diseño y mejora de procesos, gestión de calidad y ejecución de proyectos. 
+                                    p Además, somos la <strong>única universidad en el Perú que cuenta con la carrera de Administración en Salud</strong>.
                                 .bloque6LeftParagraphsTitle 
-                                    h2 Carreras de ingeniería
+                                    h2#h-dos Carreras de ingeniería
                                 p ¿Sabías que en Cayetano Heredia también puedes estudiar ingeniería? Contamos con 4 carreras en esta área: ingeniería industrial, ingeniería ambiental, ingeniería informática e ingeniería biomédica.
-                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/invidivual-slides-images-scaled.webp", alt="")
-                                p 
-                                    strong Ingeniería Industrial: 
-                                    |
-                                    br 
-                                    | ¿Te gustaría ser un agente de cambio en las organizaciones? La carrera de Ingeniería Industrial de Cayetano te prepara en ciencias, gestión tecnológica e investigación para diagnosticar, diseñar, implementar y optimizar procesos y operaciones empresariales. 
-                                p Además, según la Encuesta de Demanda Ocupacional (EDO) 2024 del Ministerio de Trabajo, Ingeniería Industrial es la tercera carrera más demandada en el mercado laboral.
-                                p 
-                                    strong Ingeniería Ambiental: 
-                                    |
-                                    br 
-                                    | ¿Te imaginas siendo parte de quienes transforman el mundo para hacerlo más sostenible? La carrera de Ingeniería Ambiental de Cayetano combina ciencia, tecnología e innovación para formar profesionales con una sólida base científica y un compromiso ético con el medioambiente. 
-                                p Aprenderás a resolver los grandes desafíos ambientales de hoy, diseñando soluciones responsables que impulsen un futuro sostenible.
-                                p 
-                                    strong Ingeniería Informática: 
-                                    |
-                                    br 
-                                    | Las carreras de Cayetano Heredia también incluyen Ingeniería Informática, ideal para quienes desean generar valor a partir de los datos e inteligencia artificial y liderar la transformación digital en el país. 
-                                p Como profesional en esta área, tendrás la oportunidad de impactar diversos sectores como banca, retail, telecomunicaciones, salud, investigación informática, biomédica y mucho más. ¡Prepárate para ser parte del cambio tecnológico que está revolucionando el mundo!
-                                p 
-                                    strong Ingeniería Biomédica: 
-                                    |
-                                    br 
-                                    | La carrera de Ingeniería Biomédica, un programa conjunto de la Universidad Peruana Cayetano Heredia y la Pontificia Universidad Católica del Perú, te permite combinar tu pasión por la ingeniería con la innovación en medicina. Con un enfoque en la salud, la interdisciplinariedad y la excelencia educativa, recibirás una formación integral que une ciencia, tecnología y un compromiso directo con el bienestar de las personas. 
-                                p Además, accederás a una sólida red de colaboración con expertos de la industria y profesionales de la salud, junto con experiencias de investigación y prácticas en instituciones médicas líderes del país. ¿Quieres ser parte del futuro de la tecnología médica? Esta carrera puede ser para ti.
-                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/invidivual-video-movile.webp", alt="")
+                                //- img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/invidivual-slides-images-scaled.webp", alt="")
+                                .other
+                                    h3 Ingeniería Industrial
+                                    p ¿Te gustaría ser un agente de cambio en las organizaciones? La carrera de Ingeniería Industrial de Cayetano te prepara en ciencias, gestión tecnológica e investigación para diagnosticar, diseñar, implementar y optimizar procesos y operaciones empresariales. 
+                                    p Además, según la Encuesta de Demanda Ocupacional (EDO) 2024 del Ministerio de Trabajo, Ingeniería Industrial es la tercera carrera más demandada en el mercado laboral.
+                                    p Si aún tienes dudas sobre si esta carrera es para ti, puedes aclararlas leyendo <span onclick="window.open('https://blogs.cayetano.edu.pe/pregrado/de-que-trata-ingenieria-industrial/', '_self')"><strong>de qué trata la ingeniería industrial</strong></span>.
+                                .other
+                                    h3 Ingeniería Ambiental
+                                    p ¿Te imaginas siendo parte de quienes transforman el mundo para hacerlo más sostenible? La carrera de Ingeniería Ambiental de Cayetano combina ciencia, tecnología e innovación para formar profesionales con una sólida base científica y un compromiso ético con el medioambiente. 
+                                    p Aprenderás a resolver los grandes desafíos ambientales de hoy, diseñando soluciones responsables que impulsen un futuro sostenible.
+                                .other
+                                    h3 Ingeniería Informática
+                                    p Las carreras de Cayetano Heredia también incluyen Ingeniería Informática, ideal para quienes desean generar valor a partir de los datos e inteligencia artificial y liderar la transformación digital en el país. 
+                                    p Como profesional en esta área, tendrás la oportunidad de impactar diversos sectores como banca, retail, telecomunicaciones, salud, investigación informática, biomédica y mucho más. ¡Prepárate para ser parte del cambio tecnológico que está revolucionando el mundo!
+                                .other 
+                                    h3 Ingeniería Biomédica
+                                    p La carrera de Ingeniería Biomédica, un programa conjunto de la Universidad Peruana Cayetano Heredia y la Pontificia Universidad Católica del Perú, te permite combinar tu pasión por la ingeniería con la innovación en medicina. Con un enfoque en la salud, la interdisciplinariedad y la excelencia educativa, recibirás una formación integral que une ciencia, tecnología y un compromiso directo con el bienestar de las personas. 
+                                    p Además, accederás a una sólida red de colaboración con expertos de la industria y profesionales de la salud, junto con experiencias de investigación y prácticas en instituciones médicas líderes del país. ¿Quieres ser parte del futuro de la tecnología médica? Esta carrera puede ser para ti.
+                                //- img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/invidivual-video-movile.webp", alt="")
                                 .bloque6LeftParagraphsTitle 
-                                    h2 Carreras de salud
-                                p 
-                                    strong Medicina: 
-                                    |
-                                    br 
-                                    | ¿Quieres dedicar tu vida al cuidado de la salud y el bienestar de las personas? La carrera de Medicina de Cayetano forma médicos comprometidos con la humanidad, capaces de respetar la dignidad y autonomía de sus pacientes, con el máximo respeto por la vida humana. Con más de 60 años de excelencia, nuestra Facultad de Medicina Alberto Hurtado ha formado a miles de médicos destacados que pueden ejercer en cualquier parte del mundo.
-                                p Aquí aprenderás con los mejores docentes, realizando rotaciones en hospitales y centros de salud del país. Nuestra metodología moderna combina simulación clínica, aprendizaje activo y retroalimentación constante, preparándote para brindar atención médica de alta calidad, con integridad y humanismo. 
-                                p 
-                                    strong Enfermería: 
-                                    |
-                                    br 
-                                    | ¿Te imaginas cuidar vidas y marcar la diferencia en la salud de las personas? Estudiar la carrera de Enfermería en Cayetano te prepara con docentes altamente calificados, expertos en pedagogía, ciencia del cuidado y desarrollo profesional. Aprenderás tanto en aulas como en prácticas en instituciones de salud públicas y privadas gracias a nuestros convenios.
-                                p Nuestra carrera está acreditada internacionalmente por IAC-CINDA, lo que asegura una formación con los más altos estándares de calidad. Como egresado, serás reconocido por tu compromiso humanístico, tus sólidos conocimientos y habilidades técnicas, y tu capacidad para liderar en el cuidado de la salud. 
-                                p 
-                                    strong Estomatología: 
-                                    |
-                                    br 
-                                    | ¿Te interesa el cuidado de la salud bucal? La carrera de Estomatología de Cayetano te formará para que seas un experto en diagnosticar, prevenir y tratar problemas de salud bucal. Aprenderás con metodologías basadas en casos reales que llevarán tu experiencia de aprendizaje a otro nivel.
-                                p Podrás planificar y ejecutar tratamientos para patologías comunes y complejas, trabajar en equipos multidisciplinarios y diseñar modelos de gestión en salud siguiendo las normativas actuales.
-                                p Además, desarrollarás pensamiento crítico y habilidades en investigación científica, siempre con principios metodológicos, bioéticos y legales. Serás un promotor de estilos de vida saludables para el cuidado de la salud bucal de las personas en todas las etapas de la vida.
-                                p 
-                                    strong Psicología: 
-                                    |
-                                    br 
-                                    | Psicología es una de las carreras de Cayetano Heredia reconocida por su liderazgo en investigación en el Perú y el mundo. Si quieres dedicarte al estudio científico de la mente y del comportamiento humano y formarte con un enfoque único en investigación, Cayetano es el lugar correcto.
-                                p Aprenderás a contribuir al bienestar y desarrollo de las personas en áreas como:
-                                    //- br
-                                    //- | - Psicología clínica
-                                    //- br
-                                    //- | - Psicología social comunitaria
-                                    //- br
-                                    //- | - Psicología educacional
-                                    //- br
-                                    //- | - Psicología organizacional
-                                ul.margin1tab
-                                    li Psicología clínica
-                                    li Psicología social comunitaria
-                                    li Psicología educacional
-                                    li Psicología organizacional
-
-                                p Nuestra enseñanza combina teoría y práctica con estrategias vivenciales basadas en casos reales, ayudándote a desarrollar pensamiento crítico, análisis y habilidades para resolver problemas.
-                                p 
-                                    strong Medicina Veterinaria y Zootecnia: 
-                                    |
-                                    br 
-                                    | ¿Te gustaría transformar tu pasión por los animales en tu profesión? Desde el año 2000, la Facultad de Medicina Veterinaria y Zootecnia de Cayetano se ha consolidado como líder en esta carrera, gracias a su excelencia académica, la investigación y el destacado desempeño de sus egresados.
-                                p Estudiar Veterinaria y Zootecnia aquí te preparará para lo siguiente: 
-                                    //- br
-                                    //- | - Cuidar y recuperar la salud animal.
-                                    //- br
-                                    //- | - Impulsar la producción sostenible de alimentos de origen animal.
-                                    //- br
-                                    //- | - Contribuir a la conservación del medio ambiente y la salud pública.
-                                ul.margin1tab
-                                    li Cuidar y recuperar la salud animal.
-                                    li Impulsar la producción sostenible de alimentos de origen animal.
-                                    li Contribuir a la conservación del medio ambiente y la salud pública.
-
-                                    
-                                p Aprenderás con metodologías basadas en casos reales, que te formarán para enfrentar desafíos del mundo real.
-                                p 
-                                    strong Terapia Física y Rehabilitación: 
-                                    |
-                                    br 
-                                    | Nuestra carrera de Terapia Física y Rehabilitación te prepara para ser un profesional líder en el cuidado del cuerpo y el movimiento humano, desde la prevención hasta la recuperación de la salud.
-                                p En Cayetano, aprenderás cómo mejorar la calidad de vida de las personas a lo largo de su ciclo vital, utilizando conocimientos científicos y tecnológicos para abordar alteraciones del movimiento corporal. Te especializarás en promover una actividad física saludable que permita a las personas alcanzar su máximo potencial en lo personal, profesional y social.
-                                p 
-                                    strong Radiología: 
-                                    |
-                                    br 
-                                    | Un profesional en radiología es imprescindible para el diagnóstico y tratamiento de enfermedades. En la carrera de Radiología en Cayetano aprenderás a usar equipos avanzados para radiodiagnóstico, medicina nuclear y radioterapia.
-                                p Te formaremos para crear e implementar protocolos innovadores que sigan estándares nacionales e internacionales, con un enfoque en protección radiológica y sostenibilidad ambiental. Además, podrás realizar investigaciones en todas las áreas de radiología, desarrollando soluciones para las necesidades de salud actuales y futuras. 
-                                p ¿Te gustaría estudiar una profesión con gran demanda en Perú y el mundo?
-                                p 
-                                    strong Laboratorio Clínico y Anatomía Patológica: 
-                                    |
-                                    br 
-                                    | ¿Te interesan los procedimientos analíticos en laboratorio clínico? Estudia Laboratorio Clínico y Anatomía Patológica y conviértete en un profesional clave para prevenir, diagnosticar y controlar enfermedades.
-                                p Aprenderás a realizar análisis de laboratorio con precisión, aplicando procedimientos en muestras biológicas humanas bajo estrictos estándares de calidad y bioseguridad. Nuestra metodología incluye casos clínicos reales, potenciando tu aprendizaje y preparación.
-                                p Además, desarrollarás habilidades para gestionar laboratorios clínicos eficientemente, respetando las normativas nacionales e internacionales. 
-                                p 
-                                    strong Terapia Ocupacional: 
-                                    |
-                                    br 
-                                    | ¿Te gustaría ayudar a las personas a recuperar sus habilidades motoras, cognitivas o emocionales? Estudia la carrera Terapia Ocupacional en Cayetano y prepárate para abordar problemas de salud, educación y trabajo desde un enfoque humanista y ético.
-                                p Aprenderás a evaluar y mejorar el desempeño ocupacional en diversas etapas de la vida, desarrollando planes de intervención basados en la ciencia. Serás parte del cambio social, contribuyendo a proyectos que favorezcan el bienestar de las personas y grupos en diferentes contextos.
-                                p 
-                                    strong Terapia de Audición, Voz y Lenguaje: 
-                                    |
-                                    br 
-                                    | Si te interesa estudiar Terapia de Audición, Voz y Lenguaje, esta carrera te formará para prevenir, rehabilitar y promover la salud de la comunicación, la audición y la motricidad orofacial. Aprenderás a ayudar a las personas a mejorar su capacidad para comunicarse de manera efectiva, restaurando y potenciando sus habilidades.
-                                p Nuestra metodología se basa en casos reales, trabajando de la mano con equipos de salud y educación. A través de una formación integral, podrás intervenir en la rehabilitación de problemas relacionados con la voz, el lenguaje, la audición y la motricidad orofacial, utilizando tecnologías y técnicas actualizadas.
+                                    h2#h-tres Carreras de salud
+                                .other 
+                                    h3 Medicina
+                                    p ¿Quieres dedicar tu vida al cuidado de la salud y el bienestar de las personas? La carrera de Medicina de Cayetano forma médicos comprometidos con la humanidad, capaces de respetar la dignidad y autonomía de sus pacientes, con el máximo respeto por la vida humana. <strong>Con más de 60 años de excelencia, nuestra Facultad de Medicina Alberto Hurtado ha formado a miles de médicos destacados que pueden ejercer en cualquier parte del mundo</strong>.
+                                    p Aquí aprenderás con los mejores docentes, realizando rotaciones en hospitales y centros de salud del país. Nuestra metodología moderna combina simulación clínica, aprendizaje activo y retroalimentación constante, preparándote para brindar atención médica de alta calidad, con integridad y humanismo. 
+                                .other 
+                                    h3 Enfermería
+                                    p ¿Te imaginas cuidar vidas y marcar la diferencia en la salud de las personas? Estudiar la carrera de Enfermería en Cayetano te prepara con docentes altamente calificados, expertos en pedagogía, ciencia del cuidado y desarrollo profesional. Aprenderás tanto en aulas como en prácticas en instituciones de salud públicas y privadas gracias a nuestros convenios.
+                                    p <strong>Nuestra carrera está acreditada internacionalmente por IAC-CINDA, lo que asegura una formación con los más altos estándares de calidad</strong>. Como egresado, serás reconocido por tu compromiso humanístico, tus sólidos conocimientos y habilidades técnicas, y tu capacidad para liderar en el cuidado de la salud. 
+                                .other 
+                                    h3 Estomatología
+                                    p ¿Te interesa el cuidado de la salud bucal? La carrera de Estomatología de Cayetano te formará para que seas un experto en diagnosticar, prevenir y tratar problemas de salud bucal. <strong>Aprenderás con metodologías basadas en casos reales que llevarán tu experiencia de aprendizaje a otro nivel</strong>.
+                                    p Podrás planificar y ejecutar tratamientos para patologías comunes y complejas, trabajar en equipos multidisciplinarios y diseñar modelos de gestión en salud siguiendo las normativas actuales.
+                                    p Además, desarrollarás pensamiento crítico y habilidades en investigación científica, siempre con principios metodológicos, bioéticos y legales. Serás un promotor de estilos de vida saludables para el cuidado de la salud bucal de las personas en todas las etapas de la vida.
+                                .other
+                                    h3 Psicología
+                                    p Psicología es una de las carreras de Cayetano Heredia reconocida por su liderazgo en investigación en el Perú y el mundo. Si quieres dedicarte al estudio científico de la mente y del comportamiento humano y formarte con un enfoque único en investigación, Cayetano es el lugar correcto.
+                                    p Aprenderás a contribuir al bienestar y desarrollo de las personas en áreas como:
+                                    ul.margin3tab
+                                        li Psicología clínica
+                                        li Psicología social comunitaria
+                                        li Psicología educacional
+                                        li Psicología organizacional
+                                    p <strong>Nuestra enseñanza combina teoría y práctica con estrategias vivenciales basadas en casos reales</strong>, ayudándote a desarrollar pensamiento crítico, análisis y habilidades para resolver problemas.
+                                    p Si quieres conocer más detalles de esta carrera, te recomendamos empezar por descubrir <span onclick="window.open('https://blogs.cayetano.edu.pe/pregrado/en-que-consiste-carrera-psicologia/', '_self')"><strong>en qué consiste la carrera de Psicología</strong></span>, cuáles son sus especialidades y qué cursos llevarías si eliges esta profesión.
+                                .other
+                                    h3 Medicina Veterinaria y Zootecnia:
+                                    p ¿Te gustaría transformar tu pasión por los animales en tu profesión? <strong>Desde el año 2000, la Facultad de Medicina Veterinaria y Zootecnia de Cayetano se ha consolidado como líder en esta carrera</strong>, gracias a su excelencia académica, la investigación y el destacado desempeño de sus egresados.
+                                    p Estudiar Veterinaria y Zootecnia aquí te preparará para lo siguiente: 
+                                    ul.margin3tab
+                                        li Cuidar y recuperar la salud animal.
+                                        li Impulsar la producción sostenible de alimentos de origen animal.
+                                        li Contribuir a la conservación del medio ambiente y la salud pública.
+                                    p Aprenderás con metodologías basadas en casos reales, que te formarán para enfrentar desafíos del mundo real.
+                                .other
+                                    h3 Terapia Física y Rehabilitación: 
+                                    p Nuestra carrera de Terapia Física y Rehabilitación te prepara para ser un profesional líder en el cuidado del cuerpo y el movimiento humano, desde la prevención hasta la recuperación de la salud.
+                                    p En Cayetano, <strong>aprenderás cómo mejorar la calidad de vida de las personas a lo largo de su ciclo vital, utilizando conocimientos científicos y tecnológicos para abordar alteraciones del movimiento corporal</strong>. Te especializarás en promover una actividad física saludable que permita a las personas alcanzar su máximo potencial en lo personal, profesional y social.
+                                .other
+                                    h3 Radiología
+                                    p Un profesional en radiología es imprescindible para el diagnóstico y tratamiento de enfermedades. En la carrera de Radiología en Cayetano aprenderás a usar equipos avanzados para radiodiagnóstico, medicina nuclear y radioterapia.
+                                    p <strong>Te formaremos para crear e implementar protocolos innovadores que sigan estándares nacionales e internacionales</strong>, con un enfoque en protección radiológica y sostenibilidad ambiental. Además, podrás realizar investigaciones en todas las áreas de radiología, desarrollando soluciones para las necesidades de salud actuales y futuras. 
+                                    p ¿Te gustaría estudiar una profesión con gran demanda en Perú y el mundo?
+                                .other
+                                    h3 Laboratorio Clínico y Anatomía Patológica
+                                    p Te interesan los procedimientos analíticos en laboratorio clínico? Estudia Laboratorio Clínico y Anatomía Patológica y conviértete en un profesional clave para prevenir, diagnosticar y controlar enfermedades.
+                                    p <strong>Aprenderás a realizar análisis de laboratorio con precisión, aplicando procedimientos en muestras biológicas humanas bajo estrictos estándares de calidad y bioseguridad</strong>. Nuestra metodología incluye casos clínicos reales, potenciando tu aprendizaje y preparación.
+                                    p Además, desarrollarás habilidades para gestionar laboratorios clínicos eficientemente, respetando las normativas nacionales e internacionales. 
+                                .other
+                                    h3 Terapia Ocupacional
+                                    p ¿Te gustaría ayudar a las personas a recuperar sus habilidades motoras, cognitivas o emocionales? Estudia la carrera Terapia Ocupacional en Cayetano y prepárate para abordar problemas de salud, educación y trabajo desde un enfoque humanista y ético.
+                                    p <strong>Aprenderás a evaluar y mejorar el desempeño ocupacional en diversas etapas de la vida</strong>, desarrollando planes de intervención basados en la ciencia. Serás parte del cambio social, contribuyendo a proyectos que favorezcan el bienestar de las personas y grupos en diferentes contextos.
+                                .other
+                                    h3 Terapia de Audición, Voz y Lenguaje
+                                    p Si te interesa estudiar Terapia de Audición, Voz y Lenguaje, esta carrera te formará para prevenir, rehabilitar y promover la salud de la comunicación, la audición y la motricidad orofacial. Aprenderás a ayudar a las personas a <strong>mejorar su capacidad para comunicarse de manera efectiva, restaurando y potenciando sus habilidades</strong>.
+                                    p Nuestra metodología se basa en casos reales, trabajando de la mano con equipos de salud y educación. A través de una formación integral, podrás intervenir en la rehabilitación de problemas relacionados con la voz, el lenguaje, la audición y la motricidad orofacial, utilizando tecnologías y técnicas actualizadas.
                                 .bloque6LeftParagraphsTitle 
-                                    h2  Carrera de Educación
-                                p 
-                                    strong Educación: 
-                                    |
-                                    br 
-                                    | ¿Sabías que educación es una de las carreras de Cayetano Heredia que destaca por su liderazgo en investigación? La carrera de Educación te prepara para ser un profesional comprometido con el servicio a tu comunidad, fomentando valores que fortalecen tu personalidad y capacidad para tomar decisiones alineadas con las necesidades del país.
+                                    h2#h-cuatro  Carrera de Educación
+                                .other
+                                    h3 Educación
+                                    p ¿Sabías que educación es una de las carreras de Cayetano Heredia que destaca por su liderazgo en investigación? La carrera de Educación te prepara para ser un profesional comprometido con el servicio a tu comunidad, fomentando valores que fortalecen tu personalidad y capacidad para tomar decisiones alineadas con las necesidades del país.
+                                    p <strong>Serás capaz de enfrentar los retos educativos, sociales y políticos del entorno</strong>, aportando soluciones innovadoras y significativas. 
                                 .bloque6LeftParagraphsTitle 
-                                    h3#six Carreras de ciencias
-                                p 
-                                    strong Biología: 
-                                    |
-                                    br 
-                                    | ¿Te intriga entender cómo funcionan la naturaleza y los seres vivos? Si es así, la carrera de Biología en Cayetano es la opción perfecta para ti. A lo largo de nuestros cursos, explorarás el fascinante mundo de la investigación e innovación científica.
-                                p Durante la carrera, desarrollarás herramientas clave para potenciar tu capacidad de análisis, pensamiento crítico e investigación. Estarás preparado para comprender, abordar y resolver los desafíos actuales que afectan a los seres vivos y su entorno.
-                                p 
-                                    strong Nutrición: 
-                                    |
-                                    br 
-                                    | ¿Te imaginas transformar vidas a través de la alimentación? Estudiar la carrera de Nutrición en Cayetano te convierte en un profesional imprescindible, con competencias científicas para combatir el hambre, mejorar la salud y potenciar el desarrollo de las personas. Aquí aprenderás a crear dietas personalizadas, considerando incluso factores genéticos que influyen en el metabolismo.
-                                p Además, te prepararás para promover hábitos alimentarios responsables, fomentando el cuidado del medio ambiente y contribuyendo al bienestar de la sociedad. ¿Sabías que nutrición es una de las carreras de Cayetano Heredia reconocidas a nivel nacional? Ocupa el primer lugar en el ranking del Examen Nacional de Nutrición (ENAN 2023).
-                                p 
-                                    strong Farmacia y Bioquímica: 
-                                    |
-                                    br 
-                                    | ¿Te gustaría ser parte del desarrollo de medicamentos, vacunas o productos que mejoren la salud de miles de personas? Estudiar la carrera de Farmacia y Bioquímica en Cayetano te prepara para ser un profesional líder en la industria farmacéutica, cosmética y alimentaria, donde podrás crear y supervisar productos esenciales para el bienestar.
-                                p También podrás destacarte en la atención farmacéutica, ayudando a las personas a usar sus medicamentos de forma segura y efectiva, vigilando posibles riesgos y garantizando su calidad. Además, serás parte de proyectos de investigación para desarrollar nuevos fármacos y vacunas, contribuyendo directamente al cuidado de la salud y al avance de la ciencia.
-                                p Esperamos que esta nota te haya ayudado a descubrir nuestras 20 carreras universitarias. Si buscas estudiar en una universidad de calidad, que te ofrezca todo lo necesario para un futuro exitoso, Cayetano es tu mejor opción. No importa qué carrera elijas, elige bien: elige Cayetano. 
-                                p ¿Quieres conocer más sobre las carreras de Cayetano Heredia? Te invitamos a explorar nuestro blog, que está pensado especialmente para ti.
-                            .bloque6LeftLabels 
-                                h3 Ciencias
-                                h3 Ciencias
-                                h3 Ciencias
-                                h3 Ciencias
-                                h3 Ciencias
+                                    h2#h-cinco Carreras de ciencias
+                                .other
+                                    h3 Biología
+                                    p ¿Te intriga entender cómo funcionan la naturaleza y los seres vivos? Si es así, la carrera de Biología en Cayetano es la opción perfecta para ti. A lo largo de nuestros cursos, <strong>explorarás el fascinante mundo de la investigación e innovación científica</strong>.
+                                    p Durante la carrera, desarrollarás herramientas clave para potenciar tu capacidad de análisis, pensamiento crítico e investigación. Estarás preparado para comprender, abordar y resolver los desafíos actuales que afectan a los seres vivos y su entorno.
+                                .other
+                                    h3 Nutrición
+                                    p ¿Te imaginas transformar vidas a través de la alimentación? Estudiar la carrera de Nutrición en Cayetano te convierte en un profesional imprescindible, <strong>con competencias científicas para combatir el hambre, mejorar la salud y potenciar el desarrollo de las personas</strong>. Aquí aprenderás a crear dietas personalizadas, considerando incluso factores genéticos que influyen en el metabolismo.
+                                    p Además, te prepararás para promover hábitos alimentarios responsables, fomentando el cuidado del medio ambiente y contribuyendo al bienestar de la sociedad. ¿Sabías que nutrición es una de las carreras de Cayetano Heredia reconocidas a nivel nacional? Ocupa el primer lugar en el ranking del Examen Nacional de Nutrición (ENAN 2023).
+                                .other
+                                    h3 Farmacia y Bioquímica: 
+                                    p ¿Te gustaría ser parte del desarrollo de medicamentos, vacunas o productos que mejoren la salud de miles de personas? Estudiar la carrera de Farmacia y Bioquímica en Cayetano te prepara para ser un <strong>profesional líder en la industria farmacéutica, cosmética y alimentaria</strong>, donde podrás crear y supervisar productos esenciales para el bienestar.
+                                    p También podrás destacarte en la atención farmacéutica, ayudando a las personas a usar sus medicamentos de forma segura y efectiva, vigilando posibles riesgos y garantizando su calidad. Además, serás parte de proyectos de investigación para desarrollar nuevos fármacos y vacunas, contribuyendo directamente al cuidado de la salud y al avance de la ciencia.
+                                    p Esperamos que esta nota te haya ayudado a descubrir nuestras <strong>20 carreras universitarias</strong>. Si buscas estudiar en una universidad de calidad, que te ofrezca todo lo necesario para un futuro exitoso, Cayetano es tu mejor opción. <strong>No importa qué carrera elijas, elige bien: elige Cayetano</strong>. 
+                                    p ¿Quieres conocer más sobre las carreras de Cayetano Heredia? <strong>Te invitamos a explorar nuestro blog</strong>, que está pensado especialmente para ti.
+                            //- .bloque6LeftLabels 
+                            //-     h3 Ciencias
+                            //-     h3 Ciencias
+                            //-     h3 Ciencias
+                            //-     h3 Ciencias
+                            //-     h3 Ciencias
                         .bloque6Right
                 .bloque7Right
                     .bloque2ProgramRight.bloque2ProgramRightDesktop
                         .bloque2ProgramRightContainer
                             .bloque2ProgramRightContainerCategories
                             .bloque2ProgramRightContainerNewsletter 
-                                .newsletterWhitespace
-                                .newsletterContent
-                                    .newsletterImage
-                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/tano-newletter.gif", alt="")
-                                    .newsletterInfo
-                                        h3 Conéctate con tu 
-                                            span futuro en Cayetano
-                                        p Recibe información sobre nuestros programas, consejos de orientación vocacional, beneficios y mucho más para ayudarte a decidir el camino que mejor se alinea con tus metas. 
-                                        input(type="text" placeholder="Tu correo electrónico...")
-                                        .newsletterInfoTerminos
-                                            input(type="checkbox")
-                                            h3 He leído y acepto la política de privacidad de Cayetano.
-                                        button
-                                            h3 Suscribirme
-                                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
+                                include includes/newletter/innerLetter.pug
+                                //- .newsletterWhitespace
+                                //- .newsletterContent
+                                //-     .newsletterImage
+                                //-         img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/tano-newletter.gif", alt="")
+                                //-     .newsletterInfo
+                                //-         h3 Conéctate con tu 
+                                //-             span futuro en Cayetano
+                                //-         p Recibe información sobre nuestros programas, consejos de orientación vocacional, beneficios y mucho más para ayudarte a decidir el camino que mejor se alinea con tus metas. 
+                                //-         input(type="text" placeholder="Tu correo electrónico...")
+                                //-         .newsletterInfoTerminos
+                                //-             input(type="checkbox")
+                                //-             h3 He leído y acepto la política de privacidad de Cayetano.
+                                //-         button
+                                //-             h3 Suscribirme
+                                //-             img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
         .bloque4 
             .bloque4Container
                 .bloque4Banner
@@ -310,6 +260,5 @@ html(lang="en")
               h3 Av. Honorio Delgado 430
               h3 Urb. Ingeniería, San Martín de Porres 
         script(src="../../js/script.js" defer)
-        
         //- script(src="./js/script.js" defer)
         script(src="https://unpkg.com/swiper/swiper-bundle.min.js")

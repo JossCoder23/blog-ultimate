@@ -18,11 +18,12 @@ html(lang="en")
         link(href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap' rel='stylesheet')
         <meta name="description" content="Descubre aquí en qué consiste la carrera de psicología y sus especialidades como psicología clínica, psicología organizacional, educativa y social.">
         <meta name="keywords" content="en que consiste la carrera de psicologia, de que trata la carrera de psicologia, especialidades en psicologia, psicologia clinica, psicologia organizacional​, psicologia educativa, psicologia social comunitaria, cursos que lleva la carrera de psicologia, competencias de la carrera de psicologia, cuanto dura la carrera de psicologia, por que elegir la carrera de psicologia, perfil del egresado de la carrera de psicologia, donde estudiar la carrera de psicologia">
+        <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
     body
         .manuInner
             .manuInnerContainer
                 .manuInnerHeader
-                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.location.replace('https://blogs.cayetano.edu.pe/')")
+                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.open('https://blogs.cayetano.edu.pe/', '_self')")
                     h3.manuInnerClose X
                 .manuInnerInfo
                     .manuInnerInfoSearch
@@ -30,8 +31,8 @@ html(lang="en")
                         img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-search.webp", alt="")
                         include includes/search/searchMobile.pug
                     .manuInnerInfoContent
-                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/')").manuInnerInfoContentBottom Blog Cayetano
-                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado')").manuInnerInfoContentBottom Blog Pregrado
+                        h3(onclick="window.open('https://blogs.cayetano.edu.pe/', '_self')").manuInnerInfoContentBottom Blog Cayetano
+                        h3(onclick="window.open('https://blogs.cayetano.edu.pe/pregrado', '_self')").manuInnerInfoContentBottom Blog Pregrado
                         h3.manuInnerInfoContentBottom Blog PGE
                         h3 Blog Especialidades
             .manuInnerFooter
@@ -41,7 +42,7 @@ html(lang="en")
         .bloque1.bloque1Individual
           .bloque1Container
             .bloque1Logos
-                img.blog-logo(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.location.replace('https://blogs.cayetano.edu.pe/')")
+                img.blog-logo(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.open('https://blogs.cayetano.edu.pe/')")
                 .bloque1LogosSelect
                     h3.dropdown-btn Blog Cayetano
                     ul.dropdown-menu
@@ -57,9 +58,9 @@ html(lang="en")
             .bloque6Container
                 .bloque6Calendar
                     .bloque6CalendarProgress
-                        h5(onclick="window.location.replace('https://blogs.cayetano.edu.pe/')") Blog Cayetano
+                        h5(onclick="window.open('https://blogs.cayetano.edu.pe/', '_self')") Blog Cayetano
                         h5 |
-                        h5(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/')") Blog Pregrado
+                        h5(onclick="window.open('https://blogs.cayetano.edu.pe/pregrado/', '_self')") Blog Pregrado
                     .bloque6CalendarInfo
                         img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/calendar-icon-whit.webp", alt="")
                         h3 17 de diciembre del 2024
@@ -72,70 +73,69 @@ html(lang="en")
                 .bloque7Left
                     .bloque6Flex
                         .bloque6Left
-                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/image-nota-3.webp", alt="Carrera de Psicología")
+                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/image-nota-3.webp", alt="Carrera de Psicología", title="Carrera de psicología")
                             .bloque6LeftRedes
                                 h3 Compartir en redes:
                                 .bloque6LeftRedesContent
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-fb.webp", alt="", onclick="window.location.replace(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`)")
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-wp.webp", alt="", onclick="window.location.replace(`https://api.whatsapp.com/send?text=${encodeURIComponent(window.location.href)}`)")
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-x.webp", alt="", onclick="window.location.replace(`https://x.com/intent/post?text=${encodeURIComponent(window.location.href)}`)")
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-link.webp", alt="", onclick="window.location.replace(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`)")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-fb.webp", alt="", onclick="window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`, '_self')")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-wp.webp", alt="", onclick="window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(window.location.href)}`, '_self')")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-x.webp", alt="", onclick="window.open(`https://x.com/intent/post?text=${encodeURIComponent(window.location.href)}`, '_self')")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-link.webp", alt="", onclick="window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`, '_self')")
                             .bloque6LeftIndex
                                 h3.indexclicker Índice
                                 .bloque6LeftIndexContent
                                     ol 
                                         li: a(href="#h-uno"): h2 ¿De qué trata la carrera de psicología?
-                                        li: a(href="#h-dos"): h2 ¿De qué trata la carrera de psicología?
-                                        li: a(href="#h-tres"): h2 Conoce las especialidades en psicología
-                                        li: a(href="#h-cuatro"): h2 ¿Qué cursos lleva la carrera de psicología?
-                                        li: a(href="#h-cinco"): h2 Competencias de la carrera de psicología
-                                        li: a(href="#h-seis"): h2 ¿Cuánto dura la carrera de psicología en Perú?
-                                        li: a(href="#h-siete"): h2 ¿Por qué elegir la carrera de psicología?
-                                        li: a(href="#h-ocho"): h2 Perfil del egresado de la carrera de psicología
-                                        li: a(href="#h-nueve"): h2 ¿Dónde estudiar la carrera de psicología?
+                                        li: a(href="#h-dos"): h2 Especialidades en psicología
+                                        li: a(href="#h-tres"): h2 ¿Qué cursos lleva la carrera de psicología?
+                                        li: a(href="#h-cuatro"): h2 Competencias de la carrera de psicología
+                                        li: a(href="#h-cinco"): h2 ¿Cuánto dura la carrera de psicología en Perú?
+                                        li: a(href="#h-seis"): h2 ¿Por qué elegir la carrera de psicología?
+                                        li: a(href="#h-siete"): h2 Perfil del egresado de la carrera de psicología
+                                        li: a(href="#h-ocho"): h2 ¿Dónde estudiar la carrera de psicología?
                             .bloque6LeftParagraphs
                                 p Si eres una persona que tiene curiosidad sobre el estudio de la percepción, las emociones y le interesa entender la importancia de la salud mental, la carrera de psicología es para ti.
                                 p En este blog, te ayudaremos a conocer más sobre esta profesión: sus competencias, en qué consiste la carrera de psicología y por qué elegirla. Nuestro objetivo es orientarte para que tomes la mejor decisión y descubras si la psicología es tu vocación.
                                 .bloque6LeftParagraphsTitle 
-                                    h2 ¿De qué trata la carrera de psicología?
+                                    h2#h-uno ¿De qué trata la carrera de psicología?
                                 p La carrera psicología es la ciencia que estudia al ser humano y su comportamiento, para generar cambios positivos en él y en su entorno.
                                 p Sus objetivos principales son <strong>evaluar funciones de la mente, explicar el comportamiento humano e intervenir, corregir y mejorar el funcionamiento mental. </strong>
                                 p Un psicólogo formado en Cayetano está preparado para intervenir en las  <strong>4 áreas de la psicología como la psicología clínica, educativa, organizacional, social comunitaria.</strong> Además, cuenta con un enfoque en investigación para contribuir al bienestar y al desarrollo individual y social desde los primeros ciclos.
                                 p Esperamos que esta información te haya ayudado a comprender mejor en qué consiste la carrera de psicología. Sigue explorando con nosotros y descubre por qué es tu mejor opción.
                                 .bloque6LeftParagraphsTitle
-                                    h2 Especialidades en psicología
+                                    h2#h-dos Especialidades en psicología
                                 p La carrera de psicología contribuye al bienestar y al desarrollo individual y social a través de sus 4 áreas:
                                 .bloque6LeftParagraphsTitle
                                     h3 Psicología clínica
                                 p La psicología clínica se enfoca en evaluar, diagnosticar y tratar patologías mentales, optimizando las condiciones individuales y sociales de la salud mental. Su objetivo principal es <strong>ayudar a las personas a comprender y superar dificultades como ansiedad, depresión, trastornos de la personalidad, traumas o conflictos interpersonales.</strong>
                                 p Los psicólogos clínicos utilizan diversas técnicas terapéuticas basadas en la evidencia científica, como la terapia cognitivo-conductual, la terapia sistémica o la psicodinámica, adaptándolas a las necesidades de cada paciente. De este modo, contribuyen a mejorar el bienestar emocional y la calidad de vida. 
-                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/nota3-image2.webp", alt="Campo laboral psicología clínica")
+                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/nota3-image2.webp", alt="Campo laboral psicología clínica", title="Psicología clínica")
                                 .bloque6LeftParagraphsTitle
                                     h3  Psicología organizacional
                                 p El psicólogo organizacional se encarga de investigar, evaluar y contribuir a mejorar el bienestar de los empleados, la productividad y la eficiencia de las organizaciones, promoviendo un ambiente de trabajo saludable y productivo.
                                 p Esta especialidad <strong>analiza factores como la motivación, el liderazgo, el trabajo en equipo, la comunicación y la gestión del cambio.</strong> Además, diseñan estrategias para optimizar procesos de selección, capacitación y desarrollo del personal, así como para resolver conflictos y fomentar la satisfacción laboral. 
                                 p La psicología organizacional combina conocimientos psicológicos con prácticas empresariales para ayudar a las empresas a alcanzar sus metas mientras priorizan el bienestar de sus trabajadores.
-                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/nota3-image3.webp", alt="Campo laboral psicología organizacional")
+                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/nota3-image3.webp", alt="Campo laboral psicología organizacional", title="Psicología organizacional")
                                 .bloque6LeftParagraphsTitle
                                     h3 Psicología educativa
                                 p La psicología educativa busca potenciar el aprendizaje y desarrollo de las personas mediante métodos educativos adaptadas a sus necesidades. Su objetivo es ayudar a los estudiantes a  fortalecer sus habilidades cognitivas como <strong>la motivación, la inteligencia, la creatividad y la comunicación. </strong>
                                 p Los psicólogos educativos analizan las características individuales de cada estudiante para diseñar intervenciones personalizadas. Además, trabajan en conjunto con docentes y familias para <strong>implementar estrategias que mejoren el modelo educativo, optimicen la gestión escolar y promuevan un ambiente inclusivo.</strong>
-                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/nota3-image4.webp", alt="Campo laboral psicología educativa")
+                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/nota3-image4.webp", alt="Campo laboral psicología educativa", title="Psicología educativa")
                                 .bloque6LeftParagraphsTitle
                                     h3  Psicología social comunitaria
                                 p El psicólogo social comunitario se encarga del estudio de los grupos humanos y su interacción con el medio ambiente, para promover su desarrollo y bienestar integral, tanto a nivel individual como comunitario. Esta disciplina analiza cómo los factores culturales, económicos, políticos y sociales influyen en el comportamiento y el bienestar colectivo.
                                 p Los psicólogos sociales comunitarios <strong>abordan temas como la promoción de la salud, la participación ciudadana, la resolución de conflictos, la prevención de problemas sociales y el fortalecimiento de las redes de apoyo comunitario.</strong>
                                 
-                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/nota3-image5.webp", alt="Campo laboral psicología social")
+                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/nota3-image5.webp", alt="Campo laboral psicología social", title="Psicología social comunitaria")
 
                                 .bloque6LeftParagraphsTitle
-                                    h2 ¿Qué cursos lleva la carrera de psicología?
+                                    h2#h-tres ¿Qué cursos lleva la carrera de psicología?
                                 p La carrera de psicología incluye una variedad de cursos diseñados para formar profesionales capaces de comprender y abordar el comportamiento humano desde múltiples perspectivas. 
                                 p Revisa la <span onclick="window.open('https://lp.cayetano.edu.pe/wp-content/uploads/2024/09/mc-psicologia.pdf', '_blank')"><strong>malla curricular</strong></span> de la Universidad Peruana Cayetano Heredia, la universidad N.° 1 en psicología y acreditada por IAC como la universidad líder en salud e investigación a nivel nacional y reconocida internacionalmente.
                                 p Además, la metodología pone énfasis en estrategias vivenciales de situaciones reales y prácticas de laboratorios, permitiendo que cada estudiante desarrolle habilidades de análisis, pensamiento crítico y resolución de problemas a través de la investigación. 
                                 p Conoce más sobre nuestra propuesta educativa <span onclick="window.open('https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/br-psicologia.pdf', '_blank')"><strong>descargando el brochure de la carrera.</strong></span>
                                 .bloque6LeftParagraphsTitle
-                                    h2 Competencias de la carrera de psicología
+                                    h2#h-cuatro Competencias de la carrera de psicología
                                 p Las competencias de la carrera de psicología son un conjunto de habilidades, conocimientos y actitudes que pueden ser innatas como adquiridas a través del estudio y la experiencia laboral. A continuación, te presentamos las principales competencias que necesita tener un psicólogo:
                                 ul.margin1tab
                                     li: h3  Ética profesional
@@ -153,21 +153,23 @@ html(lang="en")
                                     li: h3 Flexibilidad y adaptabilidad
                                         p Los psicólogos deben tratar a sus pacientes sin ningún prejuicio, tener una actitud flexible y abierta, priorizando siempre su bienestar. Además, esta habilidad nos permitirá tener la actitud receptiva frente a los avances y enfoques en el ámbito científico.
                                 .bloque6LeftParagraphsTitle
-                                    h2 ¿Cuánto dura la carrera de psicología en Perú?
+                                    h2#h-cinco ¿Cuánto dura la carrera de psicología en Perú?
                                 p En Perú, la carrera universitaria de psicología tiene una <strong> duración 5 años, este tiempo está dividido en 10 semestres académicos</strong>, durante los cuales los estudiantes cursan asignaturas teóricas y prácticas.
                                 p En Cayetano, nuestra metodología se encuentra potenciada con prácticas pre-profesionales, prácticas en laboratorio y especialidades en <strong>4 áreas: psicología clínica, psicología educativa, psicología organizacional y psicología social comunitaria. Además, los estudiantes desarrollan su capacidad de análisis, pensamiento crítico y proyectos de investigación desde los primeros ciclos.</strong>
                                 .bloque6LeftParagraphsTitle
-                                    h2 ¿Por qué elegir la carrera de psicología?
+                                    h2#h-seis ¿Por qué elegir la carrera de psicología?
                                 p Elegir la carrera de psicología significa optar por una profesión dedicada al estudio científico de la mente y el comportamiento humano, con el objetivo de contribuir al bienestar y al desarrollo individual y social en el campo clínico, social-comunitario, educacional y organizacional.
                                 p Aquí, te detallamos <strong>5 razones de por qué elegir la carrera de psicología en Cayetano:</strong>
                                 ol.margin3tab 
                                     li: h3 Reconocimiento internacional:
                                         p Somos <strong>la universidad N.º 1 para estudiar Psicología en Perú</strong>, según el ranking THE World University Rankings by Subject. Además, contamos con el <strong>respaldo de Times Higher Education (THE), que nos nombra como la mejor universidad por séptimo año consecutivo.</strong>
+                                        br
                                         p La carrera de psicología ha obtenido la acreditación internacional otorgada por el Instituto Internacional para el Aseguramiento de la Calidad (IAC - CINDA), lo que respalda nuestro compromiso con la educación de calidad.
                                 .other
                                     ol.margin3tab(start="2") 
                                         li: h3 Especialidad en 4 áreas de la psicología: 
                                             p A partir del 5.º ciclo podrás elegir tu especialidad en:
+                                    br
                                     ul.margin6tab
                                         li Psicología Clínica
                                         li Psicología Organizacional
@@ -178,6 +180,7 @@ html(lang="en")
                                         li: h3 Prácticas Vivenciales:
                                             p La metodología de enseñanza se enfoca en <strong>prácticas en laboratorios con situaciones reales desde los primeros ciclos.</strong>
                                             p Contamos con laboratorios y equipos de vanguardia, tales como:
+                                    br
                                     ul.margin6tab
                                         li Cámaras de observación
                                         li Sala Gesell
@@ -189,6 +192,7 @@ html(lang="en")
                                     ol.margin3tab(start="4")
                                         li: h3 Enfoque en investigación
                                             p Desde los primeros ciclos, nuestros estudiantes desarrollan competencias a través de 9 líneas de investigación:
+                                    br
                                     ul.margin6tab
                                         li Ciudadanía, Educación y Familia
                                         li Cultura Digital
@@ -203,7 +207,8 @@ html(lang="en")
                                     ol.margin3tab(start="5")
                                         li: h3 Intercambio estudiantil
                                             p Contamos con más de 300 convenios que permiten a nuestros alumnos realizar pasantías en universidades nacionales y extranjeras de prestigio, y enriquecer así su experiencia educativa y personal.
-                                            p Nuestros egresados confirman nuestros convenios con universidades TOP a nivel internacional y comparten sus experiencias:
+                                img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2025/01/nota3-image1.webp", alt="Convenios internacionales", title="Convenios de la carrera de psicología")
+                                p.margin3tab Nuestros egresados confirman nuestros convenios con universidades TOP a nivel internacional y comparten sus experiencias:
                                 .mention.margin1tab
                                     p <strong>"Mis compañeros y profesores, desde diferentes perspectivas y enfoques, ampliaron el panorama que tenía."</strong>
                                     h4 Aracely Galicia Soto 
@@ -218,7 +223,7 @@ html(lang="en")
                                     h5 Egresada de la Facultad de Psicología 
                                 p  Ahora que ya cuentas con un contexto amplio sobre en qué consiste la carrera de psicología, toma la mejor decisión y estudia psicología en la universidad N.° 1 en Perú.
                                 .bloque6LeftParagraphsTitle
-                                    h2 Perfil del egresado de la carrera de psicología
+                                    h2#h-siete Perfil del egresado de la carrera de psicología
                                 .other
                                     p El perfil del egresado de la carrera de psicología describe las características, habilidades y conocimientos que los estudiantes desarrollan al completar sus estudios. Un psicólogo egresado de Cayetano se destaca por:
                                     br
@@ -228,31 +233,32 @@ html(lang="en")
                                         li Analizar e integrar la información científica para diseñar, ejecutar y evaluar actividades de intervención propias de la disciplina, con fundamentos epistemológicos, teóricos, metodológicos, técnicos e interdisciplinarios de la psicología contemporánea.
                                     p Este perfil prepara a los egresados para desempeñarse en áreas como la psicología clínica, educativa, organizacional y social comunitaria, contribuyendo al bienestar de individuos, grupos y comunidades.
                                 .bloque6LeftParagraphsTitle
-                                    h2 ¿Dónde estudiar la carrera de psicología?
-                                p Estudiar la carrera de psicología en la Universidad Peruana Cayetano Heredia, no solo garantiza una formación académica de excelencia, sino también prácticas desde los primeros años de estudio. Preparamos a los estudiantes para que destaquen en el ámbito nacional e internacional, consolidando a la universidad como un referente de excelencia educativa. 
+                                    h2#h-ocho ¿Dónde estudiar la carrera de psicología?
+                                p Estudiar la carrera de psicología en la <strong>Universidad Peruana Cayetano Heredia</strong>, no solo garantiza una formación académica de excelencia, sino también prácticas desde los primeros años de estudio. Preparamos a los estudiantes para que destaquen en el ámbito nacional e internacional, consolidando a la universidad como un referente de excelencia educativa. 
                                 p En Cayetano nos caracterizamos en formar profesionales con empatía, capacidad investigadora y responsabilidad social, a través de nuestras <strong> más de 10 carreras de salud, 4 ingenierías, 3 carreras de ciencia, 2 de gestión y 1 de educación. </strong>
-                                p <strong>Conoce nuestras 20 carreras de excelencia </strong> y descubre cuál es la opción ideal para ti. 
+                                p <span onclick="window.open('https://blogs.cayetano.edu.pe/pregrado/cayetano-heredia-carreras/', '_self')"><strong>Conoce nuestras 20 carreras de excelencia </strong></span> y descubre cuál es la opción ideal para ti. 
                         .bloque6Right
                 .bloque7Right
                     .bloque2ProgramRight.bloque2ProgramRightDesktop
                         .bloque2ProgramRightContainer
                             .bloque2ProgramRightContainerCategories
                             .bloque2ProgramRightContainerNewsletter 
-                                .newsletterWhitespace
-                                .newsletterContent
-                                    .newsletterImage
-                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/tano-newletter.gif", alt="")
-                                    .newsletterInfo
-                                        h3 Conéctate con tu 
-                                            span futuro en Cayetano
-                                        p Recibe información sobre nuestros programas, consejos de orientación vocacional, beneficios y mucho más para ayudarte a decidir el camino que mejor se alinea con tus metas. 
-                                        input(type="text" placeholder="Tu correo electrónico...")
-                                        .newsletterInfoTerminos
-                                            input(type="checkbox")
-                                            h3 He leído y acepto la política de privacidad de Cayetano.
-                                        button
-                                            h3 Suscribirme
-                                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
+                                include includes/newletter/innerLetter.pug
+                                //- .newsletterWhitespace
+                                //- .newsletterContent
+                                //-     .newsletterImage
+                                //-         img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/tano-newletter.gif", alt="")
+                                //-     .newsletterInfo
+                                //-         h3 Conéctate con tu 
+                                //-             span futuro en Cayetano
+                                //-         p Recibe información sobre nuestros programas, consejos de orientación vocacional, beneficios y mucho más para ayudarte a decidir el camino que mejor se alinea con tus metas. 
+                                //-         input(type="text" placeholder="Tu correo electrónico...")
+                                //-         .newsletterInfoTerminos
+                                //-             input(type="checkbox")
+                                //-             h3 He leído y acepto la política de privacidad de Cayetano.
+                                //-         button
+                                //-             h3 Suscribirme
+                                //-             img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
         .bloque4 
             .bloque4Container
                 .bloque4Banner

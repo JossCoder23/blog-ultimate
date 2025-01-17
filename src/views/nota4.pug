@@ -18,11 +18,12 @@ html(lang="en")
         link(href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap' rel='stylesheet')
         <meta name="description" content="Encuentra la información que necesitas para rendir el examen de admisión de Cayetano Heredia: montos, documentos, temario, consejos y más.">
         <meta name="keywords" content="examen de admision cayetano heredia, examen de admision, cayetano, admision cayetano">
+        <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
     body
         .manuInner
             .manuInnerContainer
                 .manuInnerHeader
-                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.location.replace('https://blogs.cayetano.edu.pe/')")
+                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.open('https://blogs.cayetano.edu.pe/', '_self')")
                     h3.manuInnerClose X
                 .manuInnerInfo
                     .manuInnerInfoSearch
@@ -30,8 +31,8 @@ html(lang="en")
                         img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-search.webp", alt="")
                         include includes/search/searchMobile.pug
                     .manuInnerInfoContent
-                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/')").manuInnerInfoContentBottom Blog Cayetano
-                        h3(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado')").manuInnerInfoContentBottom Blog Pregrado
+                        h3(onclick="window.open('https://blogs.cayetano.edu.pe/', '_self')").manuInnerInfoContentBottom Blog Cayetano
+                        h3(onclick="window.open('https://blogs.cayetano.edu.pe/pregrado', '_self')").manuInnerInfoContentBottom Blog Pregrado
                         h3.manuInnerInfoContentBottom Blog PGE
                         h3 Blog Especialidades
             .manuInnerFooter
@@ -41,7 +42,7 @@ html(lang="en")
         .bloque1.bloque1Individual
           .bloque1Container
             .bloque1Logos
-                img.blog-logo(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.location.replace('https://blogs.cayetano.edu.pe/')")
+                img.blog-logo(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.open('https://blogs.cayetano.edu.pe/', '_self')")
                 .bloque1LogosSelect
                     h3.dropdown-btn Blog Cayetano
                     ul.dropdown-menu
@@ -57,14 +58,14 @@ html(lang="en")
             .bloque6Container
                 .bloque6Calendar
                     .bloque6CalendarProgress
-                        h5(onclick="window.location.replace('https://blogs.cayetano.edu.pe/')") Blog Cayetano
+                        h5(onclick="window.open('https://blogs.cayetano.edu.pe/', '_self')") Blog Cayetano
                         h5 |
-                        h5(onclick="window.location.replace('https://blogs.cayetano.edu.pe/pregrado/')") Blog Pregrado
+                        h5(onclick="window.open('https://blogs.cayetano.edu.pe/pregrado/', '_self')") Blog Pregrado
                     .bloque6CalendarInfo
                         img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/calendar-icon-whit.webp", alt="")
                         h3 17 de diciembre del 2024
                     .bloque6Title
-                        h1#first ¿En qué consiste la carrera de psicología y cuánto dura?
+                        h1 Examen de admisión de Cayetano Heredia: sigue estos pasos para rendir tu prueba con éxito
                     .bloque6Item
                         h4.bloque6ItemTodos General
         .bloque7.bloque7Individual
@@ -76,10 +77,10 @@ html(lang="en")
                             .bloque6LeftRedes
                                 h3 Compartir en redes:
                                 .bloque6LeftRedesContent
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-fb.webp", alt="", onclick="window.location.replace(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`)")
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-wp.webp", alt="", onclick="window.location.replace(`https://api.whatsapp.com/send?text=${encodeURIComponent(window.location.href)}`)")
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-x.webp", alt="", onclick="window.location.replace(`https://x.com/intent/post?text=${encodeURIComponent(window.location.href)}`)")
-                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-link.webp", alt="", onclick="window.location.replace(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`)")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-fb.webp", alt="", onclick="window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`, '_self')")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-wp.webp", alt="", onclick="window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(window.location.href)}`, '_self')")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-x.webp", alt="", onclick="window.open(`https://x.com/intent/post?text=${encodeURIComponent(window.location.href)}`, '_self')")
+                                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-link.webp", alt="", onclick="window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`, '_self')")
                             .bloque6LeftIndex
                                 h3.indexclicker Índice
                                 .bloque6LeftIndexContent
@@ -90,29 +91,25 @@ html(lang="en")
                                         li: a(href="#h-cuatro"): h2 Asegúrate de tu sede y fecha de examen
                                         li: a(href="#h-cinco"): h2 Conoce las reglas del examen de admisión
                                         li: a(href="#h-seis"): h2 Revisa el temario del examen de admisión
-                                        li: a(href="#h-cinco"): h2 Prepárate para tu examen de admisión
+                                        li: a(href="#h-siete"): h2 Prepárate para tu examen de admisión
                                         
                             .bloque6LeftParagraphs
                                 p Si te estás preguntando en qué consiste el examen de admisión de Cayetano Heredia, quédate a leer esta nota. Te guiaremos paso a paso para que enfrentes este desafío con confianza. 
                                 p Desde los requisitos hasta los detalles logísticos, aquí encontrarás toda la información necesaria para rendir tu prueba sin contratiempos. Además, te brindaremos algunos consejos útiles para que alcances tu objetivo. 
                                 p Esta nota es para ti si:
-                                   ul.margin1tab
-                                        li Te has inscrito a Cayetano y pronto rendirás tu examen de admisión.
-                                        li Te gustaría postular a Cayetano y quieres saber más sobre el examen de admisión.
-                                            
+                                ul.margin3tab
+                                    li Te has inscrito a Cayetano y pronto rendirás tu examen de admisión.
+                                    li Te gustaría postular a Cayetano y quieres saber más sobre el examen de admisión.
                                 p Recuerda que este examen no solo evalúa tus conocimientos, sino también tu determinación y preparación. Tómate el tiempo de revisar cada paso y planifica este momento con anticipación.
                                 .bloque6LeftParagraphsTitle
                                     h2  1. Asegúrate de completar tu inscripción
                                 p Para rendir el examen de admisión de Cayetano Heredia, debes culminar todos los pasos del proceso de inscripción.
-                                    ul.margin8tab
-                                        li Preinscríbete en el portal de admisión
-                                        li Arma tu carpeta con tus documentos
-                                        li Realiza el pago de tu inscripción
-                                        li Valida tu inscripción
-                                
+                                ul.margin3tab
+                                    li Preinscríbete en el portal de admisión
+                                    li Arma tu carpeta con tus documentos
+                                    li Realiza el pago de tu inscripción
+                                    li Valida tu inscripción
                                 p Recuerda que el enlace de pago te lo enviará la Oficina Universitaria de Admisión y Registro Académico una vez que haya verificado tu documentación.
-
-                                       
                                 .bloque6LeftParagraphsTitle 
                                     h2#two 2. Revisa que no haya documentos pendientes
                                 p Si por alguna razón no terminaste de cargar toda tu documentación, comunícate con un asesor para resolver tu situación lo más pronto posible.
@@ -127,28 +124,27 @@ html(lang="en")
                                 .bloque6LeftParagraphsTitle 
                                     h2#two 5. Conoce las reglas del examen de admisión
                                 p Para garantizar la organización y la claridad del proceso, el día del examen de admisión de Cayetano Heredia debes cumplir con lo siguiente:
-                                    ul.margin1tab
-                                        li No llevar calculadora
-                                        li No llevar celular ni ningún dispositivo electrónico portátil
-                                        li Si tienes el pelo largo, asegúrate de llevarlo recogido
-                                       
+                                ul.margin3tab
+                                    li No llevar calculadora
+                                    li No llevar celular ni ningún dispositivo electrónico portátil
+                                    li Si tienes el pelo largo, asegúrate de llevarlo recogido
                                 p De esta manera, aseguramos un proceso transparente, eficiente y equitativo para todos los participantes.
                                 .bloque6LeftParagraphsTitle 
                                     h2#two 6. Revisa el temario del examen de admisión
                                 p El temario del examen de admisión de Cayetano Heredia aplica a toda las carreras y abarca tres áreas: aptitud verbal, aptitud matemática y cultura y sociedad. Echa un vistazo al temario de admisión 2025 y prepárate.
                                     
-                                p.margin6tab   <strong> Aptitud verbal</strong>
-                                    
-                                    ul.margin7tab
+                                .other
+                                    p.margin8tab <strong>Aptitud verbal</strong>
+                                    ul.margin3tab
                                         li Fundamentos sobre el lenguaje
                                         li Normativa de la lengua
                                         li Lectura comprensiva
                                         li Lectura interpretativa
                                         li Lectura interpretativa
                                 
-                                p.margin6tab   <strong> Aptitud matemática</strong>
-                                    
-                                    ul.margin7tab
+                                .other
+                                    p.margin8tab <strong>Aptitud matemática</strong>
+                                    ul.margin3tab
                                         li Razonamiento inductivo
                                         li Operadores matemáticos
                                         li Planteo de ecuaciones
@@ -166,73 +162,66 @@ html(lang="en")
                                         li Probabilidades
                                         li Tablas estadísticas
                                 
-                                p.margin6tab   <strong> Cultura y sociedad</strong>
-                                    
-                                    ul.margin7tab
-                                        li  La Conquista de América y la modernidad
-                                        li  Renacimiento
-                                        li  Estado moderno. Antiguo y nuevo régimen
-                                        li  La República y la identidad nacional
-                                        li  El impacto de la Guerra del Pacífico
-                                        li  Revolución industrial
-                                        li  Primera Guerra Mundial e Imperialismo
-                                        li  Segunda Guerra Mundial y totalitarismo fascista
-                                        li  Totalitarismo comunista
-                                        li  Guerra Fría y nuevos movimientos sociales
-                                        li  El debate sobre la realidad nacional
-                                        li  El gobierno de las Fuerzas Armadas (1968-1980)
-                                        li  Conflicto armando interno (CAI)
-                                        li  El decenio de Fujimori
-                                        li  Democracia en el Perú (2000-2020)
-
-
-
-                                
-
-                                   
-                                
-                                
+                                .other
+                                    p.margin8tab <strong>Cultura y sociedad</strong>
+                                    ul.margin3tab
+                                        li La Conquista de América y la modernidad
+                                        li Renacimiento
+                                        li Estado moderno. Antiguo y nuevo régimen
+                                        li La República y la identidad nacional
+                                        li El impacto de la Guerra del Pacífico
+                                        li Revolución industrial
+                                        li Primera Guerra Mundial e Imperialismo
+                                        li Segunda Guerra Mundial y totalitarismo fascista
+                                        li Totalitarismo comunista
+                                        li Guerra Fría y nuevos movimientos sociales
+                                        li El debate sobre la realidad nacional
+                                        li El gobierno de las Fuerzas Armadas (1968-1980)
+                                        li Conflicto armando interno (CAI)
+                                        li El decenio de Fujimori
+                                        li Democracia en el Perú (2000-2020)
                                 .bloque6LeftParagraphsTitle 
                                     h2#two 7. Prepárate para tu examen de admisión
                                 p Aquí tienes algunas recomendaciones para los días previos a tu examen de admisión en Cayetano Heredia:
-                                    ul.margin8tab
-                                        li <strong>Repasa sin sobrecargarte: </strong>  dedica los últimos días a repasar puntos clave, pero evita estudiar en exceso o aprender cosas nuevas. Mantén un enfoque en los temas que ya conoces.</span>
-                                        li <strong>Duerme lo suficiente:</strong> asegúrate de dormir al menos 7-8 horas por noche. El descanso es fundamental para que tu mente esté alerta y enfocada.
-                                        li <strong>Aliméntate bien:</strong>  mantén una dieta equilibrada y evita alimentos pesados o poco saludables que puedan afectar tu energía o digestión.
-                                        li <strong>Visita la sede del examen:</strong>  si es posible, acércate al campus unos días antes para familiarizarte con el recorrido y calcular el tiempo que te tomará llegar.
-                                        li <strong>Consulta cualquier duda: </strong>  si tienes alguna pregunta sobre el examen de admisión de Cayetano Heredia o los procedimientos, contáctate con un asesor con anticipación para evitar sorpresas.
-                                        li <strong>Prepara lo necesario la noche anterior:  </strong>  deja lista tu ropa, tu DNI y los materiales permitidos para el examen (lápiz y borrador). Esto te dará tranquilidad al día siguiente.
-                                        li <strong>Relájate y mantén la calma: </strong> dedica tiempo a actividades que te relajen, como escuchar música, caminar o practicar respiración profunda. Mantener una actitud positiva y calmada te ayudará a enfrentar el examen con confianza.
-                                        li <strong>Evita distracciones: </strong>  enfócate en tu objetivo y trata de alejarte de distracciones que puedan generarte ansiedad, como redes sociales o compararte con otros.
+                                ul.margin1tab
+                                    li <strong>Repasa sin sobrecargarte: </strong>  dedica los últimos días a repasar puntos clave, pero evita estudiar en exceso o aprender cosas nuevas. Mantén un enfoque en los temas que ya conoces.</span>
+                                    li <strong>Duerme lo suficiente:</strong> asegúrate de dormir al menos 7-8 horas por noche. El descanso es fundamental para que tu mente esté alerta y enfocada.
+                                    li <strong>Aliméntate bien:</strong>  mantén una dieta equilibrada y evita alimentos pesados o poco saludables que puedan afectar tu energía o digestión.
+                                    li <strong>Visita la sede del examen:</strong>  si es posible, acércate al campus unos días antes para familiarizarte con el recorrido y calcular el tiempo que te tomará llegar.
+                                    li <strong>Consulta cualquier duda: </strong>  si tienes alguna pregunta sobre el examen de admisión de Cayetano Heredia o los procedimientos, contáctate con un asesor con anticipación para evitar sorpresas.
+                                    li <strong>Prepara lo necesario la noche anterior:  </strong>  deja lista tu ropa, tu DNI y los materiales permitidos para el examen (lápiz y borrador). Esto te dará tranquilidad al día siguiente.
+                                    li <strong>Relájate y mantén la calma: </strong> dedica tiempo a actividades que te relajen, como escuchar música, caminar o practicar respiración profunda. Mantener una actitud positiva y calmada te ayudará a enfrentar el examen con confianza.
+                                    li <strong>Evita distracciones: </strong>  enfócate en tu objetivo y trata de alejarte de distracciones que puedan generarte ansiedad, como redes sociales o compararte con otros.
                                 p Siguiendo estos pasos, llegarás al examen de admisión de Cayetano Heredia preparado y en las mejores condiciones para dar lo mejor de ti.
                                 p ¡Esperamos verte pronto en el campus!
-                            .bloque6LeftLabels 
-                                h3 Ciencias
-                                h3 Ciencias
-                                h3 Ciencias
-                                h3 Ciencias
-                                h3 Ciencias
+                            //- .bloque6LeftLabels 
+                            //-     h3 Ciencias
+                            //-     h3 Ciencias
+                            //-     h3 Ciencias
+                            //-     h3 Ciencias
+                            //-     h3 Ciencias
                         .bloque6Right
                 .bloque7Right
                     .bloque2ProgramRight.bloque2ProgramRightDesktop
                         .bloque2ProgramRightContainer
                             .bloque2ProgramRightContainerCategories
                             .bloque2ProgramRightContainerNewsletter 
-                                .newsletterWhitespace
-                                .newsletterContent
-                                    .newsletterImage
-                                        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/tano-newletter.gif", alt="")
-                                    .newsletterInfo
-                                        h3 Conéctate con tu 
-                                            span futuro en Cayetano
-                                        p Recibe información sobre nuestros programas, consejos de orientación vocacional, beneficios y mucho más para ayudarte a decidir el camino que mejor se alinea con tus metas. 
-                                        input(type="text" placeholder="Tu correo electrónico...")
-                                        .newsletterInfoTerminos
-                                            input(type="checkbox")
-                                            h3 He leído y acepto la política de privacidad de Cayetano.
-                                        button
-                                            h3 Suscribirme
-                                            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
+                                include includes/newletter/innerLetter.pug
+                                //- .newsletterWhitespace
+                                //- .newsletterContent
+                                //-     .newsletterImage
+                                //-         img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/tano-newletter.gif", alt="")
+                                //-     .newsletterInfo
+                                //-         h3 Conéctate con tu 
+                                //-             span futuro en Cayetano
+                                //-         p Recibe información sobre nuestros programas, consejos de orientación vocacional, beneficios y mucho más para ayudarte a decidir el camino que mejor se alinea con tus metas. 
+                                //-         input(type="text" placeholder="Tu correo electrónico...")
+                                //-         .newsletterInfoTerminos
+                                //-             input(type="checkbox")
+                                //-             h3 He leído y acepto la política de privacidad de Cayetano.
+                                //-         button
+                                //-             h3 Suscribirme
+                                //-             img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
         .bloque4 
             .bloque4Container
                 .bloque4Banner
@@ -256,7 +245,5 @@ html(lang="en")
               h3 Av. Honorio Delgado 430
               h3 Urb. Ingeniería, San Martín de Porres 
         script(src="../../js/script.js" defer)
-        //- script(src="../../js/script-ind.js" defer)
         //- script(src="./js/script.js" defer)
-        //- script(src="./js/script-ind.js" defer)
         script(src="https://unpkg.com/swiper/swiper-bundle.min.js")
