@@ -139,6 +139,7 @@
     }
     .blog-logo {
         width: 15rem;
+        cursor: pointer;
         @include m.tablet_768 {
             width: 13rem;
         }
@@ -240,16 +241,25 @@
     
         li {
             padding: 10px 20px;
-            a {
-            text-decoration: none;
-            color: #ffffff;
-            font-size: 1.3rem;
-            display: block;
-            transition: background-color 0.2s ease, color 0.2s ease;
-            &:hover {
-                background-color: #f5f5f5;
-                color: #8b1538;
+            &:nth-child(2), &:nth-child(3) {
+                background-color: rgb(197, 197, 197);
+                a {
+                    &:hover {
+                        background-color: rgb(197, 197, 197) !important;
+                        color: white !important;
+                    }
+                }
             }
+            a {
+                text-decoration: none;
+                color: #ffffff;
+                font-size: 1.3rem;
+                display: block;
+                transition: background-color 0.2s ease, color 0.2s ease;
+                &:hover {
+                    background-color: #f5f5f5;
+                    color: #8b1538;
+                }
             }
         }
     }
@@ -821,6 +831,14 @@
     @include m.desktop_1400 {
         column-gap: 4rem;
     }
+    .selectDisabled {
+        background-color: rgb(125, 125, 125);
+        &:hover {
+            background-color: rgb(125, 125, 125) !important;
+            color: black;
+            cursor: pointer;
+        }
+    }
     h3 {
         &:hover {
             background-color: black;
@@ -1181,6 +1199,9 @@
         column-gap: .5rem;
         border-radius: 1.5rem;
         padding: .8rem 1rem;
+        @include m.desktop_1400 {
+            width: 16rem;
+        }
         h3 {
             margin: 0;
             font-size: 1.5rem;

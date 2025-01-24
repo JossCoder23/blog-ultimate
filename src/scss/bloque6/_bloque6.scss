@@ -108,7 +108,10 @@
       font-size: 2.5rem;
       font-weight: 500;
       color: black;
-      width: 45rem;
+      width: 100%;
+      @include m.tablet_768 {
+        width: 45rem;
+      }
       @include m.desktop_1020 {
         font-size: 3.5rem;
         width: 59rem;

@@ -235,6 +235,7 @@
         display: flex;
         align-items: flex-start;
         justify-items: center;
+        cursor: pointer;
         @include m.tablet_768 {
             width: 18rem;
         }
@@ -381,6 +382,7 @@
         display: block;
         width: auto;
         height: 3rem;
+        cursor: pointer;
         @include m.desktop_1020 {
             height: 4rem;
         }
@@ -650,6 +652,9 @@
         // justify-content: space-between;
         height: 15rem;
         row-gap: 1rem;
+        @include m.tablet_768 {
+            height: auto;
+        }
         h3, p {
             margin: 0;
         }

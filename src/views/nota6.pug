@@ -20,22 +20,7 @@ html(lang="en")
         <meta name="keywords" content="matricula cayetano heredia, como es el proceso de matricula en cayetano heredia, portal de admision, documentos personales, realiza el pago, valida tu inscripcion">
         <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
     body
-        .manuInner
-            .manuInnerContainer
-                .manuInnerHeader
-                    img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/logo-1.webp", alt="", onclick="window.open('https://blogs.cayetano.edu.pe/', '_self')")
-                    h3.manuInnerClose X
-                .manuInnerInfo
-                    include includes/search/searchMobile.pug
-                    .manuInnerInfoContent
-                        h3(onclick="window.open('https://blogs.cayetano.edu.pe/', '_self')").manuInnerInfoContentBottom Blog Cayetano
-                        h3(onclick="window.open('https://blogs.cayetano.edu.pe/pregrado', '_self')").manuInnerInfoContentBottom Blog Pregrado
-                        h3.manuInnerInfoContentBottom Blog PGE
-                        h3 Blog Especialidades
-            .manuInnerFooter
-                .manuInnerFooterContainer
-                    h3 Quiero ser de Cayetano
-                    img.keyframe-button-movement(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
+        include includes/menu/menuMobile.pug
         .bloque1.bloque1Individual
           .bloque1Container
             .bloque1Logos
@@ -48,7 +33,7 @@ html(lang="en")
                         li: a(href="") Especialidades
                 include includes/search/searchDesktop.pug
                 img.top-icon-mobile(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/icon-menu2.webp", alt="")
-                button  
+                button(onclick="window.open('https://lp.cayetano.edu.pe/admision-cayetano/?utm_campaign=pregrado-aon&utm_term=generico&utm_source=blog&utm_medium=organic&utm_content=botonpostula', '_self')")    
                     h3 Quiero ser de Cayetano
                     img.keyframe-button-movement(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
         .bloque6
@@ -175,10 +160,9 @@ html(lang="en")
             .bloque4Container
                 .bloque4Banner
                     .bloque4BannerLeft
-                        h3 Postula a Cayetano con Beca 18
-                        h4 Valoramos tu 
-                            span excelencia académica
-                    button
+                        h3 Inicia la mejor estapa de tu vida
+                        h4 en la universidad de la <span>excelencia</span>
+                    button(onclick="window.open('https://lp.cayetano.edu.pe/admision-cayetano/?utm_campaign=pregrado-aon&utm_term=medicina-veterinaria&utm_source=blog&utm_medium=organic&utm_content=banner-2-n5', '_self')")
                         h5 Conoce más 
                         img.keyframe-button-movement(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
                 .bloque2ProgramLeft.bloque2IndividualLeft

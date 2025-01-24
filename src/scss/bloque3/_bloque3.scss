@@ -172,6 +172,7 @@
         // background-color: purple;
         width: 13rem;
         justify-content: space-between;
+        cursor: pointer;
         h3 {
             margin: 0;
             font-weight: 500;
@@ -530,6 +531,7 @@
         // background-color: purple;
         width: 13rem;
         justify-content: space-between;
+        cursor: pointer;
         @include m.desktop_1020 {
             // background-color: purple;
             width: 17rem;
