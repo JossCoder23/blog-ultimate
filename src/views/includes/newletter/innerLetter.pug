@@ -6,7 +6,7 @@
             display: none;
         }
     .newsletterImage
-        img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/tano-newletter.gif", alt="")
+        img(src="https://blogs.cayetano.edu.pe/img/tano-newletter.gif", alt="")
     form.newsletterInfo(id="webform6093725000001039003" action="https://crmsandbox.zoho.com/crm/WebToLeadForm" name="WebToLeads3503766000678594001" method="POST" onSubmit='javascript:document.charset="UTF-8"' accept-charset="UTF-8") 
         input(type='text' style='display: none' name='xnQsjsdp' value='dca2765a5d03016cc1ad249409ff360c153a5fb0aaecfb26c1b12a317d835ec6')
         input#zc_gad(type='hidden' name='zc_gad' value='')
@@ -25,7 +25,7 @@
             <div id="recapErr3503766000237491098" style="font-size:12px;color:red;visibility:hidden;">Error en validación de Captcha. Si no es un robot, inténtelo de nuevo.</div>
         </div>
         .oculto
-            <input class="UTM" id="utm_source" name="LEADCF183" value=""> <!-- utm_content-->
+            <input class="UTM" id="utm_source" name="LEADCF183" value=""> <!-- utm_source-->
             <input class="UTM" id="utm_medium" name="LEADCF189" value=""> <!-- utm_medium-->
             <input class="UTM" id="utm_campaign" name="LEADCF24" value="newsletter"> <!-- utm_campaign-->
             <input class="UTM" id="utm_id" name="LEADCF203" value=""> <!-- utm_ID-->
@@ -44,13 +44,15 @@
             <input class="" id="Last_Name" name="Last Name" value="apellido blog"> 
         button
             h3 Suscribirme
-            img(src="https://lp.cayetano.edu.pe/wp-content/uploads/2024/12/arrow-black-button.webp", alt="")
+            img(src="https://blogs.cayetano.edu.pe/img/arrow-black-button.webp", alt="")
         script.
             let retorno = document.querySelector('.return')
             let ref = document.getElementById('reference');
+            let content = document.getElementById('utm_content');
             let url = window.location.href;
             ref.value = url;
             retorno.value = url;
+            content.value = url;
         <script src="https://upch.sis-service-tivenos.com/formulario_global/formulario_general_min.js"></script>
         <script id='wf_anal' src='https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet?rid=0437d1c573ea9551a6f78fecc75ed055b133d8637c177b8a930789ad34d2a8bfef7546cab2b29a294f78be18933a2358gid144c28dbf479caf4a652b4f2dd53fb61d7dd73ce678f540722674f734ca738b3gidf7258617d9ad292e18817da2738bf8d68d0f8283158afb13ff49649786a97d5egidc810aa67d5387b528f6ea9ce8821a5817278f4c9c284b8c15ca440a2904cd61e&amp;tw=dd956dad13176aee758bad58a08496c10165e0e8527fe8a62da2a32461edd34c'></script>
         <iframe name="captchaFrame" style="display:none;"></iframe>
