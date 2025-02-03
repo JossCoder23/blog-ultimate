@@ -10,6 +10,15 @@
     overflow: visible;
 }
 
+.bloque404 {
+    background-color: v.$color1;
+    min-height: 85vh;
+    @include m.tablet_768 {
+        overflow: hidden;
+        // min-height: 75vh;
+    }
+}
+
 .bloque1DesktopImage {
     position: absolute;
     left: 0;
@@ -112,17 +121,107 @@
         width: 100%;
         height: 100%;
     }
-    // .bloque1FloatLeft {
-    //     left: 0;
-    //     bottom: 0;
-    //     width: 22rem;
-    // }
-    // .bloque1FloatRight {
-    //     width: 10.2rem;
-    //     right: 0;
-    //     top: -17rem;
-    // }
-   
+}
+
+.bloque1Float404 {
+    min-height: auto !important;
+    height: auto !important;
+    background-color: v.$color1 !important;
+}
+
+.bloque1Error404  {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding-bottom: 2rem;
+    @include m.tablet_768 {
+        flex-direction: row;
+    }
+    @include m.desktop_1020 {
+        height: 70vh;
+    }
+    @include m.desktop_1400 {
+        height: 80vh;
+    }
+}
+
+.bloque1Error404Container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    align-items: center;
+    @include m.desktop_1020 {
+        align-items: flex-start;
+    }
+    .bloque1Text404 {
+        text-align: center;
+        @include m.desktop_1020 {
+            text-align: start;
+        }
+        h3, h1 {
+            margin: 0;
+            font-weight: 500;
+        }
+        h3 {
+            font-size: 3.5rem;
+            @include m.desktop_1020 {
+                font-size: 6rem;
+                font-weight: 400;
+            }
+            @include m.desktop_1400 {
+                font-size: 8rem;
+            }
+        }
+        h1 {
+            font-size: 10rem;
+            font-weight: 300;
+            @include m.desktop_1020 {
+                font-size: 18rem;
+            }
+            @include m.desktop_1400 {
+                font-size: 25rem;
+            }
+        }
+    }
+    .bloque1Text {
+        h2 {
+            margin: 0;
+            text-align: center;
+            font-size: 2rem;
+            @include m.desktop_1020 {
+                text-align: start;
+                font-size: 4rem;
+                font-weight: 500;
+            }
+            @include m.desktop_1400 {
+                font-size: 5rem;
+            }
+        }
+    }
+}
+
+.bloque1Error404Image {
+    img {
+        width: 100%;
+        @include m.tablet_768 {
+            position: relative;
+            width: 40rem;
+            right: -10rem;
+            bottom: -5rem;
+        }
+        @include m.desktop_1020 {
+            width: 60rem;
+            right: -15rem;
+            bottom: 1rem;
+        }
+        @include m.desktop_1400 {
+            width: 70rem;
+        }
+        @include m.desktop_1800 {
+            bottom: -4rem;    
+        }
+    }
 }
 
 .bloque1Logos {
@@ -241,15 +340,6 @@
     
         li {
             padding: 10px 20px;
-            &:nth-child(2), &:nth-child(3) {
-                background-color: rgb(197, 197, 197);
-                a {
-                    &:hover {
-                        background-color: rgb(197, 197, 197) !important;
-                        color: white !important;
-                    }
-                }
-            }
             a {
                 text-decoration: none;
                 color: #ffffff;

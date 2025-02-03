@@ -1,0 +1,66 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.bloque8 {
+    padding: 2rem 0;
+    padding-bottom: 4rem;
+    // background-color: green;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // padding: 2rem;
+    @include m.tablet_768 {
+        padding: 6rem 0;
+    }
+}
+
+.bloque8Container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    width: v.$width_mobile;
+    @include m.tablet_768 {
+        width: v.$width_tablet;
+    }
+    @include m.desktop_1020 {
+        width: v.$width_desktop_1020;
+    }
+    @include m.desktop_1200 {
+        width: v.$width_desktop_1200;
+    }
+    @include m.desktop_1400 {
+        width: v.$width_desktop_1400;
+    }
+    h2 {
+        color: black;
+        margin: 0;
+        padding: 0 3rem;
+        font-size: 2rem;
+        text-align: center;
+        @include m.desktop_1020 {
+            font-size: 3rem;
+        }
+    }
+}
+
+.bloque8Links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    align-items: center;
+    @include m.desktop_1020 {
+        row-gap: 2.5rem;
+    }
+    h3 {
+        color: black;
+        margin: 0;
+        font-size: 1.8rem;
+        font-weight: 500;
+        text-decoration: underline;
+        @include m.desktop_1020 {
+            font-size: 2.5rem;
+            cursor: pointer;
+        }
+    }
+}

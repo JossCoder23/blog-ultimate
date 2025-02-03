@@ -171,7 +171,6 @@ window.addEventListener("load", () => {
             }
         }
     });
-        
 
     let iconOpen = document.querySelector('.top-icon-mobile');
     let menuOpen = document.querySelector('.manuInner');

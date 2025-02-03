@@ -17,10 +17,20 @@ footer {
     flex-direction: column;
     row-gap: 2rem;
     @include m.tablet_768 {
+        width: v.$width_tablet;
         width: 100%;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+    }
+    @include m.desktop_1020 {
+        width: v.$width_desktop_1020;
+    }
+    @include m.desktop_1200 {
+        width: v.$width_desktop_1200;
+    }
+    @include m.desktop_1400 {
+        width: v.$width_desktop_1400;
     }
     img {
         width: 20rem;

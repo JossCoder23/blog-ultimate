@@ -1,0 +1,61 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(http-equiv='Expires' content='0')
+        meta(http-equiv='Last-Modified' content='0')
+        meta(http-equiv='Cache-Control' content='no-cache, mustrevalidate')
+        meta(http-equiv='Pragma' content='no-cache')
+        title Blog Cayetano Heredia - Universidad TOP 1 del Perú
+        link(rel="stylesheet", href="./css/app.css")
+        link(rel="stylesheet", href="https://unpkg.com/swiper/swiper-bundle.min.css" defer='')
+        //- script(src='https://www.google.com/recaptcha/api.js' defer='')
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel="icon" type="image/x-icon" href="favicon.png")
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap' rel='preconnect' defer='')
+        <meta name="description" content="Descubre todo sobre los programas académicos de Cayetano Heredia: pregrado, carreras para gente que trabaja y especialidades. ¡Elige la excelencia!">
+    body
+        include includes/menu/menuMobile.pug
+        .bloque1.bloque404
+            .bloque1Container
+                .bloque1Float.bloque1Float404
+                .bloque1Logos
+                    img.blog-logo(loading="lazy" src="https://blogs.cayetano.edu.pe/img/logo-1.webp", alt="", onclick="window.open('https://blogs.cayetano.edu.pe/')")
+                    .bloque1LogosSelect
+                        h3(onclick="window.open('https://blogs.cayetano.edu.pe/')").dropdown-btn Blog Cayetano
+                        ul.dropdown-menu
+                            li: a(href="https://blogs.cayetano.edu.pe/pregrado") Pregrado
+                            li: a(href="https://blogs.cayetano.edu.pe/404.html") Pge  
+                            li: a(href="https://blogs.cayetano.edu.pe/404.html") Especialidades
+                    include includes/search/searchDesktop.pug
+                    img.top-icon-mobile(loading="lazy" src="https://blogs.cayetano.edu.pe/img/icon-menu2.webp", alt="")
+                    button(onclick="window.open('https://lp.cayetano.edu.pe/admision-cayetano/?utm_campaign=pregrado-aon&utm_term=generico&utm_source=blog&utm_medium=organic&utm_content=botonpostula', '_self')")  
+                        h3 Quiero ser de Cayetano
+                        img.keyframe-button-movement(src="https://blogs.cayetano.edu.pe/img/arrow-black-button.webp", alt="")
+                .bloque1Error404 
+                    .bloque1Error404Container
+                        .bloque1Text404
+                            h3 ¡Ups!
+                            h1 404
+                        .bloque1Text
+                            h2 Este enlace aún no cumple con los estándares de excelencia.
+                    .bloque1Error404Image
+                        img(src="https://blogs.cayetano.edu.pe/img/tano-404.webp", alt="")
+        .bloque8 
+            .bloque8Container
+                h2 ¿Por qué no vuelves al inicio o exploras estos links?
+                .bloque8Links
+                    h3(onclick="window.open('https://blogs.cayetano.edu.pe/', '_self')") Volver al inicio 
+                    h3(onclick="window.open('https://lp.cayetano.edu.pe/admision-pge/', '_self')") Solicita información PGE
+                    h3(onclick="window.open('https://lp.cayetano.edu.pe/segundas-especialidades-profesionales/', '_self')") Solicita información Especialidades
+        footer
+            .footerContainer
+                img(loading="lazy" src="https://blogs.cayetano.edu.pe/img/logo-white.webp", alt="")
+                .footerTexts
+                    h3 Campus Central:
+                    h3 Av. Honorio Delgado 430
+                    h3 Urb. Ingeniería, San Martín de Porres
+        script(src="./js/script-error.js" defer='')
