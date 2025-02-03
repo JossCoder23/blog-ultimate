@@ -60,95 +60,83 @@ const paginationContainer = document.querySelector('.bloque2ProgramNotas');
 const itemsPerPage = 6;
 let currentPage = 1;
 
+function renderCards(data) {
+    cardsContainer.innerHTML = "";
+    data.forEach((card) => {
+      const cardDiv = document.createElement("div");
+      cardDiv.classList.add("card");
+      cardDiv.innerHTML = card.content;
+      cardsContainer.appendChild(cardDiv);
+    });
+}
+
+function renderPaginacion(totalPages) {
+    paginationContainer.innerHTML = "";
+    for (let i = 1; i <= totalPages; i++) {
+        const pagina = document.createElement("button");
+        pagina.textContent = i;
+        pagina.classList.add("pagina");
+        pagina.onclick = () => changePage(i);
+        paginationContainer.appendChild(pagina);
+    }
+}
+
+function changePage(page) {
+    currentPage = page;
+    const filteredData = filterSelect.value === "todos" ? cardsData : cardsData.filter((card) => card.category === filterSelect.value);
+    const paginatedData = filteredData.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
+    renderCards(paginatedData);
+    const totalPages = Math.ceil(filteredData.length / itemsPerPage);
+    renderPaginacion(totalPages);
+}
+
+filterSelect.addEventListener("change", () => {
+    changePage(1);
+});
+
+changePage(1);
+
+//- ======================================================================================================
+
+
 const cardContainerMobile = document.querySelector('.bloque2Cards');
 const filterSelectMobile = document.getElementById('filterMobile');
 const paginationContainerMobile = document.querySelector('.bloque2ProgramNotasMobile');
 const itemsPerPageMobile = 3;
 let currentPageMobile = 1;
 
-function renderCards(data) {
-    cardsContainer.innerHTML = '';
-    data.forEach(card => {
-        const cardDiv = document.createElement('div');
-        cardDiv.classList.add('card');
-        cardDiv.innerHTML = card.content;
-        cardsContainer.appendChild(cardDiv);
-    });
-}
-
 function renderCardsMobile(data) {
-    cardContainerMobile.innerHTML = '';
-    data.forEach(card => {
-        const cardDiv = document.createElement('div');
-        cardDiv.classList.add('card');
-        cardDiv.innerHTML = card.content;
-        cardContainerMobile.appendChild(cardDiv);
+    cardContainerMobile.innerHTML = "";
+    data.forEach((card) => {
+      const cardDiv = document.createElement("div");
+      cardDiv.classList.add("card");
+      cardDiv.innerHTML = card.content;
+      cardContainerMobile.appendChild(cardDiv);
     });
 }
 
-function renderPagination(totalPages) {
-    paginationContainer.innerHTML = '';
+function renderPaginacionMobile(totalPages) {
+    paginationContainerMobile.innerHTML = "";
     for (let i = 1; i <= totalPages; i++) {
-        const pageButton = document.createElement('button');
-        pageButton.textContent = i;
-        pageButton.onclick = () => changePage(i);
-        paginationContainer.appendChild(pageButton);
+        const pagina = document.createElement("button");
+        pagina.textContent = i;
+        pagina.classList.add("pagina");
+        pagina.onclick = () => changePageMobile(i);
+        paginationContainerMobile.appendChild(pagina);
     }
-}
-
-function renderPaginationMobile(totalPages) {
-    paginationContainerMobile.innerHTML = '';
-    for (let i = 1; i <= totalPages; i++) {
-        const pageButton = document.createElement('button');
-        pageButton.textContent = i;
-        pageButton.onclick = () => changePageMobile(i);
-        paginationContainerMobile.appendChild(pageButton);
-    }
-}
-
-function getPaginatedData(data, page, itemsPerPage) {
-    const start = (page - 1) * itemsPerPage;
-    const end = start + itemsPerPage;
-    return data.slice(start, end);
-}
-
-function getPaginatedDataMobile(data, page, itemsPerPage) {
-    const start = (page - 1) * itemsPerPage;
-    const end = start + itemsPerPage;
-    return data.slice(start, end);
-}
-
-function filterCards() {
-    const selectedCategory = filterSelect.value;
-    const filteredData = selectedCategory ? 
-        cardsData.filter(card => card.category === selectedCategory) : 
-        cardsData;
-    const paginatedData = getPaginatedData(filteredData, currentPage, itemsPerPage);
-    const totalPages = Math.ceil(filteredData.length / itemsPerPage);
-    renderCards(paginatedData);
-    renderPagination(totalPages);
-}
-
-function filterCardsMobile() {
-    const selectedCategory = filterSelectMobile.value;
-    const filteredData = selectedCategory ? 
-        cardsData.filter(card => card.category === selectedCategory) : 
-        cardsData;
-    const paginatedData = getPaginatedDataMobile(filteredData, currentPageMobile, itemsPerPageMobile);
-    const totalPages = Math.ceil(filteredData.length / itemsPerPageMobile);
-    renderCardsMobile(paginatedData);
-    renderPaginationMobile(totalPages);
-}
-
-function changePage(page) {
-    currentPage = page;
-    filterCards();
 }
 
 function changePageMobile(page) {
     currentPageMobile = page;
-    filterCardsMobile();
+    const filteredDataMobile = filterSelectMobile.value === "todos" ? cardsData : cardsData.filter((card) => card.category === filterSelectMobile.value);
+    const paginatedData = filteredDataMobile.slice((currentPageMobile - 1) * itemsPerPageMobile, currentPageMobile * itemsPerPageMobile);
+    renderCardsMobile(paginatedData);
+    const totalPages = Math.ceil(filteredDataMobile.length / itemsPerPageMobile);
+    renderPaginacionMobile(totalPages);
 }
 
-filterCards();
-filterCardsMobile();
+filterSelectMobile.addEventListener("change", () => {
+    changePageMobile(1);
+});
+
+changePageMobile(1);
