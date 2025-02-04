@@ -18,6 +18,12 @@ html(lang="en")
         link(rel="icon" type="image/x-icon" href="../../favicon.png")
         <meta name="description" content="¿Aún no decides qué carrera estudiar? Descubre tu vocación y explora las 20 carreras universitarias de excelencia que Cayetano Heredia tiene para ti.">
         <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script>
+        script(async='' src='https://www.googletagmanager.com/gtag/js?id=G-8KHP9CNB7Z')
+        script.
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-8KHP9CNB7Z');
     body
         include includes/menu/menuMobile.pug
         .bloque1
