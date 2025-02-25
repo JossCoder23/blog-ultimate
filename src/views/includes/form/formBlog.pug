@@ -77,6 +77,63 @@
                 h3 Enviar
                 img.keyframe-button-movement(loading="lazy" src="https://blogs.cayetano.edu.pe/img/arrow-black-button.webp", alt="")
         script.
+            function getUTMParams() {
+                var params = {};
+                var queryString = window.location.search;
+                queryString = queryString.substr(1);
+                var pairs = queryString.split("&");
+                for (var i = 0; i < pairs.length; i++) {
+                    var pair = pairs[i].split("=");
+                    params[pair[0]] = pair[1];
+                }
+                return params;
+            }
+            
+            var utmParams = getUTMParams();
+            var utmSource = utmParams["utm_source"];
+            var utmMedium = utmParams["utm_medium"];
+            var utmCampaign = utmParams["utm_campaign"];
+            var utmTerm = utmParams["utm_term"];
+            var utmContent = utmParams["utm_content"];
+            var utmId = utmParams["utm_id"];
+
+            let source = document.getElementById('utm_source');
+            let medium = document.getElementById('utm_medium');
+            let campaign = document.getElementById('utm_campaign');
+            let term = document.getElementById('utm_term');
+            let content = document.getElementById('utm_content');
+            let utm_id = document.getElementById('utm_id');
+
+            if (utmSource) {
+                source.value = utmSource;
+            } else {
+                source.value = "blog";
+            }
+            if (utmId) {
+                utm_id.value = utmId;
+            } else {
+                utm_id.value = "";
+            }
+            if (utmMedium) {
+                medium.value = utmMedium;
+            } else {
+                medium.value = "organic";
+            }
+            if (utmCampaign) {
+                campaign.value = utmCampaign;
+            } else {
+                campaign.value = "pregrado-aon";
+            }
+            if (utmTerm) {
+                term.value = utmTerm;
+            } else {
+                term.value = "generico";
+            }
+            if (utmContent) {
+                content.value = utmContent;
+            } else {
+                content.value = "formulario";
+            }
             window.addEventListener("load", function () {
             const tiposDocumento = {
                 DNI: {
