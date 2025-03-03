@@ -18,7 +18,10 @@
         .bloque5ContainerInput
             .bloque5ContainerInputGroup
                 input(class="input__item requerido" id="First_Name" type="text" name="First Name" maxlength="40" placeholder="Nombres*" required)
-                input(class="input__item requerido" id="Last_Name" type="text" name="Last Name" maxlength="40" placeholder="Apellidos*" required)
+                input(class="input__item requerido" id="Last_Name" type="text" name="Last Name" maxlength="40" placeholder="Apellidos Paterno*" required)
+            .bloque5ContainerInputGroup
+                input(class="input__item requerido" id="LEADCF38" type="text" name="LEADCF38" maxlength="40" placeholder="Apellidos Materno*" required)
+                input#Mobile.requerido.input__item(type='text' placeholder='Celular*' name='Mobile' maxlength='9' pattern='9[0-9]{8}' required)
             .bloque5ContainerInputGroup
                 select#LEADCF20.requerido.input__item(name='LEADCF20' required)
                     option(value='' disabled='' selected='') DNI/CE
@@ -27,7 +30,7 @@
                     option(value='CarnédeExtranjería') Carnet de Extranjeria
                 input#LEADCF21.requerido.input__item(type='text' name='LEADCF21' maxlength='25' placeholder='N°' required)
             .bloque5ContainerInputGroup
-                input#Mobile.requerido.input__item(type='text' placeholder='Celular*' name='Mobile' maxlength='9' pattern='9[0-9]{8}' required)
+                
                 input#Email.requerido.input__item(type='text' name='Email' ftype='email' maxlength='40' placeholder='Correo electrónico*' required)
             //- .bloque5ContainerInputGroupSelect
             //-     input(type="text" placeholder="Seleccionar programa")
@@ -53,17 +56,26 @@
                 option(value='TERAPIA FISICA Y REHABILITACION') Terapia F&iacute;sica y Rehabilitaci&oacute;n
                 option(value='TERAPIA OCUPACIONAL') Terapia Ocupacional
                 option(value='TERAPIA DE AUDICION, VOZ Y LENGUAJE') Terapia de Audici&oacute;n, Voz y Lenguaje
+            select#LEADCF14.requerido.LEADCF14Form(name='LEADCF14' required='')
+                option(value='' disabled='' selected='') - &iquest;En qu&eacute; a&ntilde;o est&aacute;s del colegio? -
+                option(value='4to de secundaria') 4to. de secundaria
+                option(value='5to de secundaria') 5to. de secundaria
+                option(value='Ya termine la secundaria') Ya termin&eacute; la secundaria
+                option(value='Estudiando en instituto') Estudiando en instituto
+                option(value='Estudiando en universidad') Estudiando en universidad
+                option(value='Egresado de instituto') Egresado de instituto
+                option(value='Egresado de universidad') Egresado de universidad
         .bloque5ContainerTerminos
             input(type="checkbox" required)
             h4 Acepto la Política de Privacidad y Proteccipon de Datos Personales.
         .oculto
             <input class="UTM" id="utm_source" name="LEADCF183" value="blog"> <!-- utm_source -->
             <input class="UTM" id="utm_medium" name="LEADCF189" value="organic"> <!-- utm_medium-->
-            <input class="UTM" id="utm_campaign" name="LEADCF24" value="pregrado-aon"> <!-- utm_campaign-->
+            <input class="UTM" id="utm_campaign3" name="LEADCF24" value="pregrado-aon"> <!-- utm_campaign-->
             <input class="UTM" id="utm_id" name="LEADCF203" value=""> <!-- utm_ID-->
             <input class="UTM" id="utm_term" name="LEADCF184" value="generico"> <!-- utm-term-->
             <input class="UTM" id="utm_content" name="LEADCF182" value="formulario"> <!-- utm_content-->
-            <input class="" id="reference" name="LEADCF168" value=""> <!-- reference-->
+            <input class="" id="reference3" name="LEADCF168" value=""> <!-- reference-->
             <input class="" id="LEADCF185" name="LEADCF185" value="PREGRADO" /> <!-- marca -->
             <input class="" name="Lead Status" value="Sin gestión" /> <!-- lead status -->
             <input class="" name="LEADCF1" value="Automáticos" /> <!-- tipo_origen -->
@@ -77,6 +89,11 @@
                 h3 Enviar
                 img.keyframe-button-movement(loading="lazy" src="https://blogs.cayetano.edu.pe/img/arrow-black-button.webp", alt="")
         script.
+
+            let refForm = document.getElementById('reference3');
+            let urlForm = window.location.href;
+            refForm.value = urlForm;
+
             function getUTMParams() {
                 var params = {};
                 var queryString = window.location.search;
@@ -99,7 +116,7 @@
 
             let source = document.getElementById('utm_source');
             let medium = document.getElementById('utm_medium');
-            let campaign = document.getElementById('utm_campaign');
+            let campaign = document.getElementById('utm_campaign3');
             let term = document.getElementById('utm_term');
             let content = document.getElementById('utm_content');
             let utm_id = document.getElementById('utm_id');
@@ -134,6 +151,37 @@
             } else {
                 content.value = "formulario";
             }
+
+            let selectCarrera = document.getElementById('LEADCF220');
+            let campaign2 = document.getElementById('utm_campaign3');
+                
+            let carreras = [
+                "INGENIERIA BIOMEDICA",
+                "LABORATORIO CLINICO",
+                "RADIOLOGIA",
+                "MEDICINA",
+                "TERAPIA FISICA Y REHABILITACION",
+                "TERAPIA OCUPACIONAL",
+                "TERAPIA DE AUDICION, VOZ Y LENGUAJE"
+            ]
+            
+            selectCarrera.addEventListener("change", (ev) => {
+                if ( carreras.includes(selectCarrera.value) ) {
+                    campaign2.value = "pregrado-2026-01";
+                }else {
+                    campaign2.value = "pregrado-2025-02";
+                }
+            })
+
+            let selectEstudios = document.querySelector('.LEADCF14Form');
+            selectEstudios.addEventListener("change", (ev) => {
+                if ( selectEstudios.value === "5to de secundaria" ) {
+                    campaign.value = "pregrado-2026-01"
+                }else {
+                    campaign.value = "pregrado-2025-02"
+                }
+            })
+
             window.addEventListener("load", function () {
             const tiposDocumento = {
                 DNI: {
@@ -182,6 +230,6 @@
                 }
             });
             })
-        <script src="https://upch.sis-service-tivenos.com/formulario_global/formulario_general_min.js"></script>
+        //- <script src="https://upch.sis-service-tivenos.com/formulario_global/formulario_general_min.js"></script>
         <script id='wf_anal' src='https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet?rid=0437d1c573ea9551a6f78fecc75ed055b133d8637c177b8a930789ad34d2a8bfef7546cab2b29a294f78be18933a2358gid144c28dbf479caf4a652b4f2dd53fb61d7dd73ce678f540722674f734ca738b3gidf7258617d9ad292e18817da2738bf8d68d0f8283158afb13ff49649786a97d5egidc810aa67d5387b528f6ea9ce8821a5817278f4c9c284b8c15ca440a2904cd61e&amp;tw=dd956dad13176aee758bad58a08496c10165e0e8527fe8a62da2a32461edd34c'></script>
         <iframe name="captchaFrame" style="display:none;"></iframe>
