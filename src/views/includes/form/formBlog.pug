@@ -69,21 +69,37 @@
             input(type="checkbox" required)
             h4 Acepto la Política de Privacidad y Proteccipon de Datos Personales.
         .oculto
-            <input class="UTM" id="utm_source" name="LEADCF183" value="blog"> <!-- utm_source -->
-            <input class="UTM" id="utm_medium" name="LEADCF189" value="organic"> <!-- utm_medium-->
-            <input class="UTM" id="utm_campaign3" name="LEADCF24" value="pregrado-aon"> <!-- utm_campaign-->
-            <input class="UTM" id="utm_id" name="LEADCF203" value=""> <!-- utm_ID-->
-            <input class="UTM" id="utm_term" name="LEADCF184" value="generico"> <!-- utm-term-->
-            <input class="UTM" id="utm_content" name="LEADCF182" value="formulario"> <!-- utm_content-->
-            <input class="" id="reference3" name="LEADCF168" value=""> <!-- reference-->
-            <input class="" id="LEADCF185" name="LEADCF185" value="PREGRADO" /> <!-- marca -->
-            <input class="" name="Lead Status" value="Sin gestión" /> <!-- lead status -->
-            <input class="" name="LEADCF1" value="Automáticos" /> <!-- tipo_origen -->
-            <input class="" name="LEADCF198" value="Postulante" /> <!-- parentezco -->
-            <input class="" name="Lead Source" value="Landing Page" /> <!-- fuente_lead -->
-            <input class="" id="LEADCF22" name="LEADCF22" value="" /> <!-- comentario -->
-            <input class="" id="LEADCF194" name="LEADCF194" value="" /> <!-- horario_disponible --> 
-            <input class="" id="LEADCF10" name="LEADCF10" value="2025-1"> <!-- periodo -->
+            input#utm_source.UTM(name='LEADCF183' value='blog')
+            // utm_source
+            input#utm_medium.UTM(name='LEADCF189' value='organic')
+            // utm_medium
+            input#utm_campaign.UTM.utm_campaign(name='LEADCF24' value='')
+            // utm_campaign
+            input#utm_id.UTM.utm_idForm(name='LEADCF203' value='')
+            // utm_ID
+            input#utm_term.UTM(name='LEADCF184' value='generico')
+            // utm-term
+            input#utm_content.UTM(name='LEADCF182' value='formulario')
+            // utm_content
+            input#reference3(name='LEADCF168' value='')
+            // reference
+            input#LEADCF185(name='LEADCF185' value='PREGRADO')
+            // marca
+            input(name='Lead Status' value='Sin gestión')
+            // lead status
+            input(name='LEADCF1' value='Automáticos')
+            // tipo_origen
+            input(name='LEADCF198' value='Postulante')
+            // parentezco
+            input(name='Lead Source' value='Landing Page')
+            // fuente_lead
+            input#LEADCF22(name='LEADCF22' value='')
+            // comentario
+            input#LEADCF194(name='LEADCF194' value='')
+            // horario_disponible
+            input#LEADCF10.LEADCF10Form(name='LEADCF10' value='2025-2')
+            // periodo
+            input#LEADCF7(name='LEADCF7' value='Pregrado OPG')
         .bloque5Button
             button
                 h3 Enviar
@@ -116,10 +132,9 @@
 
             let source = document.getElementById('utm_source');
             let medium = document.getElementById('utm_medium');
-            let campaign = document.getElementById('utm_campaign3');
             let term = document.getElementById('utm_term');
             let content = document.getElementById('utm_content');
-            let utm_id = document.getElementById('utm_id');
+            let utm_id = document.querySelector('.utm_idForm');
 
             if (utmSource) {
                 source.value = utmSource;
@@ -136,11 +151,6 @@
             } else {
                 medium.value = "organic";
             }
-            if (utmCampaign) {
-                campaign.value = utmCampaign;
-            } else {
-                campaign.value = "pregrado-aon";
-            }
             if (utmTerm) {
                 term.value = utmTerm;
             } else {
@@ -153,10 +163,10 @@
             }
 
             let selectCarrera = document.getElementById('LEADCF220');
-            let campaign2 = document.getElementById('utm_campaign3');
+            let campaign2 = document.querySelector('.utm_campaign');
+            let periodo2 = document.querySelector('.LEADCF10Form');
                 
             let carreras = [
-                "INGENIERIA BIOMEDICA",
                 "LABORATORIO CLINICO",
                 "RADIOLOGIA",
                 "MEDICINA",
@@ -168,19 +178,29 @@
             selectCarrera.addEventListener("change", (ev) => {
                 if ( carreras.includes(selectCarrera.value) ) {
                     campaign2.value = "pregrado-2026-01";
+                    periodo2.value = "2026-1";
                 }else {
                     campaign2.value = "pregrado-2025-02";
+                    periodo2.value = "2025-2";
                 }
             })
 
             let selectEstudios = document.querySelector('.LEADCF14Form');
+
             selectEstudios.addEventListener("change", (ev) => {
                 if ( selectEstudios.value === "5to de secundaria" ) {
-                    campaign.value = "pregrado-2026-01"
+                    campaign2.value = "pregrado-2026-01";
+                    periodo2.value = "2026-1";
+                }else if ( selectEstudios.value !== "5to de secundaria" && !carreras.includes(selectCarrera.value) ) {
+                    campaign2.value = "pregrado-2025-02";
+                    periodo2.value = "2025-2";
                 }else {
-                    campaign.value = "pregrado-2025-02"
+                    campaign2.value = "pregrado-2026-01";
+                    periodo2.value = "2026-1";
                 }
             })
+
+            
 
             window.addEventListener("load", function () {
             const tiposDocumento = {
